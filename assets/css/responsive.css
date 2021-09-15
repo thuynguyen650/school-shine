@@ -78,6 +78,16 @@
     .slide img {
         display: none;
     }
+
+    .footer-contact--left,
+    .footer-contact--right {
+        text-align: center;
+        margin: 8px;
+    }
+
+    .footer-social-item {
+        display: none;
+    }
 }
 
 /*Tablet & PC Low Resolution: 740 - 1239px */

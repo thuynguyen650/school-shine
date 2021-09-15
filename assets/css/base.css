@@ -12,7 +12,8 @@
 
     --hover-color: #ffb20e;
     --body-background-color: #f4f7f9;
-
+    --footer-color: #2f332f;
+    
     --header-height: 150px;
     --main-header-height: 116px;
     --sub-header-height: calc(var(--header-height) - var(--main-header-height));
