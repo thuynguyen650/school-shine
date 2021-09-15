@@ -152,10 +152,6 @@ main {
     color: var(--hover-color);
 }
 
-.features {
-    min-height: 300px;
-}
-
 /* footer  */
 footer {
     background-color: var(--footer-color);
