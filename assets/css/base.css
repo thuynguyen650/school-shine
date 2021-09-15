@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #1eaace;
+    --secondary-color: #1dbb90;
+    --third-color: #018763;
+    --gray-color: #666666;
+    --light-gray-color: #909090;
+
+    --hover-color: #ffb20e;
+    --body-background-color: #f4f7f9;
+
+    --header-height: 150px;
+    --main-header-height: 116px;
+    --sub-header-height: calc(var(--header-height) - var(--main-header-height));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.title {
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+/* button */
+.btn {
+    color: var(--white-color);
+    box-shadow: -4px 3px 0px 0px rgb(0 0 0 / 20%);
+    padding: 5px 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-border-bottom {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.btn--small {
+    height: 28px;
+    font-size: 1.2rem;
+}
+
+.btn--large {
+    height: 58px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.btn--green {
+    background-color: var(--secondary-color);
+}
+
+.btn--yellow {
+    background-color: var(--hover-color);
+}

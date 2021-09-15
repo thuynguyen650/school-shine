@@ -1,0 +1,153 @@
+/* Header */
+header {
+    height: var(--header-height);
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    height: var(--sub-header-height);
+}
+
+.header-contact {
+    color: var(--light-gray-color);
+    font-size: 1.2rem;
+    margin-top: 8px;
+}
+
+.header-user-item {
+    margin-left: 4px;
+}
+
+.user-control {
+    display: flex;
+    align-items: center;
+}
+
+.user-avt {
+    width: 18px;
+    margin-right: 6px;
+}
+
+.user-avt img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+}
+
+.user-logout-link {
+    color: var(--white-color);
+}
+
+/* main header */
+.main-header {
+    height: var(--main-header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo,
+.tablet-logo {
+    font-size: 4.6rem;
+    color: var(--third-color);
+    display: flex;
+}
+
+.tablet-logo {
+    display: none;
+    font-size: 3.8rem;
+    margin-top: 22px;
+}
+
+.mobile-menu {
+    font-size: 2.8rem;
+    color: var(--secondary-color);
+    display: none;
+}
+/* nav */
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-list {
+
+}
+
+.header-nav-item a{
+    color: var(--third-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 3px;
+    padding: 13px 15px;
+    border-radius: 5px;
+}
+
+.header-nav-item a:hover {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    box-shadow: -4px 3px 0px 0px rgb(0 0 0 / 20%);
+}
+
+.header-search img {
+    margin-left: 22px;
+    max-height: 38px;
+}
+
+.header-search img:hover {
+    cursor: pointer;
+}
+
+/* main */
+main {
+    line-height: 2.8rem;
+}
+/* slide */
+.slide-wrap {
+    height: 485px;
+    background-color: var(--primary-color);
+    background-image: url(/assets/img/bg_over.webp);
+    background-repeat: repeat-x;
+    padding: 50px 0;
+}
+
+.slide {
+    display: flex;
+    margin: 0 140px;
+}
+
+.slide-content {
+    margin-left: 52px;
+    color: var(--white-color);
+}
+
+.slide-title {
+    line-height: 6rem;
+}
+
+.slide-title .main-title {
+    font-size: 6rem;
+    margin-top: 20px;
+}
+
+.slide-title .sub-title {
+    font-size: 5rem;
+}
+
+.slide-desc {
+    font-size: 1.8rem;
+    margin: 40px 0;
+    max-width: 90%;
+}
+
+.slide-btn {
+    color: #e05100;
+    background-color: var(--white-color);
+}
+
+.slide-btn:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+}
