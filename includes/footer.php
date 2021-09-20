@@ -59,3 +59,5 @@
         </div>
     </div>
 </footer>
+
+<script src="./assets/scripts/main.js"></script>

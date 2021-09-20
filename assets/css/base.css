@@ -41,10 +41,14 @@ ul {
     list-style: none;
 }
 
-li {
-    float: left;
+table, td {
+    border: 1px solid #e0dede;
+    border-collapse: collapse;
 }
 
+th {
+    border: 1px solid var(--light-gray-color);
+}
 .primary-text {
     color: var(--primary-color);
 }
@@ -84,3 +88,14 @@ li {
 .btn--yellow {
     background-color: var(--hover-color);
 }
+
+/* after  */
+.after::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+

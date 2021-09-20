@@ -18,8 +18,8 @@
                             <div class="main-title title">Online courses</div>
                             <div class="sub-title title">and distance education</div>
                         </div>
-                        <div class="slide-desc">Online Education leads the world in distance education with high quality online degrees and online courses.</div>
-                        <button class="slide-btn btn btn--large">Start Learning Now</button>
+                        <div class="slide-desc">Trung tâm Anh ngữ hàng đầu Việt Nam, cung cấp chương trình đào tạo chất lượng với mức học phí hợp lý, phương pháp giảng dạy sinh động, môi trường học tập tương tác cao! </div>
+                        <button class="slide-btn btn btn--large">Đăng Ký Học Ngay</button>
                     </div>
                 </div>
             </div>
