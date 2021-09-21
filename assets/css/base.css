@@ -84,7 +84,9 @@ th {
 .btn--green {
     background-color: var(--secondary-color);
 }
-
+.btn:hover{
+    background-color: var(--hover-color);
+}
 .btn--yellow {
     background-color: var(--hover-color);
 }

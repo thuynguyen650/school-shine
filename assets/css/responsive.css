@@ -133,7 +133,7 @@
     }
 
     .nav-item > a {
-        padding: 13px 14px;
+        padding: 13px 14px 13px 0px;
     }
 
     /* calendar */

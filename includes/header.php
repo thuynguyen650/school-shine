@@ -1,5 +1,5 @@
 <header>
-    <div class="grid wide">
+    <div class="home_section">
         <div class="sub-header">
             <div class="header-contact">
                 Liên hệ tư vấn:
@@ -41,7 +41,7 @@
 
                             <li class="sub-header-user-item">
                                 Thông tin cá nhân
-                            </li>
+                            </li> 
 
                             <li class="sub-header-user-item">
                                 Cài đặt
@@ -54,97 +54,116 @@
                 </ul>
             </div>
         </div>
+        <div class="header-logo">
+                <div class="row">
+                    <div class="col m-9">
+                        <a href="./home.php" class="tablet-logo title">School Shine🌥</a>
+                    </div>
+                    <div class="col m-3">
 
-        <div class="main-header">
-            <a href="./home.php" class="logo title">
+                    </div>
+
+                </div>
+        </div>
+    </div>  
+            <!-- <div class="main-header"> -->
+            <!-- <a href="./home.php" class="logo title">
                 <div style="margin-top: 15px; margin-right: 4px; font-size: 10rem;">S</div>
                 <div >
                     <div>chool</div>
                     <div style="margin-top: 18px;">hine🌥</div>
                 </div>
-            </a>
+            </a> -->
 
-            <!-- mobile and tablet logo -->
-            <a href="./home.php" class="tablet-logo title">
+                <!-- mobile and tablet logo -->
+            <!-- <a href="./home.php" class="tablet-logo title">
                 School Shine🌥
-            </a>
-
-            <!-- navigation -->
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item after">
-                        <ul class="sub-nav-list btn btn--green">
-                            <li class="sub-nav-item">
-                                <a href="">Về School Shine</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Phương pháp đào tạo</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Đội ngũ giảng viên</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Chính sách học viên</a>
-                            </li>
-                        </ul>
-                        <a href="">Về chúng tôi</a>
-                    </li>
-                    <li class="nav-item after">
-                        <ul class="sub-nav-list btn btn--green">
-                            <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
-                            </li>
-                        </ul>
-                        <a href="">Khóa học</a>
-                    </li>
-                    <li class="nav-item after">
-                        <a href="./calendar.php">Lịch khai giảng</a>
-                    </li>
-                    <li class="nav-item after">
-                        <ul class="sub-nav-list btn btn--green">
-                            <li class="sub-nav-item">
-                                <a href="">Bí kíp học ngoại ngữ</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Cảm nhận học viên</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Abc</a>
-                            </li>
-                        </ul>
-                        <a href="">Blog</a>
-                    </li>
-                    <li class="nav-item after">
-                        <ul class="sub-nav-list btn btn--green">
-                            <li class="sub-nav-item">
-                                <a href="">Test trình độ online</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Tài liệu miễn phí</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Khóa học miễn phí</a>
-                            </li>
-                        </ul>
-                        <a href="">Tự học online</a>
-                    </li>
-                    <li class="nav-item after">
-                        <a href="">Liên hệ</a>
-                    </li>
-                </ul>
-
-                <!-- mobile menu icon-->
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
+            </a> -->
             
-            </nav>
+            <!-- header -->
+           
+            <!-- navigation -->
+            <div id="navbar">
+                <nav>
+                        <ul class="nav-list">
+                            <li class="nav-item after">
+                                <a><i class="fas fa-home"></i></a>
+                            </li>
+                            <li class="nav-item after">
+                                <ul class="sub-nav-list btn btn--green">
+                                    <li class="sub-nav-item">
+                                        <a href="">Về School Shine</a>
+                                    </li>
+                                    <li class="sub-nav-item">
+                                        <a href="">Phương pháp đào tạo</a>
+                                    </li>
+                                    <li class="sub-nav-item">
+                                        <a href="">Đội ngũ giảng viên</a>
+                                    </li>
+                                    <li class="sub-nav-item">
+                                        <a href="">Chính sách học viên</a>
+                                    </li>
+                                </ul>
+                                <a href="">Về chúng tôi</a>
+                            </li>
+                            <li class="nav-item after">
+                                <ul class="sub-nav-list btn btn--green">
+                                    <li class="sub-nav-item">
+                                        <a href="">Các danh mục khóa học</a>
+                                    </li>
+                                    <li class="sub-nav-item">
+                                        <a href="">Các danh mục khóa học</a>
+                                    </li>
+                                    <li class="sub-nav-item">
+                                        <a href="">Các danh mục khóa học</a>
+                                    </li>
+                                </ul>
+                                <a href="">Khóa học</a>
+                            </li>
+                            <li class="nav-item after">
+                                <a href="./calendar.php">Lịch khai giảng</a>
+                            </li>
+                            <li class="nav-item after">
+                                <ul class="sub-nav-list btn btn--green">
+                                    <li class="sub-nav-item">
+                                        <a href="">Bí kíp học ngoại ngữ</a>
+                                    </li>
+                                    <li class="sub-nav-item">
+                                        <a href="">Cảm nhận học viên</a>
+                                    </li>
+                                    <li class="sub-nav-item">
+                                        <a href="">Abc</a>
+                                    </li>
+                                </ul>
+                                <a href="">Blog</a>
+                            </li>
+                            <li class="nav-item after">
+                                <ul class="sub-nav-list btn btn--green">
+                                    <li class="sub-nav-item">
+                                        <a href="">Test trình độ online</a>
+                                    </li>
+                                    <li class="sub-nav-item">
+                                        <a href="">Tài liệu miễn phí</a>
+                                    </li>
+                                    <li class="sub-nav-item">
+                                        <a href="">Khóa học miễn phí</a>
+                                    </li>
+                                </ul>
+                                <a href="">Tự học online</a>
+                            </li>
+                            <li class="nav-item after">
+                                <a href="">Liên hệ</a>
+                            </li>
+                        </ul> 
+
+                    <!-- mobile menu icon-->
+                    <div class="mobile-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                
+                </nav>
+            </div>
+            
 
             <!-- mobile nav  -->
             <div class="mobile-nav btn btn--green">
@@ -217,6 +236,20 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </div>
+        <!-- </div> -->
 </header>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+    }
+</script>
