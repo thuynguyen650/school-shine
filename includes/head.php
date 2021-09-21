@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/calendar.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/listtest.css">
+    <link rel="stylesheet" href="./assets/css/fasttest.css">
     <link rel = "icon" href = "./assets/img/title-bar-icon.png" type = "image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
