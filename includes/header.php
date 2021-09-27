@@ -92,13 +92,10 @@
                     <li class="nav-item after">
                         <ul class="sub-nav-list btn btn--green">
                             <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
+                                <a href="newcourses.php">Các khóa học mới</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
+                                <a href="allcourses.php">Tất cả các khóa học.</a>
                             </li>
                         </ul>
                         <a href="">Khóa học</a>
