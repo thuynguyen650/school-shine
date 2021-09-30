@@ -1,10 +1,10 @@
-<header>
+<header class="header preload">
     <div class="grid wide">
         <div class="sub-header">
             <div class="header-contact">
                 Liên hệ tư vấn:
-                <a href="#">0876 123 123</a> hoặc 
-                <a href="mailto:">nhom3@uit.edu.vn</a>
+                <a href="#" style="color: var(--primary-color);">0876 123 123</a> hoặc 
+                <a href="mailto:" style="color: var(--primary-color);">nhom3@uit.edu.vn</a>
             </div>
     
             <div class="header-user">
@@ -64,6 +64,11 @@
                 </div>
             </a>
 
+            <!-- sticky logo  -->
+            <a href="./home.php" class="sticky-logo title">
+                School Shine🌥
+            </a> 
+
             <!-- mobile and tablet logo -->
             <a href="./home.php" class="tablet-logo title">
                 School Shine🌥
@@ -95,10 +100,10 @@
                                 <a href="newcourses.php">Các khóa học mới</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="allcourses.php">Tất cả các khóa học.</a>
+                                <a href="allcourses.php">Tất cả các khóa học</a>
                             </li>
                         </ul>
-                        <a href="">Khóa học</a>
+                        <span>Khóa học</span>
                     </li>
                     <li class="nav-item after">
                         <a href="./calendar.php">Lịch khai giảng</a>
@@ -106,7 +111,7 @@
                     <li class="nav-item after">
                         <ul class="sub-nav-list btn btn--green">
                             <li class="sub-nav-item">
-                                <a href="">Bí kíp học ngoại ngữ</a>
+                                <a href="./blog-list.php">Tất cả bài viết</a>
                             </li>
                             <li class="sub-nav-item">
                                 <a href="">Cảm nhận học viên</a>
@@ -115,24 +120,24 @@
                                 <a href="">Abc</a>
                             </li>
                         </ul>
-                        <a href="">Blog</a>
+                        <a href="./blog-list.php">Blog</a>
                     </li>
                     <li class="nav-item after">
                         <ul class="sub-nav-list btn btn--green">
                             <li class="sub-nav-item">
-                                <a href="">Test trình độ online</a>
+                                <a href="./listtest.php">Test trình độ online</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="">Tài liệu miễn phí</a>
+                                <a href="./document.php">Tài liệu miễn phí</a>
                             </li>
                             <li class="sub-nav-item">
                                 <a href="">Khóa học miễn phí</a>
                             </li>
                         </ul>
-                        <a href="">Tự học online</a>
+                        <span>Tự học online</span>
                     </li>
                     <li class="nav-item after">
-                        <a href="">Liên hệ</a>
+                        <a href="./contact.php">Liên hệ</a>
                     </li>
                 </ul>
 

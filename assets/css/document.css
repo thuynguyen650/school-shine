@@ -1,0 +1,23 @@
+.document-item {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    font-size: 1.4rem;
+    color: var(--gray-color);
+}
+
+.document-item-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.document-item-heading {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    margin: 8px 0 14px 0;
+}
+
+.document-item-info {
+    font-size: 1.2rem;
+    display: block;
+}

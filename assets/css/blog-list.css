@@ -1,0 +1,140 @@
+.blog-list {
+    margin-right: 10px;
+}
+
+.blog-item-title {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.blog-item-title:hover {
+    color: #007c9c;
+}
+
+.blog-item {
+    border-bottom: 1px solid #e0dede;
+    padding: 50px 0;    
+}
+
+.blog-item:first-child {
+    padding-top: 0;
+}
+
+.blog-item img {
+    width: 100%;
+    max-height: 360px;
+    margin-top: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.blog-item-info {
+    font-size: 1.4rem;
+    display: flex;
+}
+
+.blog-item-info {
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.blog-item-info a {
+    border-right: 1px solid var(--light-gray-color);
+    padding-right: 16px;
+    color: var(--primary-color);
+}
+
+.blog-item-info li + li {
+    padding-left: 16px;
+}
+
+.blog-item-info span {
+    margin-right: 16px;
+}
+
+.blog-item-desc {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.blog-list-btn {
+    padding: 11px 16px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.categories h2,
+.blog-list-most-view h2 {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    margin: 10px 0 20px 0;
+    padding: 4px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.categories ul {
+    padding-left: 20px;
+}
+
+.categories ul li::before {
+    content: "\2022";
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 2rem;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -0.8em;
+}
+
+.categories ul li:hover a, 
+.categories ul li:hover::before {
+    color: var(--hover-color);
+}
+.category a{
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.advertising img {
+    width: 100%;
+}
+
+.category {
+    max-height: 76px;
+    margin: 10px 0;
+}
+
+.blog-category-img {
+    height: 72px;
+    width: 72px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.blog-category-img img{
+    height: 100%;
+    border-radius: 5px;
+}
+
+.blog-category-info {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.blog-category-title a {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+}
+
+.blog-category-title:hover a {
+    color: var(--hover-color);
+}
+
+.blog-category-desc {
+    margin-top: 4px;
+}
