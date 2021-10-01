@@ -1,7 +1,7 @@
 /* Header */
-header {
+/* header {
     height: var(--header-height);
-}
+} */
 
 header.green {
     background-color: var(--primary-color);
@@ -232,6 +232,7 @@ header nav {
     padding: 8px 0;
     min-width: 220px;
     display: none;
+    z-index: 1000;
 }
 
 .sub-nav-list:hover ~ a {
@@ -260,7 +261,7 @@ main {
     line-height: 2.8rem;
 }
 /* slide */
-.slide-wrap {
+.slide-container {
     height: 485px;
     background-color: var(--primary-color);
     background-image: url(../img/bg_over.webp);
@@ -268,10 +269,72 @@ main {
     padding: 50px 0;
 }
 
-.slide {
-    display: flex;
-    margin: 0 140px;
+
+
+.mySlides-1, .mySlides-2 {
+    display: none
 }
+
+.slide-img {
+    /* vertical-align: middle; */
+    width: 480px;
+    height: 373px;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid var(--white-color);
+    border-radius: 15px;
+}
+
+/* Slideshow container */
+.slideshow-wrap {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.slideshow-wrap a {
+    opacity: 0;
+}
+
+.slideshow-wrap:hover a {
+    opacity: 1;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 
 .slide-content {
     margin-left: 52px;
@@ -283,18 +346,19 @@ main {
 }
 
 .slide-title .main-title {
-    font-size: 6rem;
+    font-size: 4rem;
     margin-top: 20px;
 }
 
 .slide-title .sub-title {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .slide-desc {
-    font-size: 1.8rem;
-    margin: 40px 0;
+    font-size: 1.3rem;
+    margin: 30px 0;
     max-width: 90%;
+    line-height: 2rem;
 }
 
 .slide-btn {
@@ -306,6 +370,144 @@ main {
     cursor: pointer;
     color: var(--hover-color);
 }
+
+
+/* về chúng tôi */
+
+/* .home-background-img {
+    background-image: url("../img/bacgr.png");
+} */
+
+.row-home:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-home {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.col-home img {
+    max-width: 100%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 0px 0px rgb(0 0 0 / 20%);
+
+}
+
+
+.home-img {
+    height: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* khóa học */
+.home-background-color {
+    background-color: #f4f7f9;
+}
+
+.into_item {
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 10px;
+}
+
+.into_item i {
+    font-size: 70px;
+    margin-bottom: 10px;
+    
+}
+
+.home_header {
+    text-align: center;
+    font-size: 30px;
+    color: var(--hover-color);
+    padding: 50px 0px 30px 0px;
+}
+
+.home-section {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+/* nút on top */
+.btn-ontop { 
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1000;
+    font-size: 50px;
+    color: var(--white-color);
+    cursor: pointer;
+    padding:5px;
+    width: 50px;
+    height: 50px;
+}
+
+/* cảm nhận của học viên */
+.slide-student {
+    background-color: var(--primary-color);
+    background-repeat: repeat-x;
+    /* padding: 50px 0; */
+    color: var(--white-color);
+    height: 400px;
+    text-align: center;
+}
+
+.slide-item {
+    max-width: 100%;
+    padding: 0 50px;
+}
+
+.slide-item--avatar {
+    overflow: hidden;
+    margin: 0 auto 6px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--white-color);
+    border-radius: 50%;
+}
+.slide-item--avatar img {
+    width: 100px;
+    height: 100px;
+}
+
+.slide-item--des {
+    font-size: 18px;
+}
+
+.slide-item--author {
+    font-size: 15px;
+}
+
+.slide-item--author:before {
+    content: '***';
+    font-size: 2em;
+    display: block;
+}
+
+.slide-prev, .slide-next {
+    font-size: 40px;
+    color: var(--white-color);
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin:  0 -20px;
+}
+
+.slide-prev {
+    left: 0;
+}
+
+.slide-next {
+    right: 0;
+}
+
+
 
 /* footer  */
 footer {

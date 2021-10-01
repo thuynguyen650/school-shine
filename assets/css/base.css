@@ -65,6 +65,7 @@ th {
     border-radius: 5px;
 }
 
+
 .btn-border-bottom {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -84,6 +85,11 @@ th {
 .btn--green {
     background-color: var(--secondary-color);
 }
+
+.btn--green:hover {
+    background-color: var(--hover-color);
+}
+
 
 .btn--yellow {
     background-color: var(--hover-color);

@@ -1,0 +1,19 @@
+.header-user-title {
+    font-size: 30px;
+    color: var(--secondary-color);
+    text-align: left;
+    margin: 50px 0px;
+    width: 100%;
+}
+.form-user {
+    border: 3px solid var(--third-color);
+    /* background-color: #eff7f5; */
+    padding: 7% 10%;
+    border-radius: 5px;
+}
+.form-user-label {
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0px;
+}

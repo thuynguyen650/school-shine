@@ -40,11 +40,11 @@
                             </li>
 
                             <li class="sub-header-user-item">
-                                Thông tin cá nhân
+                                Chỉnh sửa thông tin
                             </li>
 
                             <li class="sub-header-user-item">
-                                Cài đặt
+                                Thay đổi mật khẩu
                             </li>
                         </ul>
                     </li>
@@ -54,7 +54,8 @@
                 </ul>
             </div>
         </div>
-
+    </div>
+    <div class="grid wide">
         <div class="main-header">
             <a href="./home.php" class="logo title">
                 <div style="margin-top: 15px; margin-right: 4px; font-size: 10rem;">S</div>

@@ -85,9 +85,35 @@
         display: none;
     }
 
+    .slide-container {
+        height: 400px;
+    }
+
     .slide img {
         display: none;
     }
+
+    .home_header {
+        font-size: 20px;
+    }
+
+    .home-section {
+        font-size: 13px;
+    }
+
+    .home-img {
+        height: auto;
+    }
+
+    .into_item i {
+        font-size: 50px;
+    }
+
+    /* về chúng tôi */
+    .col-home {
+        width: 100%;
+    }
+
 
     .footer-contact--left,
     .footer-contact--right {
@@ -148,6 +174,10 @@
 
 /*740 - 1112px */
 @media (min-width: 740px) and (max-width: 1112px) {
+    .home-background-img {
+        background-image: url("../img/bacgr.png");
+    }
+    
 
 }
 
