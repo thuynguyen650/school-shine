@@ -1,0 +1,458 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+body{
+	background-color: #F4F7F9;
+}
+*{
+	margin:0;
+	padding: 0;
+	color: #666666;
+	font-family: 'Roboto', sans-serif;
+	line-height: 17px;
+
+}
+.checkout_title{
+	width: 60%;
+	margin: auto;
+	font-size: 60px;
+	color: white;
+	font-weight: 100;
+	padding-top: 20px;
+}
+.checkout_title p{
+	color: white;
+	padding-top: 30px;
+}
+.panel{
+	background-color: #1EAACE;
+	height: 150px;
+	margin-top: 50px;
+}
+
+.bill_details{
+	width: 60%;
+	margin: auto;
+	margin-top: 40px;
+	background-color: white;
+	border: 1px solid #F4F7F9;
+	border-radius: 25px;
+	overflow: hidden;
+}
+i{
+	font-size: 20px;
+	color: #1EAACE;
+}
+.suggest_tip{
+	margin: 30px;
+	border-top: 3px solid #1EAACE;
+	border-radius: 5px;
+	background-color: #F4F7F9;
+}
+.suggest_tip p{
+	padding: 20px;
+	font-size: 20px;
+
+}
+a{
+	text-decoration: none;
+	color: #1EAACE;
+}
+a:hover{
+	color: #1f96b5;
+}
+.info{
+	display: flex;
+}
+.detail{
+	flex: 2;
+	margin: 0 30px 30px 30px;
+}
+.addition_info{
+	flex: 2;
+	margin: 0 30px 30px 30px;
+}
+.label_detail{
+	font-size: 30px;
+	color: black;
+}
+.detail_field{
+	font-size: 15px;
+}
+.detail_container[data-error] .input{
+	border-color: #c92432;
+	color: #c92432;
+	background-color: #fffafa;
+}
+.detail_container[data-error]::after{
+	content: attr(data-error);
+	color: #c92432;
+}
+.half{
+	width: 50%;
+	float: left;
+}
+.in_half{
+	width: 90%;
+	height: 30px;
+	border: none;
+	background-color: #F4F7F9;
+}
+.full{
+	width: 100%;
+}
+.in_full{
+	width: 95%;
+	height: 30px;
+	border: none;
+	background-color: #F4F7F9;
+}
+.notnull{
+	color: red;
+}
+.note{
+	height: 150px;
+}
+.payment{
+	margin: 30px;
+	border: 3px solid #F4F7F9;
+	border-radius: 5px;
+	background-color: #F4F7F9;
+	overflow: hidden;
+}
+.sum{
+	color: red;
+	font-size: 20px;
+	float: right;
+	margin-right: 5%;
+}
+
+.payment li{
+	list-style: none;
+	height: 30px;
+	text-align: left;
+	margin-bottom: 30px;
+	width: 90%;
+}
+.payment ul{
+	border-bottom: 1px solid #666666;
+	font-size: 14px;
+}
+.payment li img{
+	height: 100%;
+	width: auto;
+	margin-left: 20px;
+	position: relative;
+	top: 5px;
+}
+label{
+	font-size: 14.5px;
+}
+.payment a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	padding: 15px;
+	font-size: 16px;
+	border: 1px solid #1EAACE;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: #1EAACE;
+	box-shadow: -4px 4px 0 #4c525659;
+	transition: 0.2s;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	float: right;
+	margin-right: 15px;
+}
+.payment a:hover{
+	border: 1px solid #FFB20E;
+	background-color: #FFB20E;
+	transition: 0.2s;
+}
+.error{
+	color: red;
+	font-size: 12px;
+	display: none;
+}
+em{
+	color: red;
+	font-size: 14.5px;
+}
+.label_period{
+	color: #666666;
+	float: right;
+	margin-right: 5%;
+}
+@media only screen and (max-width: 102.875em){
+	
+}
+@media only screen and (min-width: 46.25em) and (max-width: 83.375em){
+	.checkout_title{
+		width: 85%;
+	}
+	.bill_details{
+		width: 85%;
+	}
+	
+}
+@media only screen and (max-width: 46.1875em){
+	.checkout_title{
+		width: 85%;
+		font-size: 30px;
+	}
+	.bill_details{
+		width: 85%;
+	}
+	.suggest_tip p{
+		font-size: 14px;
+	}
+	.info{
+		flex-direction: column;
+	}
+	.error{
+		color: red;
+		font-size: 10px;
+		display: none;
+	}
+	.in_half{
+		width: 95%;
+
+	}
+	.half{
+		height: 80px;
+	}
+	.payment a{
+		font-size: 12px;
+	}
+=======
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+body{
+	background-color: #F4F7F9;
+}
+*{
+	margin:0;
+	padding: 0;
+	color: #666666;
+	font-family: 'Roboto', sans-serif;
+	line-height: 17px;
+
+}
+.checkout_title{
+	width: 60%;
+	margin: auto;
+	font-size: 60px;
+	color: white;
+	font-weight: 100;
+	padding-top: 20px;
+}
+.checkout_title p{
+	color: white;
+	padding-top: 30px;
+}
+.panel{
+	background-color: #1EAACE;
+	height: 150px;
+	margin-top: 50px;
+}
+
+.bill_details{
+	width: 60%;
+	margin: auto;
+	margin-top: 40px;
+	background-color: white;
+	border: 1px solid #F4F7F9;
+	border-radius: 25px;
+	overflow: hidden;
+}
+i{
+	font-size: 20px;
+	color: #1EAACE;
+}
+.suggest_tip{
+	margin: 30px;
+	border-top: 3px solid #1EAACE;
+	border-radius: 5px;
+	background-color: #F4F7F9;
+}
+.suggest_tip p{
+	padding: 20px;
+	font-size: 20px;
+
+}
+a{
+	text-decoration: none;
+	color: #1EAACE;
+}
+a:hover{
+	color: #1f96b5;
+}
+.info{
+	display: flex;
+}
+.detail{
+	flex: 2;
+	margin: 0 30px 30px 30px;
+}
+.addition_info{
+	flex: 2;
+	margin: 0 30px 30px 30px;
+}
+.label_detail{
+	font-size: 30px;
+	color: black;
+}
+.detail_field{
+	font-size: 15px;
+}
+.detail_container[data-error] .input{
+	border-color: #c92432;
+	color: #c92432;
+	background-color: #fffafa;
+}
+.detail_container[data-error]::after{
+	content: attr(data-error);
+	color: #c92432;
+}
+.half{
+	width: 50%;
+	float: left;
+}
+.in_half{
+	width: 90%;
+	height: 30px;
+	border: none;
+	background-color: #F4F7F9;
+}
+.full{
+	width: 100%;
+}
+.in_full{
+	width: 95%;
+	height: 30px;
+	border: none;
+	background-color: #F4F7F9;
+}
+.notnull{
+	color: red;
+}
+.note{
+	height: 150px;
+}
+.payment{
+	margin: 30px;
+	border: 3px solid #F4F7F9;
+	border-radius: 5px;
+	background-color: #F4F7F9;
+	overflow: hidden;
+}
+.sum{
+	color: red;
+	font-size: 20px;
+	float: right;
+	margin-right: 5%;
+}
+
+.payment li{
+	list-style: none;
+	height: 30px;
+	text-align: left;
+	margin-bottom: 30px;
+	width: 90%;
+}
+.payment ul{
+	border-bottom: 1px solid #666666;
+	font-size: 14px;
+}
+.payment li img{
+	height: 100%;
+	width: auto;
+	margin-left: 20px;
+	position: relative;
+	top: 5px;
+}
+label{
+	font-size: 14.5px;
+}
+.payment a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	padding: 15px;
+	font-size: 16px;
+	border: 1px solid #1EAACE;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: #1EAACE;
+	box-shadow: -4px 4px 0 #4c525659;
+	transition: 0.2s;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	float: right;
+	margin-right: 15px;
+}
+.payment a:hover{
+	border: 1px solid #FFB20E;
+	background-color: #FFB20E;
+	transition: 0.2s;
+}
+.error{
+	color: red;
+	font-size: 12px;
+	display: none;
+}
+em{
+	color: red;
+	font-size: 14.5px;
+}
+.label_period{
+	color: #666666;
+	float: right;
+	margin-right: 5%;
+}
+@media only screen and (max-width: 102.875em){
+	
+}
+@media only screen and (min-width: 46.25em) and (max-width: 83.375em){
+	.checkout_title{
+		width: 85%;
+	}
+	.bill_details{
+		width: 85%;
+	}
+	
+}
+@media only screen and (max-width: 46.1875em){
+	.checkout_title{
+		width: 85%;
+		font-size: 30px;
+	}
+	.bill_details{
+		width: 85%;
+	}
+	.suggest_tip p{
+		font-size: 14px;
+	}
+	.info{
+		flex-direction: column;
+	}
+	.error{
+		color: red;
+		font-size: 10px;
+		display: none;
+	}
+	.in_half{
+		width: 95%;
+
+	}
+	.half{
+		height: 80px;
+	}
+	.payment a{
+		font-size: 12px;
+	}
+>>>>>>> c6632e69e53027cb5ec2ee2ac1be719998a3b802
+}

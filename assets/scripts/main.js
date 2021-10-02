@@ -1,6 +1,11 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
+//enable animation header
+setTimeout(function(){
+    $('.header').classList.remove('preload')
+},500);
+
 const mobileMenu = $('.mobile-menu')
 const mobileNav = $('.mobile-nav')
 
@@ -17,14 +22,13 @@ for(let mobileNavItem of mobileNavItems) {
         _this.querySelector('.nav-icon--up').style.display =  _this.querySelector('.nav-icon--up').style.display === 'block' ? 'none' : 'block'
     }
 }
-console.log(mobileNavItems)
 
 mobileMenu.onclick = () => {
     mobileNav.classList.toggle('show')   
     header.style.height = header.offsetHeight === 150 ? '360px' : '150px' 
 }
 
-window.onresize = () => {
-    mobileNav.classList.remove('show')
-    header.style.height = '150px' 
-}
+// sticky header 
+window.addEventListener("scroll", function() {
+    document.querySelector("header").classList.toggle("sticky", window.scrollY > 0)
+})

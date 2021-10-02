@@ -1,4 +1,4 @@
-<header class="green">
+<header class="header preload green">
     <div class="grid wide">
         <div class="sub-header">
             <div class="header-contact white">
@@ -56,7 +56,7 @@
         </div>
 
         <div class="main-header">
-            <a href="#" class="logo title white">
+            <a href="./home.php" class="logo title white">
                 <div style="margin-top: 15px; margin-right: 4px; font-size: 10rem;">S</div>
                 <div >
                     <div>chool</div>
@@ -64,8 +64,13 @@
                 </div>
             </a>
 
+            <!-- sticky logo  -->
+            <a href="./home.php" class="sticky-logo white title">
+                School Shine🌥
+            </a>
+
             <!-- mobile and tablet logo -->
-            <a href="#" class="tablet-logo title white">
+            <a href="./home.php" class="tablet-logo title white">
                 School Shine🌥
             </a>
 
@@ -91,24 +96,21 @@
                     <li class="nav-item after white">
                         <ul class="sub-nav-list btn btn--green">
                             <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
+                                <a href="newcourses.php">Các khóa học mới</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
+                                <a href="allcourses.php">Tất cả các khóa học</a>
                             </li>
                         </ul>
                         <a href="">Khóa học</a>
                     </li>
                     <li class="nav-item after white active">
-                        <a href="">Lịch khai giảng</a>
+                        <a href="./calendar.php">Lịch khai giảng</a>
                     </li>
                     <li class="nav-item after white">
                         <ul class="sub-nav-list btn btn--green">
                             <li class="sub-nav-item">
-                                <a href="">Bí kíp học ngoại ngữ</a>
+                                <a href="./blog-list.php">Tất cả bài viết</a>
                             </li>
                             <li class="sub-nav-item">
                                 <a href="">Cảm nhận học viên</a>
@@ -117,15 +119,15 @@
                                 <a href="">Abc</a>
                             </li>
                         </ul>
-                        <a href="">Blog</a>
+                        <a href="./blog-list.php">Blog</a>
                     </li>
                     <li class="nav-item after white">
                         <ul class="sub-nav-list btn btn--green">
                             <li class="sub-nav-item">
-                                <a href="">Test trình độ online</a>
+                                <a href="./listtest.php">Test trình độ online</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="">Tài liệu miễn phí</a>
+                                <a href="./document.php">Tài liệu miễn phí</a>
                             </li>
                             <li class="sub-nav-item">
                                 <a href="">Khóa học miễn phí</a>
@@ -134,7 +136,7 @@
                         <a href="">Tự học online</a>
                     </li>
                     <li class="nav-item after white">
-                        <a href="">Liên hệ</a>
+                        <a href="./contact.php">Liên hệ</a>
                     </li>
                 </ul>
 

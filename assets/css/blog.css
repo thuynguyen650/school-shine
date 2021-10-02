@@ -1,0 +1,20 @@
+.blog-content {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.blog-title {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.blog-content p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.blog-content img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}

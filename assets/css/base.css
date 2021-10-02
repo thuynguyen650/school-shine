@@ -65,6 +65,12 @@ th {
     border-radius: 5px;
 }
 
+<<<<<<< HEAD
+=======
+.btn:hover {
+    cursor: pointer;
+}
+>>>>>>> 761b91ce6e1dc10a2b2b9742e8b96007b5d345a1
 
 .btn-border-bottom {
     border-top-left-radius: 0px;
@@ -80,6 +86,18 @@ th {
     height: 58px;
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+.btn--medium {
+    height: 45px;
+}
+
+.btn--primary {
+    background-color: var(--primary-color);
+}
+
+.btn--primary:hover {
+    background-color: var(--hover-color);
 }
 
 .btn--green {
@@ -104,4 +122,3 @@ th {
     right: 0;
     height: 4px;
 }
-
