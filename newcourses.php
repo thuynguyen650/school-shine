@@ -16,9 +16,22 @@
         include "./includes/header.php";
     ?>
 	<main>
-	<h2 class="title_newcourse">
+	<div class="panel">
+		<div class="allcourse_title">
+			<p>Các khóa học mới</p>
+			<div class="addr">
+				<a href="home.php" class="btn_addr">Trang chủ</a>
+				<label>&rarr;</label>
+				<a href="#" class="btn_addr">Khóa học</a>
+				<label>&rarr;</label>
+				<a href="#" class="btn_addr">Các khóa học mới</a>
+			</div>
+		</div>
+		
+	</div>
+	<!-- <h2 class="title_newcourse">
 		Các khóa học mới
-	</h2>
+	</h2> -->
 	<!-- Thông tin các khóa học -->
 	<div class="list_courses">
 		<div class="_1newcourse" id="Language">
