@@ -78,6 +78,8 @@ a:hover{
 }
 .detail_field{
 	font-size: 15px;
+	margin-bottom: 10px;
+    display: block;
 }
 .detail_container[data-error] .input{
 	border-color: #c92432;
@@ -97,6 +99,8 @@ a:hover{
 	height: 30px;
 	border: none;
 	background-color: #F4F7F9;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .full{
 	width: 100%;
@@ -106,6 +110,8 @@ a:hover{
 	height: 30px;
 	border: none;
 	background-color: #F4F7F9;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .notnull{
 	color: red;

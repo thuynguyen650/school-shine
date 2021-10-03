@@ -205,6 +205,9 @@ a.btn_paid_course:hover{
 	border: 1px solid gray;
 	border-radius: 10px;
 }
+.field label{
+	padding-left: 10px;
+}
 .more{
 	margin: auto;
 	width: 60%;

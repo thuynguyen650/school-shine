@@ -61,8 +61,8 @@
 			<div class="chart">
 				<form class="vote">
 					<fieldset class="field">
-						<legend>Đánh giá chất lượng khóa học.</legend>
-						<label> <br>Chất lượng bài giảng:</label> <br>
+						<legend>Đánh giá chất lượng khóa học.</legend><br>
+						<label> Chất lượng bài giảng:</label> <br>
 						<input type="range" min="1" max="100" value="50" id="tutorial" class="tutorial slider" oninput="changeTutorial();">
 						<label id="val_tutorial"> 50% </label><br> <br>
 						<label>Kĩ năng thực hành:</label> <br>
