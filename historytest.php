@@ -10,6 +10,7 @@
 ?>
 </div>
 <!-- Content fasttest -->
+<main>
     <div id="contenthistorytest">
     <div id="info-user">
         <img id="icon-user" src="./assets/img/icon-user.png" alt="">
@@ -27,8 +28,6 @@
     <h2>LỊCH SỬ TEST</h2>
     
     <input type="text" placeholder="search">
-    </div>
-    
     <table>
         <tr>
             <th>Thời gian</th>
@@ -44,7 +43,11 @@
         </tr>
     </table>
     </div>
+    
+
     </div>
+    </div>
+</main>
 <!-- footer -->
 <?php
     include "./includes/footer.php"
