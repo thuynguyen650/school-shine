@@ -1,12 +1,12 @@
 #contenthistorytest{
-background-color: teal;
+background-color: #f4f7f9;
 padding-top: 50px;
 padding-bottom: 50px;
 }
 #info-user{
     width: 70%;
     height: 250px;
-    background-color: white;
+    background-color: teal;
     margin-left: 15%;
 }
 #icon-user{
@@ -31,13 +31,13 @@ padding-bottom: 50px;
 #result-test{
     width: 70%;
     height: 500px;
-    background-color: white;
+    background-color: teal;
     margin-left: 15%;
     margin-top: 10px;
 }
 #result-test h2{
     text-align: center;
-    color: teal;
+    color: white;
     font-size: 30;
     line-height: 5;
 }
@@ -45,6 +45,7 @@ padding-bottom: 50px;
     line-height: 5;
     width: 80%;
     margin-left:10% ;
+    background-color: white;
 }
 #result-test div{
     width: 100%;
@@ -55,12 +56,14 @@ padding-bottom: 50px;
     height: 50px;
     margin-right: 10%;
     float: right;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
-#result-test table th, td {
+#result-test table {
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
     text-align: center;
-    
   }
+
   

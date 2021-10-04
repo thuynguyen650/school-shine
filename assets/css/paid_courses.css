@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 *{
@@ -25,6 +24,7 @@ em.survey_mobile{
 }
 em.survey_desk{
 	display: block;
+	line-height: 25px;
 }
 i.icon_course{
 	font-size: 100px;
@@ -80,7 +80,7 @@ ul{
 .filter{
 	padding-top: 30px;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	background-color: #093e52c7;
 }
 .time_details{
@@ -94,6 +94,9 @@ ul{
 	font-size: 70px;
 	color: #1EAACE;
 	margin-right: 15px;
+}
+.time_details p{
+	line-height: 40px;
 }
 .finish{
 	text-decoration: none;
@@ -202,343 +205,8 @@ a.btn_paid_course:hover{
 	border: 1px solid gray;
 	border-radius: 10px;
 }
-.more{
-	margin: auto;
-	width: 60%;
-	display: flex;
-}
-.plan{
-	flex: 2;
-}
-.location{
-	flex: 1;
-}
-.need{
-	color: #1EAACE;
-	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
-	font-size: 17px;
-}
-.author{
-	color: #1EAACE;
-	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
-}
-.plan label{
-	font-family: 'Roboto', sans-serif;
-}
-.plan ul{
-	list-style: none;
-}
-.plan p{
-	padding-right: 70px;
-	line-height: 25px;
-}
-.plan p.about{
-	padding-right: 70px;
-	line-height: 60px;
-}
-.plan i{
-	color: #1EAACE;
-	font-size: 5px;
-	margin-right: 15px;
-	position: relative;
-	top: -4px;
-}
-.location i{
-	color: #1EAACE;
-	font-size: 30px;
-	margin-right: 15px;
-}
-p.location_name{
-	font-size: 14.5px;
-	line-height: 20px;
-}
-.more{
-	margin-bottom: 50px;
-}
-@media only screen and (max-width: 102.875em){
-	
-}
-@media only screen and (min-width: 46.25em) and (max-width: 83.375em){
-	.time_details
-	{
-		width: 85%;
-	}
-	.about_course
-	{
-		width: 85%;
-	}
-	.more
-	{
-		width: 85%;
-	}
-}
-@media only screen and (max-width: 46.1875em){
-	.about_course{
-		flex-direction: column;
-	}
-	.info_course{
-		width: 100%;
-	}
-	.info_course p{
-		padding-right: 10px;
-	}
-	.time_details
-	{
-		width: 85%;
-		font-size: 20px;
-	}
-	.about_course
-	{
-		width: 85%;
-	}
-	.more
-	{
-		width: 85%;
-		flex-direction: column;
-	}
-	.more p
-	{
-		padding-right: 10px;
-	}
-	.content_big h3{
-		font-size: 20px;
-		color: white;
-		line-height: 25px;
-		font-weight: 400;
-	}
-	.content_big a{
-		padding: 15px;
-		margin-bottom: 60px;
-		margin-top: 20px;
-		font-size: 15px;
-		background-color: white;
-		display: inline-block;
-		text-decoration: none;
-		font-family: 'Roboto', sans-serif;
-		font-weight: bold;
-		color: #E05100;
-		border: 1px solid white;
-		border-radius: 5px;
-		box-shadow: -4px 4px 0 #4c525659;
-	}
-	p.about{
-		font-size: 40px;
-		line-height: 60px;
-	}
-	em.survey_desk{
-		display: none;
-	}
-	em.survey_mobile{
-		display: block;
-	}
-	/*.panel{
-		width: 110%;
-	}*/
-=======
-@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-}
-body{
-	color: #666666;
-}
-.panel{
-	width: 100%;
-	/*height: auto;*/
-	background-image: url(../img/panel.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	text-align: center;
-	border-top: 2px dashed white;
-
-	
-}
-em.survey_mobile{
-	display: none;
-
-}
-em.survey_desk{
-	display: block;
-}
-i.icon_course{
-	font-size: 100px;
-	color: white;
-}
-form{
-	font-size: 14px;
-	line-height: 18px;
-}
-.icon a{
-	text-decoration: none;
-	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	margin-bottom: 30px;
-	display: block;
-}
-ul{
-	font-size: 14.5px;
-	line-height: 20px;
-}
-.icon p{
-	color: white;
-}
-.content_big h3{
-	font-size: 60px;
-	color: white;
-	line-height: 65px;
-	font-weight: 400;
-}
-.content_big{
-	width: 65%;
-	margin: auto;
-	text-align: center;
-	margin-bottom: 50px;
-	margin-top: 40px;
-}
-.content_big a{
-	padding: 15px;
-	margin-bottom: 60px;
-	margin-top: 20px;
-	font-size: 20px;
-	background-color: white;
-	display: inline-block;
-	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	color: #E05100;
-	border: 1px solid white;
-	border-radius: 5px;
-	box-shadow: -4px 4px 0 #4c525659;
-}
-.filter{
-	padding-top: 30px;
-	width: 100%;
-	height: 100%;
-	background-color: #093e52c7;
-}
-.time_details{
-	font-size: 35px;
-	width: 60%;
-	margin: auto;
-	color: #666666;
-	margin-bottom: 40px;
-}
-.time_details i{
-	font-size: 70px;
-	color: #1EAACE;
-	margin-right: 15px;
-}
-.finish{
-	text-decoration: none;
-	color: #1EAACE;
-}
-.about_course{
-	margin: auto;
-	width: 60%;
-	display: flex;
-	margin-bottom: 30px;
-	border-bottom: 1px solid gray;
-}
-.info_course{
-	flex: 2;
-}
-.info_course p{
-
-	line-height: 25px;
-	font-size: 14.5px;
-}
-
-p.about{
-	font-size: 55px;
-	font-family: 'Roboto', sans-serif;
-	color: #666666;
-	margin-top: 20px;
-	margin-bottom: 25px;
-	display: block;
-	line-height: 60px;
-}
-.info_course p{
-	padding-right: 70px;
-}
-.info_course em{
-	padding-right: 70px;
-	font-size: 14.5px;
-	
-}
-.chart{
-	flex: 1;
-}
-.slider{
-	width: 80%;
-	margin-left: 10px;
-	-webkit-appearance: none;
-	border-radius: 12px;
-}
-.tutorial{
-	background: linear-gradient(90deg, #1EAACE 50%, white 50%);
-}
-.training{
-	background: linear-gradient(90deg, #1DBB90 50%, white 50%);
-}
-.teacher{
-	background: linear-gradient(90deg, #FFB20E 50%, white 50%);
-}
-.price{
-	background: linear-gradient(90deg, #1EAACE 50%, white 50%);
-}
-.avg{
-	display: flex;
-	background-color: #F4F7F9;
-	line-height: 25px;
-}
-.summa{
-	flex: 2;
-	margin-top: 10px;
-	margin-left: 10px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
-}
-.percent{
-	flex: 1;
-	font-size: 50px;
-	color: white;
-	text-align: center;
-	padding-top: 30px;
-	background-color: #1DBB90;
-}
-a.btn_paid_course{
-	text-decoration: none;
-	display: inline-block;
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	padding: 15px;
-	border: 1px solid #1EAACE;
-	font-weight: bold;
-	font-size: 16px;
-	border-radius: 5px;
-	background-color: #1EAACE;
-	box-shadow: -4px 4px 0 #4c525659;
-	transition: 0.2s;
-	margin: auto;
-	margin-top: 10px;
-	margin-bottom: 30px;
-}
-a.btn_paid_course:hover{
-	border: 1px solid #FFB20E;
-	background-color: #FFB20E;
-	transition: 0.2s;
-}
-.acpt{
-	text-align: center;
-}
-.field{
-	border: 1px solid gray;
-	border-radius: 10px;
+.field label{
+	padding-left: 10px;
 }
 .more{
 	margin: auto;
@@ -613,6 +281,9 @@ p.location_name{
 	}
 }
 @media only screen and (max-width: 46.1875em){
+	.time_details p{
+		line-height: 30px;
+	}
 	.about_course{
 		flex-direction: column;
 	}
@@ -670,9 +341,9 @@ p.location_name{
 	}
 	em.survey_mobile{
 		display: block;
+		line-height: 25px;
 	}
 	/*.panel{
 		width: 110%;
 	}*/
->>>>>>> c6632e69e53027cb5ec2ee2ac1be719998a3b802
 }

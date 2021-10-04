@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 *{
@@ -8,13 +7,57 @@
 body{
 	background-color: #F4F7F9;
 }
+
+.btn_addr{
+	color: #1EAACE;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+.btn_addr:hover{
+	background-color: #007c9c;
+	color: white;
+	border: 1px solid #007c9c;
+}
+a.btn_addr{
+	padding: 5px;
+	font-size: 1.2rem;
+	font-weight: 400;
+
+}
+.addr label{
+	font-size: 1.2rem;
+	color: white;
+}
+.addr{
+	float: right;
+	position: relative;
+	top: -25px;
+}
 .mobile_price{
 	display: none;
 }
 .mobile_filter{
 	display: none;
 }
-
+.allcourse_title{
+	width: 70%;
+	margin: auto;
+	font-size: 60px;
+	color: white;
+	font-weight: 100;
+	padding-top: 20px;
+}
+.allcourse_title p{
+	color: white;
+	padding-top: 30px;
+}
+.panel{
+	background-color: #1EAACE;
+	height: 150px;
+	/*margin-top: 50px;*/
+	margin-bottom: 40px;
+}
 h2{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
@@ -60,7 +103,7 @@ p.type{
 	color: white;
 	font-weight: normal;
 	padding-left: 15px;
-	padding-top: 10px;
+	padding-top: 25px;
 }
 .overview .type{
 	font-size: 25px;
@@ -85,7 +128,7 @@ p.type{
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: auto;
-	
+
 }
 .green{
 	color: #1DBB90;
@@ -285,6 +328,15 @@ a.buynow:hover{
 		width: 100%;
 		object-fit: contain;
 	}
+	.allcourse_title{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.addr{
+		float: right;
+		padding-top: 5px;
+		top: 0;
+	}
 }
 @media only screen and (min-width: 46.25em) and (max-width: 76.375em){
 	.listfields{
@@ -315,6 +367,15 @@ a.buynow:hover{
 		width: 100%;
 		object-fit: contain;
 	}
+	.allcourse_title{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.addr{
+		float: right;
+		padding-top: 5px;
+		top: 0;
+	}
 }
 @media only screen and (max-width: 46.1875em){
 	h2{
@@ -326,6 +387,7 @@ a.buynow:hover{
 	.field{
 		font-size: 15px;
 	}
+
 	._1newcourse{
 		width: 100%;
 		height: 350px;
@@ -368,7 +430,7 @@ a.buynow:hover{
 		padding-top: 30px;
 	}
 	._1newcourse .hover p{
-		height: 200px;
+		height: 235px;
 		line-height: 20px;
 		font-size: 13.5px;
 		font-family: 'Roboto', sans-serif;
@@ -391,7 +453,7 @@ a.buynow:hover{
 		padding-top: 30px;
 	}
 	._1newcourse:hover .hover p{
-		height: 200px;
+		height: 235px;
 		line-height: 20px;
 		font-size: 13.5px;
 		font-family: 'Roboto', sans-serif;
@@ -424,435 +486,17 @@ a.buynow:hover{
 		margin-bottom: 3%;
 		
 	}
-	
-	
-=======
-@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
-*{
-	margin:0;
-	padding:0;
-}
-body{
-	background-color: #F4F7F9;
-}
-.mobile_price{
-	display: none;
-}
-.mobile_filter{
-	display: none;
-}
-
-h2{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	font-size: 60px;
-	text-align: center;
-	color: #4E4F50;
-	margin-bottom: 50px;
-	margin-top: 50px;
-}
-._1newcourse{
-	width: 31.33%;
-	height: 350px;
-	margin-left: 1%;
-	margin-right: 1%;
-	margin-bottom: 3%;
-	border: 1px solid #F4F7F9;
-	border-radius: 25px;
-	overflow: hidden;
-	transition: 0.6s;
-}
-.imgcourse{
-	width: 100%;
-	height: 170px;
-	overflow: hidden;
-}
-.namecourse{
-	width: 100%;
-	height: 25%;
-}
-.overview{
-	width: 100%;
-	height: 25%;
-	overflow: hidden;
-	background-color: white;
-}
-p.type{
-	padding-bottom: 12px;
-	padding-top: 10px;
-}
-.namecourse h4{
-	font-size: 30px;
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	font-weight: normal;
-	padding-left: 15px;
-	padding-top: 10px;
-}
-.overview .type{
-	font-size: 25px;
-	font-weight: bold;
-	font-family: 'Roboto', sans-serif;
-	padding-left: 15px;
-	padding-top: 15px;
-}
-.overview .cost{
-	float: right;
-	font-size: 35px;
-	padding-right: 15px;
-}
-.overview .cost .period{
-	color: gray;
-	font-size: 25px;
-}
-.list_courses{
-	width: 70%;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: auto;
-	
-}
-.green{
-	color: #1DBB90;
-}
-.yellow{
-	color: #FFB20E;
-}
-.blue{
-	color: #1EAACE;
-}
-.greenback{
-	background-color: #1DBB90;
-}
-.yellowback{
-	background-color: #FFB20E;
-}
-.blueback{
-	background-color: #1EAACE;
-}
-main{
-	overflow: hidden;
-	margin-bottom: 30px;
-}
-.view_all{
-	margin: auto;
-	width: 230px;
-	height: 45px;
-	text-align: center;
-	display: block;
-	background-color: #1DBB90;
-	box-shadow: -5px 5px 0 #C3C6C7;
-	transition: 0.2s;
-	margin-bottom: 50px;
-	overflow: hidden;
-}
-a.view_all{
-	vertical-align: middle;
-	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	color: white;
-	font-size: 15px;
-	padding-top: 10px;
-
-}
-.view_all:hover{
-	transition: 0.2s;
-	background-color: #FFB20E;
-}
-
-._1newcourse .hover{
-	height: 0;
-	opacity: 0;
-	transition: 0.6s;
-}
-._1newcourse .unhover{
-	opacity: 1;
-	height: 100%;
-}
-
-._1newcourse:hover .unhover{
-	height: 0;
-	opacity: 0;
-
-}
-._1newcourse:hover .hover{
-	opacity: 1;
-	height: 100%;
-	border: 1px solid #F4F7F9;
-	border-radius: 25px;
-	/*overflow: hidden;*/
-	/*transition: 0.6s;*/
-	/*width: 31.33%;
-	margin-left: 1%;
-	margin-right: 1%;
-	margin-bottom: 3%;
-	border: 1px solid #F4F7F9;
-	border-radius: 25px;
-	/*overflow: hidden;*/
-	transition: 0.6s;
-}
-._1newcourse:hover .hover h4{
-	font-size: 30px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: normal;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 30px;
-}
-._1newcourse:hover .hover p{
-	height: 190px;
-	line-height: 20px;
-	font-size: 13.5px;
-	font-family: 'Roboto', sans-serif;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-}
-._1newcourse:hover .hover .sel{
-	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
-	padding-left: 20px;
-	padding-top: 10px;
-}
-a.learnmore{
-	padding-right: 10px;
-	padding-left: 10px;
-	vertical-align: middle;
-	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	color: #E05100;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: white;
-	border: 1px solid white;
-	border-radius: 5px;
-	box-shadow: -4px 4px 0 #4c525659;
-	margin-right: 10px;
-	transition: 0.2s;
-}
-a.buynow{
-	padding-right: 10px;
-	padding-left: 10px;
-	vertical-align: middle;
-	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	color: #E05100;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: white;
-	border: 1px solid white;
-	border-radius: 5px;
-	box-shadow: -4px 4px 0 #4c525659;
-	margin-right: 10px;
-	transition: 0.2s;
-}
-a.learnmore:hover{
-	color: white;
-	background-color: #CC8B00;
-	border: 1px solid #CC8B00;
-	transition: 0.2s;
-}
-a.buynow:hover{
-	color: white;
-	background-color: #CC8B00;
-	border: 1px solid #CC8B00;
-	transition: 0.2s;
-}
-.toogle{
-	margin: auto;
-}
-.listfields{
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 50px;
-}
-.field{
-	text-decoration: none;
-	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
-	padding-left: 20px;
-	padding-right: 20px;
-	color: white;
-	background-color: #1DBB90;
-	margin-right: 5px;
-	border: 1px solid #1DBB90;
-	border-radius: 5px;
-	padding-bottom: 15px;
-	padding-top: 15px;
-	transition: 0.2s;
-}
-.field:hover{
-	background-color: #FFB20E;
-	border: 1px solid #FFB20E;
-	border-radius: 5px;
-	transition: 0.2s;
-}
-.field:focus{
-	background-color: #FFB20E;
-	border: 1px solid #FFB20E;
-}
-@media only screen and (max-width: 90.875em){
-	._1newcourse{
-		width: 48%;
-		height: 350px;
-		margin-left: 1%;
-		margin-right: 1%;
-		margin-bottom: 5%;
-		border: 1px solid #F4F7F9;
-		border-radius: 25px;
-		overflow: hidden;
-		transition: 0.6s;
-	}
-	.imgcourse{
-		width: 100%;
-		object-fit: contain;
-	}
-}
-@media only screen and (min-width: 46.25em) and (max-width: 76.375em){
-	.listfields{
-		margin: auto;
-		width: 85%;
+	.allcourse_title{
 		display: flex;
-		flex-direction: column;
-		flex-flow: wrap;
+		flex-direction: column-reverse;
 	}
-	.listfields a{
-		width: 48%;
-		margin-left: 1%;
-		margin-right: 1%;
-		margin-bottom: 3%;
-		
+	.allcourse_title p{
+		font-size: 30px;
 	}
-	._1newcourse{
-		width: 85%;
-		height: 350px;
-		margin: auto;
-		margin-bottom: 5%;
-		border: 1px solid #F4F7F9;
-		border-radius: 25px;
-		overflow: hidden;
-		transition: 0.6s;
-	}
-	.imgcourse{
-		width: 100%;
-		object-fit: contain;
+	.addr{
+		float: right;
+		padding-top: 5px;
+		top: 0;
 	}
 }
-@media only screen and (max-width: 46.1875em){
-	h2{
-		font-size: 40px;
-	}
-	.mobile_price{
-		display: block;
-	}
-	.field{
-		font-size: 15px;
-	}
-	._1newcourse{
-		width: 100%;
-		height: 350px;
-		margin: auto;
-		margin-bottom: 5%;
-		border: 1px solid #F4F7F9;
-		border-radius: 25px;
-		overflow: hidden;
-		transition: 0.6s;
-		
-	}
-	.namecourse h4{
-		font-size: 18px;
-	}
-	.list_courses{
-		width: 80%;
-		height: auto;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		margin: auto;
-	}
-	._1newcourse .unhover{
-		display: none;
-	}
-	._1newcourse .hover{
-		opacity: 1;
-		height: 100%;
-		border: 1px solid #F4F7F9;
-		border-radius: 25px;
-		font-size: 14.5px;
-		transition: 0s;
-	}
-	._1newcourse .hover h4{
-		font-size: 18px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: normal;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-top: 30px;
-	}
-	._1newcourse .hover p{
-		height: 200px;
-		line-height: 20px;
-		font-size: 13.5px;
-		font-family: 'Roboto', sans-serif;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-top: 10px;
-	}
-	._1newcourse .hover .sel{
-		font-size: 15px;
-		font-family: 'Roboto', sans-serif;
-		padding-left: 20px;
-		padding-top: 10px;
-	}
-	._1newcourse:hover .hover h4{
-		font-size: 18px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: normal;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-top: 30px;
-	}
-	._1newcourse:hover .hover p{
-		height: 200px;
-		line-height: 20px;
-		font-size: 13.5px;
-		font-family: 'Roboto', sans-serif;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-top: 10px;
-	}
-	._1newcourse:hover .hover .sel{
-		font-size: 15px;
-		font-family: 'Roboto', sans-serif;
-		padding-left: 20px;
-		padding-top: 10px;
-	}
-	.imgcourse{
-		width: 100%;
-		height: 170px;
-		overflow: hidden;
-	}
-	.listfields{
-		margin: auto;
-		width: 85%;
-		display: flex;
-		flex-direction: column;
-		flex-flow: wrap;
-	}
-	.listfields a{
-		width: 31.33%;
-		margin-left: 1%;
-		margin-right: 1%;
-		margin-bottom: 3%;
-		
-	}
 	
-	
->>>>>>> c6632e69e53027cb5ec2ee2ac1be719998a3b802
-}
