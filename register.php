@@ -22,7 +22,8 @@
                         <input class="input" type="text" placeholder="Nhập user">
                         <input class="input" type="email" placeholder="Nhâp email" />
                         <input class="input" type="password" placeholder="Nhập password" />
-                        <a class="btn btn-login btn--green" style="width:100%" href="#">Đăng nhập</a>
+                        <a class="btn btn-login btn--green" style="width:100%;
+                        padding: 9px;" href="#">Đăng kí</a>
                         <h2 style="margin:20px 0; color: red;">Hoặc có thể đăng nhập với</h2>
                         <div class="social-container">
                             <a href="#" class="fb social-btn">

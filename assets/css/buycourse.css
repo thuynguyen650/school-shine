@@ -11,6 +11,12 @@ body{
 	/*line-height: 17px;
 */
 }
+main{
+	color: #666666;
+	font-family: 'Roboto', sans-serif;
+	line-height: 17px;
+
+}
 .checkout_title{
 	width: 60%;
 	margin: auto;

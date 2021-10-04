@@ -9,7 +9,8 @@
                     <input class="input" type="email" placeholder="Nhập email" />
                     <input class="input" type="password" placeholder="Nhập password" />
                     <a class="form-forgot"href="#">Quên mật khẩu?</a>
-                    <a class="btn btn-login btn--green" style="width:100%" href="#">Đăng nhập</a>
+                    <a class="btn btn-login btn--green" style="width:100%;
+                    padding: 9px;" href="#">Đăng nhập</a>
                     <h2 style="margin:20px 0; color: red;">Hoặc có thể đăng nhập với</h2>
                     <div class="social-container">
                         <a href="#" class="fb social-btn">
