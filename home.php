@@ -168,54 +168,7 @@
         </div>
 
         <!-- khóa học tiêu biểu -->
-        <div class="grid wide">
-            <h2 class="home_header">Khóa học tiêu biểu</h2>
-            <div class="row">
-                <div class="col l-3 m-3 c-6">
-                    <div class="_1newcourse Writing" id="Writing">
-			        <!-- Hiển thị thông tin chi tiết khi hover vào -->
-			        <!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-                        <div class="hover blueback">
-                            <h4>
-                                Luyện thi TOEIC 400+
-                            </h4>
-                            <p>
-                                Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-                                sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-                                Reading + Listening: 550+ <br>
-                                Speaking + Writing: 200+ <br>
-                                Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-                                Thời hạn đăng kí: Đến hết 15/09/2021.
-                                <label class="mobile_price">Giá 5.400.000đ</label>
-                            </p>
-                            <div class="sel">
-                                <!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-                                <a href="paid_courses.php" title="" class="learnmore" onclick="setWriting()">Tìm hiểu thêm</a>
-                                <a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 1)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-                            </div>
-                        </div>
-                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
-                        <!-- Hiển thị thông tin sơ lược -->
-                        <div class="unhover">
-                            <div class="imgcourse">	
-                                <img src="assets/img/Principles of Written English, Part 2.jpg" alt="">
-                            </div>
-                            <div class="namecourse blueback">	
-                                <h4>
-                                    Luyện thi TOEIC 400+
-                                </h4>
-                            </div>
-                            <div class="overview">
-                                <p class="type blue">Writing Skill</p>
-                                <p class="cost">235.000đ <label class="period">/ tháng</label>
-                                </p>	
-                            </div>
-                        </div>
-			            <!-- Hiển thị thông tin sơ lược -->
-		            </div>
-                </div>
-
-            </div>
+        
 
         <!-- cảm nhận của học viên -->
         <div class="slide-student">

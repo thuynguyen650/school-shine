@@ -27,7 +27,7 @@
 
 html {
     font-size: 62.5%;
-    line-height: 1.6rem;
+    line-height: 30px;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
@@ -64,7 +64,9 @@ th {
     border: none;
     border-radius: 5px;
 }
-
+a.btn {
+    padding: 15px;
+}
 .btn:hover {
     cursor: pointer;
 }

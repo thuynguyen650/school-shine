@@ -25,10 +25,10 @@
 	</div>
 	<div class="bill_details">
 		<div class="suggest_tip">
-			<p><i class="fas fa-sign-in-alt"></i> Bạn đã có tài khoản? <a href="" title="" class="click_login">Bấm vào đây để đăng nhập</a></p>
+			<p><i class="fas fa-sign-in-alt buy"></i> Bạn đã có tài khoản? <a href="" title="" class="click_login">Bấm vào đây để đăng nhập</a></p>
 		</div>
 		<div class="suggest_tip">
-			<p><i class="fas fa-percent"></i> Bạn có mã giảm giá? <a href="" title="" class="click_login">Bấm vào đây để áp dụng ngay</a></p>
+			<p><i class="fas fa-percent buy"></i> Bạn có mã giảm giá? <a href="" title="" class="click_login">Bấm vào đây để áp dụng ngay</a></p>
 		</div>
 		<div class="info">
 			<div class="detail">
