@@ -372,7 +372,6 @@ main {
 .slide-btn:hover {
     cursor: pointer;
     color: var(--hover-color);
-<<<<<<< HEAD
 }
 
 
@@ -592,6 +591,3 @@ footer {
     background-color: #0077b5;
     padding: 6px 12px;
 }
-=======
-}
->>>>>>> 761b91ce6e1dc10a2b2b9742e8b96007b5d345a1

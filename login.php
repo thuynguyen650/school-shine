@@ -1,7 +1,7 @@
-<?php include"./includes/head.php" ?>
+<?php include "./includes/head.php" ?>
 
 <div class="main_login">
-    <div class="container" id="container">
+    <div class="container-login" id="container">
         <div class="row" style="padding: 30px 0px;">
             <div class="col l-6 m-6 c-12">
                 <form class="form" action="#">
@@ -9,7 +9,7 @@
                     <input class="input" type="email" placeholder="Nhập email" />
                     <input class="input" type="password" placeholder="Nhập password" />
                     <a class="form-forgot"href="#">Quên mật khẩu?</a>
-                    <a class="btn btn--small btn--green" style="width:100%" href="#">Đăng nhập</a>
+                    <a class="btn btn-login btn--green" style="width:100%" href="#">Đăng nhập</a>
                     <h2 style="margin:20px 0; color: red;">Hoặc có thể đăng nhập với</h2>
                     <div class="social-container">
                         <a href="#" class="fb social-btn">

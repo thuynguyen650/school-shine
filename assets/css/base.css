@@ -65,12 +65,9 @@ th {
     border-radius: 5px;
 }
 
-<<<<<<< HEAD
-=======
 .btn:hover {
     cursor: pointer;
 }
->>>>>>> 761b91ce6e1dc10a2b2b9742e8b96007b5d345a1
 
 .btn-border-bottom {
     border-top-left-radius: 0px;

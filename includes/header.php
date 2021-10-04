@@ -44,7 +44,7 @@
                             </li>
 
                             <li class="sub-header-user-item">
-                                Thay đổi mật khẩu
+                                <a href="./edit-password.php">Thay đổi mật khẩu</a>
                             </li>
                         </ul>
                     </li>
