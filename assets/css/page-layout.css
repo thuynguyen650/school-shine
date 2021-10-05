@@ -1,5 +1,6 @@
 main {
     margin-top: var(--header-height);
+    line-height: 2.6rem;
 }
 
 .page-banner-wrap {

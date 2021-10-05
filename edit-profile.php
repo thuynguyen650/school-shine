@@ -5,10 +5,9 @@
     <?php
         include "./includes/green-header.php";
     ?>
+    <main>
     <div class="grid wide">
         <h1 class="header-user-title">Cập nhập thông tin</h1>
-    </div>
-    <div class="grid wide">
         <div class="row">
             <div class="col l-12 m-12">
                 <form class="form form-user">
@@ -33,5 +32,7 @@
 
         </div>
     </div>
+    </main>
+
     
 </body>

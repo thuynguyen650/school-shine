@@ -136,7 +136,7 @@
         <!-- tại sao lại chọn school shine -->
         <div class="home-background-color">
             <div class="grid wide">
-                <h2 class="home_header">Tại sao lại chọn chúng tôi</h2>
+                <h2 class="home_header">Tại sao chọn chúng tôi?</h2>
                 <div class="row home-section">
                     <div class="col l-3 m-3 c-6">
                         <div class="into_item">

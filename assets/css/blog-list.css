@@ -56,6 +56,7 @@
 
 .blog-item-desc {
     font-size: 1.4rem;
+    line-height: 2.4rem;
     color: var(--text-color);
     margin-bottom: 20px;
 }

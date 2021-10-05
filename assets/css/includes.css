@@ -21,6 +21,7 @@ header {
 header.sticky {
     height: 70px;
     box-shadow: -4px 3px 0px 0px rgb(0 0 0 / 20%);
+    /* background-color: var(--primary-color); */
 }
 
 header.green.sticky {

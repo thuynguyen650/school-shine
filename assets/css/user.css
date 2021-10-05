@@ -2,7 +2,7 @@
     font-size: 30px;
     color: var(--secondary-color);
     text-align: left;
-    margin: 50px 0px;
+    padding: 50px 0px;
     width: 100%;
 }
 .form-user {

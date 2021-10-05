@@ -9,7 +9,8 @@
     include "./includes/header.php";
 ?>
 </div>
-<!-- Content fasttest -->
+<main>
+    <!-- Content fasttest -->
     <div id="contenthistorytest">
     <div id="info-user">
         <img id="icon-user" src="./assets/img/icon-user.png" alt="">
@@ -27,8 +28,6 @@
     <h2>LỊCH SỬ TEST</h2>
     
     <input type="text" placeholder="search">
-    </div>
-    
     <table>
         <tr>
             <th>Thời gian</th>
@@ -43,10 +42,17 @@
             <td>GREAT</td>
         </tr>
     </table>
+    
+    </div>
+    
+
     </div>
     </div>
 <!-- footer -->
+
+</body>
+</main>
 <?php
     include "./includes/footer.php"
 ?>
-</body>
+

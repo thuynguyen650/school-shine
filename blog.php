@@ -3,7 +3,7 @@
 ?>
 
 <?php
-    include "./includes/green-header.php";
+    include "./includes/header.php";
 ?>
 
 <body>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -282,7 +281,6 @@
         include "./includes/footer.php";
     ?> 
 </body>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -566,5 +564,4 @@
         include "./includes/footer.php";
     ?> 
 </body>
->>>>>>> c6632e69e53027cb5ec2ee2ac1be719998a3b802
 </html>
