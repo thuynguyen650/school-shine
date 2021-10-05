@@ -9,8 +9,8 @@
     include "./includes/header.php";
 ?>
 </div>
+<!-- Content fasttest -->
 <main>
-    <!-- Content fasttest -->
     <div id="contenthistorytest">
     <div id="info-user">
         <img id="icon-user" src="./assets/img/icon-user.png" alt="">
@@ -47,7 +47,11 @@
     
 
     </div>
+    
+
     </div>
+    </div>
+</main>
 <!-- footer -->
 
 </body>

@@ -44,7 +44,7 @@
                             </li>
 
                             <li class="sub-header-user-item">
-                                Thay đổi mật khẩu
+                                <a href="./edit-password.php">Thay đổi mật khẩu</a>
                             </li>
                         </ul>
                     </li>
@@ -181,13 +181,10 @@
 
                         <ul class="sub-nav-list">
                             <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
+                                <a href="newcourses.php">Các khóa học mới</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
-                            </li>
-                            <li class="sub-nav-item">
-                                <a href="">Các danh mục khóa học</a>
+                                <a href="allcourses.php">Tất cả các khóa học</a>
                             </li>
                         </ul>
                     </li>

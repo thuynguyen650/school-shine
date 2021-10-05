@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Tất cả khóa học</title>
 	<link rel="stylesheet" href="assets/css/courses.css">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="FontAwesome/css/all.css">
 	<script src="assets/scripts/course_filter.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="assets/scripts/vote.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
@@ -17,7 +18,19 @@
         include "./includes/header.php";
     ?>
     <main>
+    <div class="panel">
+		<div class="allcourse_title">
+			<p>Tất cả khoá học</p>
+			<div class="addr">
+				<a href="home.php" class="btn_addr">Trang chủ</a>
+				<label>&rarr;</label>
+				<a href="#" class="btn_addr">Khóa học</a>
+				<label>&rarr;</label>
+				<a href="#" class="btn_addr">Tất cả khóa học</a>
+			</div>
+		</div>
 
+	</div>
 	<!-- Phần này dùng để lọc khóa học theo kĩ năng -->
 	
 	

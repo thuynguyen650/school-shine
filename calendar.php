@@ -73,7 +73,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <a href="">Luyện thi TOEIC 400+</a>
+                                <a href="./paid_courses.php">Luyện thi TOEIC 400+</a>
                             </td>
                             <td>18h - 19h30</td>
                             <td>2.4.6</td>
@@ -81,12 +81,12 @@
                             <td>Online</td>
                             <td>Còn trống</td>
                             <td>
-                                <a href="">Đăng ký ngay</a>
+                                <a href="./buycourse.php">Đăng ký ngay</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <a href="">Luyện thi TOEIC 400+</a>
+                                <a href="./paid_courses.php">Luyện thi TOEIC 400+</a>
                             </td>
                             <td>18h - 19h30</td>
                             <td>2.4.6</td>
@@ -94,23 +94,13 @@
                             <td>Online</td>
                             <td>Còn trống</td>
                             <td>
-                                <a href="">Đăng ký ngay</a>
+                                <a href="./buycourse.php">Đăng ký ngay</a>
                             </td>
-                        </tr>                            <tr>
+                        </tr>                            
+                        
+                        <tr>
                             <td>
-                                <a href="">Luyện thi TOEIC 400+</a>
-                            </td>
-                            <td>18h - 19h30</td>
-                            <td>2.4.6</td>
-                            <td>20/09/2021</td>
-                            <td>Online</td>
-                            <td>Còn trống</td>
-                            <td>
-                                <a href="">Đăng ký ngay</a>
-                            </td>
-                        </tr>                            <tr>
-                            <td>
-                                <a href="">Luyện thi TOEIC 400+</a>
+                                <a href="./paid_courses.php">Luyện thi TOEIC 400+</a>
                             </td>
                             <td>18h - 19h30</td>
                             <td>2.4.6</td>
@@ -118,7 +108,91 @@
                             <td>Online</td>
                             <td>Còn trống</td>
                             <td>
-                                <a href="">Đăng ký ngay</a>
+                                <a href="./buycourse.php">Đăng ký ngay</a>
+                            </td>
+                        </tr>                            
+                        
+                        <tr>
+                            <td>
+                                <a href="./paid_courses.php">Luyện thi TOEIC 400+</a>
+                            </td>
+                            <td>18h - 19h30</td>
+                            <td>2.4.6</td>
+                            <td>20/09/2021</td>
+                            <td>Online</td>
+                            <td>Còn trống</td>
+                            <td>
+                                <a href="./buycourse.php">Đăng ký ngay</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="./paid_courses.php">Luyện thi TOEIC 400+</a>
+                            </td>
+                            <td>18h - 19h30</td>
+                            <td>2.4.6</td>
+                            <td>20/09/2021</td>
+                            <td>Online</td>
+                            <td>Còn trống</td>
+                            <td>
+                                <a href="./buycourse.php">Đăng ký ngay</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="./paid_courses.php">Luyện thi TOEIC 400+</a>
+                            </td>
+                            <td>18h - 19h30</td>
+                            <td>2.4.6</td>
+                            <td>20/09/2021</td>
+                            <td>Online</td>
+                            <td>Còn trống</td>
+                            <td>
+                                <a href="./buycourse.php">Đăng ký ngay</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="./paid_courses.php">Luyện thi TOEIC 400+</a>
+                            </td>
+                            <td>18h - 19h30</td>
+                            <td>2.4.6</td>
+                            <td>20/09/2021</td>
+                            <td>Online</td>
+                            <td>Còn trống</td>
+                            <td>
+                                <a href="./buycourse.php">Đăng ký ngay</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="./paid_courses.php">Luyện thi TOEIC 400+</a>
+                            </td>
+                            <td>18h - 19h30</td>
+                            <td>2.4.6</td>
+                            <td>20/09/2021</td>
+                            <td>Online</td>
+                            <td>Còn trống</td>
+                            <td>
+                                <a href="./buycourse.php">Đăng ký ngay</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="./paid_courses.php">Luyện thi TOEIC 400+</a>
+                            </td>
+                            <td>18h - 19h30</td>
+                            <td>2.4.6</td>
+                            <td>20/09/2021</td>
+                            <td>Online</td>
+                            <td>Còn trống</td>
+                            <td>
+                                <a href="./buycourse.php">Đăng ký ngay</a>
                             </td>
                         </tr>
                     </table>

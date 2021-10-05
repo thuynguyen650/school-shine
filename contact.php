@@ -96,11 +96,11 @@
             <div class="contact-map">
                 <div class="mapouter">
                     <div class="gmap_canvas">
-                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=University of Information Technology, Ho Chi Minh city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=500&amp;hl=en&amp;q=University of Information Technology, Ho Chi Minh city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                         </iframe>
                         <a href="https://www.fnfgo.com/">FNF</a>
                     </div>
-                    <style>.mapouter{position:relative;text-align:right;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;}.gmap_iframe {width: 100%;height:400px!important;}</style>
+                    <style>.mapouter{position:relative;text-align:right;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;}.gmap_iframe {width: 100%;height:500px!important;}</style>
                 </div>
             </div>
         </div>

@@ -9,6 +9,7 @@
 ?>
 </div>
 <!-- Content fasttest -->
+<main>
     <div id="contentfasttest">
     <h1>THE FAST TEST</h1>
     <form id="formfasttest" name="formfasttest">
@@ -33,6 +34,7 @@
     <button id="btn-submit-fasttest" onclick="check()">Submit</button>
 </form>
     </div>
+</main>
 <!-- footer -->
 <?php
     include "./includes/footer.php"
