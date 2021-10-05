@@ -34,7 +34,7 @@
                             <input class="input" type="password" placeholder="" />
                             <label class="form-user-label">Nhập lại mật khẩu mới</label>
                             <input class="input" type="password" placeholder="" />
-                            <a class="btn btn--small btn--green" style="width:100%; margin-top:10px;" href="#">Lưu mật khẩu</a>
+                            <button class="btn btn--medium btn--green" style="width:100%; margin-top:10px;" href="#">Lưu mật khẩu</button>
                         </form>
                     </div>
 

@@ -36,11 +36,11 @@
 
                         <ul class="sub-header-user-list btn btn btn--yellow">
                             <li class="sub-header-user-item">
-                                Lớp học
+                                <a href="#">Lớp học</a>
                             </li>
 
                             <li class="sub-header-user-item">
-                                Chỉnh sửa thông tin
+                                <a href="./edit-profile.php">Chỉnh sửa thông tin</a>
                             </li>
 
                             <li class="sub-header-user-item">

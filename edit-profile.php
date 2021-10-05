@@ -45,17 +45,13 @@
                             <label class="form-user-label">Châm ngôn của bạn</label>
                             <textarea class="input" name="w3review" rows="4" cols="100"></textarea>
 
-                            <a class="btn btn--small btn--green" style="width:100%; margin-top:10px;" href="#">Cập nhập</a>
+                            <button class="btn btn--medium btn--green" style="width:100%; margin-top:10px;" href="#">Cập nhật thông tin</button>
                         </form>
                     </div>
 
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-    </div>
-=======
->>>>>>> 8da1a6dc8a5cf6abc6b3561e9cc5202c779bdeba
     </main>
 
     

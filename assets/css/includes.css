@@ -132,6 +132,9 @@ header.green {
     justify-content: space-between;
 }
 
+.sub-header-user-item a {
+    color: var(--white-color);
+}
 .bookmark-remove {
     font-size: 1rem;
 }
