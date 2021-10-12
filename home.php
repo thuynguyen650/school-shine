@@ -7,32 +7,31 @@
     ?>
     <main>
         <div class="slide-container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="row">
                     <div class="col l-7 m-7 c-0">
                         
                         <div class="slideshow-wrap">
 
                             <div class="mySlides-1 fade">
-                                <img class="slide-img" src="./assets/img/slide-1.jpg" alt="Hình ảnh slide">
+                                <img id="slide-img-1" class="slide-img" src="./assets/img/slide-1.png" alt="Hình ảnh slide">
                                 
                             </div>
 
                             <div class="mySlides-1 fade">
                                 
-                                <img class="slide-img" src="./assets/img/slide-2.jpg" alt="Hình ảnh slide">
+                                <img id="slide-img-2" class="slide-img" src="./assets/img/slide-2.jpg" alt="Hình ảnh slide">
                                 
                             </div>
 
                             <div class="mySlides-1 fade">
                                 
-                                <img  class="slide-img" src="./assets/img/slide-3.jpg" alt="Hình ảnh slide">
+                                <img id="slide-img-3" class="slide-img" src="./assets/img/slide-3.jpg" alt="Hình ảnh slide">
                                 
                             </div>
                         </div>
-                        <br>
 
-                        <div style="text-align:center">
+                        <div class="dots" style="text-align:center">
                             <span class="dot" onclick="currentSlide(1)"></span> 
                             <span class="dot" onclick="currentSlide(2)"></span> 
                             <span class="dot" onclick="currentSlide(3)"></span> 
@@ -56,7 +55,7 @@
                                 if (n > slides_1.length) {slideIndex_1 = 1}    
                                 if (n < 1) {slideIndex_1 = slides_1.length}
                                 for (i = 0; i < slides_1.length; i++) {
-                                    slides_1[i].style.display = "none";  
+                                    slides_1[i].style.display = "none";
                                 }
                                 for (i = 0; i < dots.length; i++) {
                                     dots[i].className = dots[i].className.replace(" active", "");
@@ -83,8 +82,25 @@
                                 <div class="main-title title">Online courses</div>
                                 <div class="sub-title title">and distance education</div>
                             </div>
-                            <div class="slide-desc">Trung tâm Anh ngữ hàng đầu Việt Nam, cung cấp chương trình đào tạo chất lượng với mức học phí hợp lý, phương pháp giảng dạy sinh động, môi trường học tập tương tác cao! </div>
-                            <button class="slide-btn btn btn--large">Đăng Ký Học Ngay</button>
+                            <ul class="slide-desc">
+                                <li>
+                                    <i class="far fa-check-square"></i>
+                                    <p>Hệ thống học tiếng Anh
+                                    <br/>
+                                    <span>toàn diện cho người mới bắt đầu</span></p>
+                                </li>
+                                <li>
+                                    <i class="far fa-check-square"></i>
+                                    <p>TẮM tiếng Anh hằng ngày với: 
+                                    <br/>
+                                    <span>Class - Club - E-learning - Community</span></p>
+                                </li>
+                                <li>
+                                    <i class="far fa-check-square"></i>    
+                                    <p>Cơ hội gặp gỡ và tiếp xúc <span>với các diễn giả, trải nghiệm các dự án cộng đồng</span></p>
+                                </li>
+                            </ul>
+                            <a href= "#" class="slide-btn btn btn--large">Đăng Ký Học Ngay</a>
                         </div>
                     </div>
                 </div>
@@ -99,9 +115,9 @@
                     <div class="col-home">
                         <h2 class="home_header" style="padding-top: 10px;">Giới thiệu School Shine</h2>
                         <div class="home-section" style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
-                            <p style="color: var(--secondary-color); text-align: justify;">Tự hào là một trong những đơn vị đầu tiên giảng dạy theo phương pháp truyền cảm hứng với mô hình đào tạo S-SMART kết hợp dạy bảng và slide một cách thông minh. Nhờ phương pháp này, hàng nghìn học viên và giáo viên của Anh ngữ 2Eng đều được đồng bộ hóa về giá trị đào tạo. Với mong muốn lan toả nhiều hơn những giá trị đào tạo và khai phá tiềm năng của học viên, chúng tôi sẽ không chỉ dừng lại ở 5 cơ sở tại TP. HCM mà còn đến với các tỉnh thành khác trên toàn quốc.</p>
+                            <p class="home-desc">Tự hào là một trong những đơn vị đầu tiên giảng dạy theo phương pháp truyền cảm hứng với mô hình đào tạo S-SMART kết hợp dạy bảng và slide một cách thông minh. Nhờ phương pháp này, hàng nghìn học viên và giáo viên của Anh ngữ 2Eng đều được đồng bộ hóa về giá trị đào tạo. Với mong muốn lan toả nhiều hơn những giá trị đào tạo và khai phá tiềm năng của học viên, chúng tôi sẽ không chỉ dừng lại ở 5 cơ sở tại TP. HCM mà còn đến với các tỉnh thành khác trên toàn quốc.</p>
                             <div style="margin-top: 30px;">
-                                <a class="btn btn--large btn--green" href="#">Xem chi tiết</a>
+                                <a class="btn btn--medium btn--green" href="#">Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
@@ -112,6 +128,7 @@
                     
             </div>
         
+            
 
             <div class="grid wide">
                 <div class="row-home">
@@ -121,9 +138,9 @@
                     <div class="col-home"> 
                         <h2 class="home_header" style="padding-top: 10px;">Đội ngũ giảng viên</h2>
                         <div class="home-section" style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
-                            <p style="color: var(--secondary-color); text-align: justify;">Tự hào là một trong những đơn vị đầu tiên giảng dạy theo phương pháp truyền cảm hứng với mô hình đào tạo S-SMART kết hợp dạy bảng và slide một cách thông minh. Nhờ phương pháp này, hàng nghìn học viên và giáo viên của Anh ngữ School Shine đều được đồng bộ hóa về giá trị đào tạo. Với mong muốn lan toả nhiều hơn những giá trị đào tạo và khai phá tiềm năng của học viên, chúng tôi sẽ không chỉ dừng lại ở 5 cơ sở tại TP. HCM mà còn đến với các tỉnh thành khác trên toàn quốc.</p>
+                            <p class="home-desc">Tự hào là một trong những đơn vị đầu tiên giảng dạy theo phương pháp truyền cảm hứng với mô hình đào tạo S-SMART kết hợp dạy bảng và slide một cách thông minh. Nhờ phương pháp này, hàng nghìn học viên và giáo viên của Anh ngữ School Shine đều được đồng bộ hóa về giá trị đào tạo. Với mong muốn lan toả nhiều hơn những giá trị đào tạo và khai phá tiềm năng của học viên, chúng tôi sẽ không chỉ dừng lại ở 5 cơ sở tại TP. HCM mà còn đến với các tỉnh thành khác trên toàn quốc.</p>
                             <div style="margin-top: 30px;">
-                                <a class="btn btn--large btn--green" href="#">Xem chi tiết</a>
+                                <a class="btn btn--medium btn--green" href="#">Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
@@ -173,7 +190,6 @@
         <!-- cảm nhận của học viên -->
         <div class="slide-student">
             <div class="grid wide">
-                <h2 class="home_header" style="color: var(--white-color);">Cảm nhận của học viên</h2>
                 <div class="slideshow-wrap">
                     <div class="mySlides-2 fade">
                         <div class="slide-item">

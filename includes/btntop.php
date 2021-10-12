@@ -1,4 +1,6 @@
-<button id="btn-ontop" class="btn btn--small btn--green btn-ontop" onclick="btnonTop()">&#94</button>
+<button id="btn-ontop" class="btn-ontop" onclick="btnonTop()">
+    <i class="fas fa-chevron-left"></i>
+</button>
         <script>
             var btntop = document.getElementById("btn-ontop");
 
@@ -16,6 +18,6 @@
             // When the user clicks on the button, scroll to the top of the document
             function btnonTop() {
                 document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
+                window.scrollTo({top: 0, behavior: 'smooth'});
             }
         </script>
