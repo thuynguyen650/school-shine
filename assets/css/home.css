@@ -151,7 +151,7 @@ main {
     transition: .3s ease-out;
     display: flex;
     align-items: center;
-    animation: blinkBtn 2s infinite;
+    animation: blinkBtn 1s infinite;
     border-radius: 15px;
 }
   
