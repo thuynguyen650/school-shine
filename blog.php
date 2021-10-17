@@ -165,5 +165,8 @@
 </body>
 
 <?php
+    include "./includes/chatbot.php";
+?>
+<?php
     include "./includes/footer.php";
 ?>
