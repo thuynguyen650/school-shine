@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 :root {
     --white-color: #fff;
     --black-color: #000;
@@ -63,6 +63,7 @@ th {
     padding: 5px 16px;
     border: none;
     border-radius: 5px;
+    transition: all .2s;
 }
 a.btn {
     padding: 15px;
@@ -82,13 +83,13 @@ a.btn {
 }
 
 .btn--large {
-    height: 58px;
+    height: 56px;
     font-size: 1.8rem;
     font-weight: 600;
 }
 
 .btn--medium {
-    height: 45px;
+    height: 40px;
 }
 
 .btn--primary {
