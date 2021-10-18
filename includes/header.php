@@ -81,7 +81,7 @@
                     <li class="nav-item after">
                         <ul class="sub-nav-list btn btn--green">
                             <li class="sub-nav-item">
-                                <a href="">Về School Shine</a>
+                                <a href="aboutus.php">Về School Shine</a>
                             </li>
                             <li class="sub-nav-item">
                                 <a href="">Phương pháp đào tạo</a>

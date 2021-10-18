@@ -271,6 +271,14 @@
         <?php
             include "./includes/btntop.php";
         ?>
+
+        <!-- chatbox -->
+        <?php
+            include "./includes/chatbot.php";
+        ?>
+        
+        
+
        
     </main>
     
