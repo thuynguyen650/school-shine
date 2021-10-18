@@ -1,0 +1,27 @@
+body {
+    background-color: #1eaace;
+}
+
+canvas {
+    width: 80%;
+    height: max-content;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.btn_game_1 {
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: #1dbb90;
+    border: none;
+    font-size: 25px;
+    color: white;
+    margin-left: 20%;
+}
+
+.btn_game_1:active {
+    background-color: #13775c;
+}
