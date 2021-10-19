@@ -50,6 +50,7 @@
     padding: 12px 50px;
     font-size: 1.2rem;
     margin-top: 10px;
+    transition: all .2s;
 }
 
 .calendar-button button:hover {
@@ -60,6 +61,7 @@
 .calendar-content {
     margin-top: 60px;
     text-align: center;
+    padding-bottom: 60px;
 }
 
 .calendar-table-heading {
@@ -99,4 +101,8 @@
 
 .calendar-table a:hover {
     color: red;
+}
+
+.emissary {
+    background-color: var(--white-color);
 }

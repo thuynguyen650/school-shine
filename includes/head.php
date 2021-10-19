@@ -21,7 +21,11 @@
     <link rel="stylesheet" href="./assets/css/blog.css">
     <link rel="stylesheet" href="./assets/css/historytest.css">
     <link rel="stylesheet" href="./assets/css/chatbot.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="./assets/css/page-static.css">
+=======
+    <link rel="stylesheet" href="./assets/css/recruitment.css">
+>>>>>>> 7d35ae22448cefcfabf1bc8521d18d7d767eb3cb
     <link rel = "icon" href = "./assets/img/title-bar-icon.png" type = "image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Các khóa học mới</title>
@@ -16,24 +16,29 @@
         include "./includes/header.php";
     ?>
 	<main>
-	<div class="panel">
-		<div class="allcourse_title">
-			<p>Các khóa học mới</p>
-			<div class="addr">
-				<a href="home.php" class="btn_addr">Trang chủ</a>
-				<label>&rarr;</label>
-				<a href="#" class="btn_addr">Khóa học</a>
-				<label>&rarr;</label>
-				<a href="#" class="btn_addr">Các khóa học mới</a>
+		<div class="page-banner-wrap">
+			<div class="grid wide">
+				<div class="page-banner">
+					<div class="page-title">
+						<h1>Các Khóa Học Mới</h1>
+					</div>
+
+					<div class="page-breadcrumb">
+							<a class="page-banner-item" href="">Trang chủ</a>
+							<i class="page-banner-icon fas fa-arrow-right"></i>
+
+							<a class="page-banner-item" href="">Khóa học</a>
+							<i class="page-banner-icon fas fa-arrow-right"></i>
+
+							<span class="page-banner-item">Các khóa học mới</span>
+					</div>
+				</div>
+				
 			</div>
 		</div>
-		
-	</div>
-	<!-- <h2 class="title_newcourse">
-		Các khóa học mới
-	</h2> -->
-	<!-- Thông tin các khóa học -->
-	<div class="list_courses">
+		<div class="page-content">
+			<div class="grid wide">
+			<div class="list_courses">
 		<div class="_1newcourse" id="Language">
 			<!-- Hiển thị thông tin chi tiết khi hover vào -->
 			<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
@@ -287,6 +292,9 @@
 		</div>
 		<!-- finish 1 course -->
 	</div>
+			</div>
+		</div>
+
 	<!-- Thông tin các khóa học -->
 	<a href="allcourses.php" title="" class="view_all"> <i class="fas fa-graduation-cap"></i> XEM TẤT CẢ KHÓA HỌC</a>
 	</main>

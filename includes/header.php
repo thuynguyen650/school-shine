@@ -115,10 +115,18 @@
                                 <a href="./blog-list.php">Tất cả bài viết</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="">Cảm nhận học viên</a>
+                                <a href="./new-post.php">Bài viết mới</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="">Abc</a>
+                                <a href="./learning-tips.php">Bí kíp học ngoại ngữ</a>
+                            </li>
+
+                            <li class="sub-nav-item">
+                                <a href="./cam-nhan.php">Cảm nhận học viên</a>
+                            </li>
+
+                            <li class="sub-nav-item">
+                                <a href="./recruitment.php">Tuyển dụng</a>
                             </li>
                         </ul>
                         <a href="./blog-list.php">Blog</a>
@@ -131,6 +139,11 @@
                             <li class="sub-nav-item">
                                 <a href="./document.php">Tài liệu miễn phí</a>
                             </li>
+
+                            <li class="sub-nav-item">
+                                <a href="./utilities.php">Tiện ích</a>
+                            </li>
+
                             <li class="sub-nav-item">
                                 <a href="">Khóa học miễn phí</a>
                             </li>

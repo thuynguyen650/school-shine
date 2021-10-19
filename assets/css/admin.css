@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+}
+
+#list-tab {
+    width: 20%;
+    height: 100vmax;
+    float: left;
+    background-color: #1eaace;
+    border-right: 1px solid #1eaace;
+}
+
+#list-tab div {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+#info-admin {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+}
+
+#info-admin h2 {
+    color: #1eaace;
+}
+
+#info-admin img {
+    width: 60%;
+    height: 110px;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+#list-tab div:hover {
+    background-color: #018763;
+}
+
+#list-tab a {
+    text-decoration: none;
+}
+
+#content-tab-admin {
+    width: 78%;
+    height: max-content;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+#course-admin {
+    width: 100%;
+    height: max-content;
+    font-size: 20px;
+    display: none;
+}
+
+#course-admin div {
+    margin-top: 50px;
+}
+
+#class-admin {
+    width: 100%;
+    height: max-content;
+    font-size: 20px;
+    display: none;
+}
+
+#class-admin div {
+    margin-top: 50px;
+}
+
+#student-admin {
+    width: 100%;
+    height: max-content;
+    font-size: 20px;
+    display: none;
+}
+
+#student-admin div {
+    margin-top: 50px;
+}
+
+#blog-admin {
+    width: 100%;
+    height: max-content;
+    font-size: 20px;
+    display: none;
+}
+
+#blog-admin div {
+    margin-top: 50px;
+}
+
+#content-tab-admin div textarea {
+    display: block;
+    width: 98%;
+}
+
+#content-tab-admin h3 {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+#content-tab-admin strong {
+    display: inline-block;
+    width: 15%;
+}
+
+#content-tab-admin div input {
+    display: inline-block;
+    width: 80%;
+    margin-left: 2%;
+    height: 25px;
+}
+
+#content-tab-admin button {
+    margin-left: 75%;
+    width: 20%;
+    height: 50px;
+    border: none;
+    background-color: #1eaace;
+    color: #fff;
+    box-shadow: 5px 5px 5px #ccc;
+    margin-top: 50px;
+}
+
+#content-tab-admin button:active {
+    background-color: #15687c;
+    box-shadow: none;
+}
