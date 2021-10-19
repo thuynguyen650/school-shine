@@ -84,13 +84,13 @@
                                 <a href="aboutus.php">Về School Shine</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="">Phương pháp đào tạo</a>
+                                <a href="phuongphapdaotao.php">Phương pháp đào tạo</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="">Đội ngũ giảng viên</a>
+                                <a href="teacher-list.php">Đội ngũ giảng viên</a>
                             </li>
                             <li class="sub-nav-item">
-                                <a href="">Chính sách học viên</a>
+                                <a href="chinhsachhocvien.php">Chính sách học viên</a>
                             </li>
                         </ul>
                         <a href="">Về chúng tôi</a>
