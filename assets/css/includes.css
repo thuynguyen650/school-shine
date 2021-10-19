@@ -432,3 +432,131 @@ footer {
     background-color: #0077b5;
     padding: 6px 12px;
 }
+
+/* consult form  */
+.consult-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    background-color: var(--secondary-color);
+    margin: 10px 0 20px 0;
+    color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.consult-form h3 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--white-color);
+}
+
+.consult-form input,
+.consult-form button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+.consult-form input {
+    outline: none;
+}
+
+.consult-form input:focus {
+    border: 1px solid var(--third-color);
+}
+.consult-form button {
+    color: var(--white-color);
+    background-color: #f94444;
+    transition: .2s;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.consult-form button:hover {
+    cursor: pointer;
+    background-color: #f55252;
+}
+
+.pride {
+    margin-bottom: 20px;
+}
+.pride .category {
+    border-bottom: 1px solid var(--light-gray-color);
+    padding-bottom: 10px;
+}
+
+.pride .blog-category-desc {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blog-category-level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.blog-category-level {
+    color: var(--gray-color);
+}
+
+.pride ul {
+    max-height: 481px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.pride .category:first-child .blog-category-level {
+    color: red;
+}
+
+.pride .category:nth-child(2) .blog-category-level {
+    color: var(--third-color);
+}
+
+.pride .category:nth-child(3) .blog-category-level {
+    color: var(--hover-color);
+}
+
+.blog-category-level span:first-child {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.blog-category-level span:last-child {
+    font-size: 1.2rem;
+    line-height: 6px;
+}
+
+.pride .blog-category-info {
+    margin-left: -16px;
+}
+
+.pride .view-more {
+    text-decoration: underline;
+    color: red;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    transition: .2s;
+}
+
+.pride .view-more:hover {
+    font-weight: 700;
+}
+
+.pride .view-more i {
+    font-size: 1.6rem;
+    margin-right: 5px;
+}

@@ -123,7 +123,6 @@ p.type{
 	font-size: 25px;
 }
 .list_courses{
-	width: 70%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
@@ -201,15 +200,6 @@ a.view_all{
 	height: 100%;
 	border: 1px solid #F4F7F9;
 	border-radius: 25px;
-	/*overflow: hidden;*/
-	/*transition: 0.6s;*/
-	/*width: 31.33%;
-	margin-left: 1%;
-	margin-right: 1%;
-	margin-bottom: 3%;
-	border: 1px solid #F4F7F9;
-	border-radius: 25px;
-	/*overflow: hidden;*/
 	transition: 0.6s;
 }
 ._1newcourse:hover .hover h4{
@@ -314,18 +304,12 @@ a.buynow:hover{
 	background-color: #FFB20E;
 	border: 1px solid #FFB20E;
 }
-@media only screen and (max-width: 90.875em){
-	._1newcourse{
-		width: 48%;
-		height: 350px;
-		margin-left: 1%;
-		margin-right: 1%;
-		margin-bottom: 5%;
-		border: 1px solid #F4F7F9;
-		border-radius: 25px;
-		overflow: hidden;
-		transition: 0.6s;
-	}
+
+.hover {
+	color: var(--white-color);
+}
+
+@media only screen and (max-width: 63.9375em){
 	.imgcourse{
 		width: 100%;
 		object-fit: contain;
@@ -341,6 +325,18 @@ a.buynow:hover{
 	}
 }
 @media only screen and (min-width: 46.25em) and (max-width: 76.375em){
+	._1newcourse{
+		width: 48%;
+		height: 350px;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-bottom: 5%;
+		border: 1px solid #F4F7F9;
+		border-radius: 25px;
+		overflow: hidden;
+		transition: 0.6s;
+	}
+
 	.listfields{
 		margin: auto;
 		width: 85%;
@@ -355,7 +351,7 @@ a.buynow:hover{
 		margin-bottom: 3%;
 		
 	}
-	._1newcourse{
+	/* ._1newcourse{
 		width: 85%;
 		height: 350px;
 		margin: auto;
@@ -364,7 +360,7 @@ a.buynow:hover{
 		border-radius: 25px;
 		overflow: hidden;
 		transition: 0.6s;
-	}
+	} */
 	.imgcourse{
 		width: 100%;
 		object-fit: contain;

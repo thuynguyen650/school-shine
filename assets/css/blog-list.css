@@ -67,8 +67,7 @@
     font-weight: 700;
 }
 
-.categories h2,
-.blog-list-most-view h2 {
+.aside-title {
     font-size: 1.6rem;
     color: var(--white-color);
     background-color: var(--secondary-color);
@@ -98,6 +97,7 @@
 .category a{
     font-size: 2rem;
     color: var(--secondary-color);
+    transition: .2s;
 }
 
 .advertising img {
@@ -130,6 +130,7 @@
 .blog-category-title a {
     color: var(--secondary-color);
     font-size: 1.4rem;
+    transition: .2s;
 }
 
 .blog-category-title:hover a {
@@ -138,4 +139,30 @@
 
 .blog-category-desc {
     margin-top: 4px;
+}
+
+/* pagination */
+.blog-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.blog-pagination li {
+    float: left;
+}
+
+.blog-pagination a {
+    display: block;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 6px 16px;
+    font-size: 1.4rem;
+    margin: 0 4px;
+    transition: .2s;
+}
+
+.blog-pagination a:hover {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
 }

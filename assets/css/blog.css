@@ -3,13 +3,46 @@
     color: var(--text-color);
 }
 
+.blog-header {
+    color: var(--text-color);
+}
 .blog-title {
     font-weight: normal;
-    margin-bottom: 40px;
+    font-size: 3.4rem;
+    line-height: 4rem;
+}
+
+.blog-info {
+    margin-top: 6px;
+    font-size: 1.4rem;
+}
+
+.blog-info span {
+    position: relative;
+    margin: 0 12px;
+}
+
+.blog-info span:first-child {
+    margin-left: 0;
+}
+
+.blog-info span::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--text-color);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0 10px;
+}
+
+.blog-info span:last-child::after {
+    height: 0;
 }
 
 .blog-content p {
-    margin: 20px 0;
+    margin: 30px 0 20px 0;
     text-align: justify;
 }
 
@@ -17,4 +50,198 @@
     width: 100%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.blog-action {
+    display: flex;
+    justify-content: center;
+    background-color: #169f79;
+    color: var(--white-color);
+    border-radius: 50px;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 36px 0;
+}
+
+.blog-like,
+.blog-share {
+    margin: 0 10px;
+}
+
+.blog-like:hover,
+.blog-share:hover {
+    cursor: pointer;
+}
+
+.blog-action i {
+    margin-right: 8px;
+    transition: .2s;
+    font-size: 1.8rem;
+}
+
+.blog-action i:hover {
+    color: rgb(212, 1, 1);
+}
+
+.blog-comment h2 {
+    font-size: 2.2rem;
+    padding: 16px 12px;
+    color: var(--gray-color);
+    border-bottom: 1px solid #f3efef;
+}
+
+.blog-comment {
+    color: var(--text-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.comment {
+    display: flex;
+}
+
+.comment-item {
+    border-bottom: 1px solid #f3efef;
+    margin: 30px 26px 0 26px;
+    padding-bottom: 20px;
+}
+
+.comment-item + .comment-item {
+    margin-top: 40px;
+}
+
+.child-comment {
+    margin-left: 80px;
+    margin-top: 20px;
+    border-top: 1px solid #f3efef;
+    padding-top: 40px;
+    padding-left: 20px;
+    border-left: 1px solid #f3efef;
+}
+
+.comment-avt {
+    width: 64px;
+    height: 64px;
+    margin-right: 25px;
+}
+.comment-avt img {
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid lightblue;
+
+}
+
+.comment-details {
+    font-size: 1.6rem;
+    flex: 1;
+}
+
+.comment-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+
+.comment-content {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.comment-reply {
+    text-align: right;
+    font-weight: 700;
+    transition: .2s;
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+
+.comment-reply i {
+    margin-right: 8px;
+    font-size: 2rem;
+}
+.comment-reply:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+}
+
+.comment-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 26px;
+    font-size: 1.6rem;
+    padding: 26px 0;
+    border-bottom: 1px solid #f3efef;
+}
+
+.comment-sort {
+    display: flex;
+}
+
+.comment-sort p {
+    margin-right: 10px;
+}
+
+.comment-sort select {
+    outline: none;
+    cursor: pointer;
+}
+
+.comment-bar > p {
+    font-weight: 700;
+}
+
+.comment-form {
+    padding: 20px 26px;
+    display: flex;
+}
+
+.comment-form .form-group {
+    flex: 1;
+    margin-top: 8px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 1.4rem;
+    border: 1px solid #d7cbcb;
+    outline: none;
+    vertical-align: top;
+    font-family: inherit;
+    height: 48px;
+}
+
+.comment-form textarea:focus {
+    height: auto;
+}
+
+.comment-form textarea:focus ~ .form-submit{
+    display: block;
+}
+
+.comment-form .form-submit {
+    text-align: right;
+    border: 1px solid #d7cbcb;
+    border-top: none;
+    background: #f3f3f3;
+    padding: 8px;
+    display: none;
+    transition: .2s;
+}
+
+.comment-form .form-submit button {
+    border: none;
+    color: #fff;
+    background-color: var(--third-color);
+    padding: 6px 10px;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.comment-form .form-submit button:hover {
+    cursor: pointer;
+    background-color: #1c9b78;
 }

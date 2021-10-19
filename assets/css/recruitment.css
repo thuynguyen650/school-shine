@@ -1,0 +1,35 @@
+.recruitment-item {
+    display: flex;
+    margin: 14px 0;
+    
+}
+
+.recruitment-img {
+    min-width: 265px;
+    max-width: 265px;
+    margin-right: 20px;
+}
+
+.recruitment-img img {
+    width: 100%;
+}
+
+.recruitment-detail {
+    margin-top: 8px;
+}
+
+.recruitment-title {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+    line-height: 2rem;
+    transition: .2s;
+}
+
+.recruitment-title:hover {
+    color: var(--hover-color);
+}
+
+.recruitment-desc {
+    font-size: 1.4rem;
+}

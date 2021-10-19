@@ -12,7 +12,7 @@
             <div class="grid wide">
                 <div class="page-banner">
                     <div class="page-title">
-                        <h1>Tất cả bài viết</h1>
+                        <h1>Bài viết mới nhất</h1>
                     </div>
 
                     <div class="page-breadcrumb">
@@ -22,7 +22,7 @@
                             <a class="page-banner-item" href="./blog-list.php">Blog</a>
                             <i class="page-banner-icon fas fa-arrow-right"></i>
 
-                            <a class="page-banner-item" href="./blog-list.php">Tất cả bài viết</a>
+                            <a class="page-banner-item" href="./new-post.php">Bài viết mới</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                                     <p class="blog-item-desc">
                                     Ra trường rồi lập gia đình được vài năm, vốn tiếng Anh của chị Nguyễn Thị Hồng (Hà Nội) gần như đã rơi rụng hết. Xuất phát từ suy nghĩ “không muốn bản thân tiếp tục trì trệ và đi xuống”, chị Hồng đã thử đăng ký một khóa học Tiếng Anh giao tiếp tại Langmaster.
                                     </p>
-                                    <a href="./blog.php" class="btn btn--medium btn--primary blog-list-btn">READ MORE</a>
+                                    <a href="" class="btn btn--medium btn--primary blog-list-btn">READ MORE</a>
                                 </li>
 
                                 <li class="blog-item">
@@ -186,7 +186,6 @@
         <?php
             include "./includes/chatbot.php";
         ?>
-        
     </main>
 </body>
 

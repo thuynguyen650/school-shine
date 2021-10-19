@@ -12,17 +12,17 @@
             <div class="grid wide">
                 <div class="page-banner">
                     <div class="page-title">
-                        <h1>Tất cả bài viết</h1>
+                        <h1>Cảm nhận học viên</h1>
                     </div>
 
                     <div class="page-breadcrumb">
-                            <a class="page-banner-item" href="./home.php">Trang chủ</a>
+                    <a class="page-banner-item" href="./home.php">Trang chủ</a>
                             <i class="page-banner-icon fas fa-arrow-right"></i>
 
                             <a class="page-banner-item" href="./blog-list.php">Blog</a>
                             <i class="page-banner-icon fas fa-arrow-right"></i>
 
-                            <a class="page-banner-item" href="./blog-list.php">Tất cả bài viết</a>
+                            <a class="page-banner-item" href="./cam-nhan.php">Cảm nhận học viên</a>
                     </div>
                 </div>
             </div>
@@ -36,9 +36,9 @@
                             <ul class="blog-list">
                                 <li class="blog-item">
                                     <a href="">
-                                        <h1 class='blog-item-title'>Giảng viên School Shine "truyền lửa" cho học viên mất gốc tiếng anh như thế nào?</h1>
+                                        <h1 class='blog-item-title'>A1690: THẦY TƯỜNG ƠI, ĐƯỢC HỌC VỚI THẦY LÀ MỘT NIỀM HẠNH PHÚC NHẤT CUỘC ĐỜI EM!</h1>
                                     </a>
-                                    <img src="./assets/img/blog-giangvien.jpg" alt="blog-giang-vien">
+                                    <img src="./assets/img/blog2.gif" alt="blog-giang-vien">
                                     <ul class="blog-item-info">
                                         <li>
                                             <a href="">26 tháng 9, 2021</a>
@@ -57,9 +57,9 @@
                                         </li>
                                     </ul>
                                     <p class="blog-item-desc">
-                                    Ra trường rồi lập gia đình được vài năm, vốn tiếng Anh của chị Nguyễn Thị Hồng (Hà Nội) gần như đã rơi rụng hết. Xuất phát từ suy nghĩ “không muốn bản thân tiếp tục trì trệ và đi xuống”, chị Hồng đã thử đăng ký một khóa học Tiếng Anh giao tiếp tại Langmaster.
+                                    Không chỉ tận tình hướng dẫn các bạn học viên trong suốt quá trình giảng dạy, thầy Tường (hay còn được gọi "yêu" là Mr Wall) còn là một cây hài, một "vựa muối" của lớp học nữa cơ.
                                     </p>
-                                    <a href="./blog.php" class="btn btn--medium btn--primary blog-list-btn">READ MORE</a>
+                                    <a href="" class="btn btn--medium btn--primary blog-list-btn">READ MORE</a>
                                 </li>
 
                                 <li class="blog-item">
@@ -186,7 +186,6 @@
         <?php
             include "./includes/chatbot.php";
         ?>
-        
     </main>
 </body>
 
