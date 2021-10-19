@@ -8,7 +8,7 @@
             
         </li>
         <li>
-            <a href="#" class="chatbot-btn--hover" onclick="openForm()">
+            <a class="chatbot-btn--hover" onclick="openForm()">
                 <i class="far fa-envelope"></i>
                 <p>Liên hệ qua mail</p>
             </a>
@@ -21,13 +21,13 @@
             </a>
         </li>
         <li>
-            <a href="#" onclick="openChatbotbtn()" class="btnexit-hover"><i class="fas fa-times"></i></a>
+            <a onclick="openChatbotbtn()" class="btnexit-hover"><i class="fas fa-times"></i></a>
         </li>
     </ul>
 
     <div class="chatbot-wrap" id="chatbot-btn" onclick="closeChatbotbtn()">
         <div class="chatbot-overlay">
-            <a href="#" class="chatbot-showbtn">
+            <a class="chatbot-showbtn">
                 <i class="chatbot-slide fa fa-phone"></i>
                 <i class="chatbot-slide fab fa-facebook-messenger"></i>
                 <i class="chatbot-slide far fa-envelope"></i>
@@ -38,7 +38,7 @@
 
 <div id="chatbot-form" class="modal-contact">
     <div class="contact-form-wrapper" style="margin: auto; width: 80%;">
-        <a href="#" class="chatbot-closeform" onclick="closeForm()">&times;</a>
+        <a class="chatbot-closeform" onclick="closeForm()">&times;</a>
         <div class="contact-form">
             <div class="grid wide">
                 <h1>Liên Hệ Trung Tâm</h1>
@@ -70,6 +70,7 @@
 </div>
 
 <script>
+
     function closeChatbotbtn() {
         document.getElementById("chatbot-btn").style.display = "none";
         document.getElementById("chatbot-list--btn").style.display = "block";
@@ -92,8 +93,8 @@
         if (event.target == modalform) {
         modalform.style.display = "none";
         document.getElementById("chatbot-list--btn").style.display = "block";
-    }
-}
+        }
+    }       
 </script>
 
 <script>

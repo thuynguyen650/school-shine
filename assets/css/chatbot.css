@@ -112,7 +112,7 @@
     display: none; 
     position: fixed; 
     z-index: 1000; 
-    padding-top: 100px; /* Vị trí của modal */
+    padding-top: 50px; /* Vị trí của modal */
     left: 0;
     top: 0;
     width: 100%; 

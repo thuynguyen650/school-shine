@@ -1,0 +1,367 @@
+.page-static {
+    background-color: var(--white-color);
+}
+
+.static-header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.static-header--sup {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.static-header.white {
+    color: #04495a;
+}
+
+.static-des {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.static-img {
+    max-width: 100%;
+}
+
+.static-container {
+    padding-bottom: 20px ;
+}
+
+.static-container.color-hover {
+    background-color: var(--hover-color);
+}
+
+.static-container.primary-color {
+    background-color: var(--primary-color);
+}
+
+
+
+.static-container.color-hover .span-des p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.static-container.color-hover .span-des {
+    padding: 35px 0;
+}
+
+.static-container.color-hover .span-img {
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+.static-container.color-hover .span-img img {
+    max-width: 60%;
+}
+
+.static-item--pp {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.static-item--pp p {
+    padding: 0 10px;
+}
+
+.static-item--pp img {
+    max-width: 50%;
+}
+
+.static-item--pp.des{
+    text-align: justify;
+}
+
+
+
+.static-item--pp.header {
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.static-item--tn {
+    margin-bottom: 25px;
+    color: white;
+}
+
+.static-item--tn.header {
+    color: var(--hover-color);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.static-item--tn.des {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.static-item--tn.des b {
+    color: #04495a;
+}
+
+/* phương pháp đào tạo */
+.static-itemppdt {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    margin-bottom: 30px;
+}
+
+.static-itemppdt.left {
+    grid-template-columns: 1fr 80px;
+}
+
+.static-itemppdt.left .right {
+    float: right;
+}
+
+.static-itemppdt--child {
+    color: #ffffff;
+    /* background: linear-gradient(to right, #e64536, #ee7338 70%); */
+    background: -webkit-linear-gradient(to right, var(--secondary-color), var(--third-color));
+	background: linear-gradient(to right, var(--secondary-color), var(--third-color));
+    box-shadow: 5px 5px 5px 0px #b8b8b8;
+    border-radius: 10px;
+}
+
+.static-itemppdt--child .child-header {
+    background: rgba(255,255,255,0.3);
+    padding: 10px 15px;
+}
+
+.static-itemppdt--child .child-header h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.static-itemppdt--child .child-des {
+    padding: 10px 20px;
+}
+
+.static-itemppdt--child .child-des p {
+    font-size: 16px;
+}
+
+/* chính sách học viên */
+
+.static-table, .static-table tr,  .static-table td {
+    border: 1px solid #c2baba;
+    border-collapse:collapse;
+    padding: 15px;
+}
+.static-table {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.header-table {
+    color: white;
+}
+
+.static-table h4, td:nth-child(odd) {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.static-table td:nth-child(odd) {
+    width: 200px;
+    font-weight: bold;
+}
+
+.static-table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.static-table--ul {
+    text-indent: 20px;
+    list-style-type: square;
+    padding-left: 20px;
+    
+}
+
+.static-table--li {
+    padding: 10px;
+}
+
+/* đội ngũ giảng viên */
+
+.teacher-intro {
+	background-color: var(--secondary-color);
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: white;
+	padding: 30px 10px;
+	position: relative;
+	margin-bottom: 30px;
+	max-width: 100%;
+	text-align: center;
+    font-size: 16px;
+}
+
+.teacher-img {
+	border: 3px solid white;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+.teacher-intro--name {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--footer-color);
+    margin-top: 5px;
+}
+
+.teacher-intro--sup {
+    font-size: 20px;
+    color: var(--gray-color);
+    margin: 10px 0px 15px 0px;
+}
+
+.teacher-btn {
+    padding: 10px;
+    width: 100%;
+    border: 3px solid var(--third-color);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--third-color);
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    
+}
+
+.teacher-btn:hover {
+    background-color: var(--third-color);
+    color: white;
+}
+
+/* chi tiết giảng viên */
+.teacher-profile-container {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px 5px var(--secondary-color);
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.teacher-close {
+    cursor: pointer;
+    font-size: 50px;
+    margin: 10px;
+    color: #aaa;
+    position: absolute;
+    right: 0;
+}
+
+.teacher-profile {
+    color: var(--white-color);
+    overflow: hidden;
+    text-align: center;
+}
+
+.teacher-profile--left, .teacher-profile--right {
+    /* width: 30%; */
+    display: inline-block;
+    padding: 20px;
+}
+
+.teacher-profile--left {
+    width: 30%;
+    float: left;
+}
+
+.teacher-profile--right {
+    width: 70%;
+    float: right;
+    border-left: 2px dashed;
+}
+    
+
+.teacher-list-info {
+    /* padding-top: 20px; */
+    text-align: left;
+}
+
+.teacher-list-info .item {
+    padding-top: 15px;
+    border-bottom: 1px solid #828282;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+
+.teacher-list-info .item i {
+    font-size: 50px;
+}
+
+.teacher-list-info .item .text {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.teacher-list-info .item .text strong {
+    color: #034b5e;
+}
+
+.teacher-list-info .item p a {
+    color: var(--hover-color);
+    font-weight: bold;
+}
+
+.teacher-profile--des {
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.teacher-profile--des .header {
+    color: var(--hover-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.teacher-profile--des .des {
+    text-indent: 20px;
+    line-height: 2.3rem;
+}
+
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .static-img {
+        margin-top: 20px;
+    }
+    .teacher-profile--left {
+        width: 40%;
+    }
+    .teacher-profile--right {
+        width: 60%;
+    }
+}
+
+@media (max-width: 46.1875em) {
+    .static-img {
+        margin-top: 20px;
+    }
+    .teacher-profile--left, .teacher-profile--right {
+        width: 100%;
+        border: 0px;
+    }
+    .teacher-profile--left {
+        border-bottom: 2px dashed;
+    }
+}
+
