@@ -34,7 +34,7 @@
                     <table class="static-table">
                         <thead>
                             <tr>
-                                <td colspan="2" style="background-color: var(--hover-color);">
+                                <td colspan="2" style="background-color: var(--primary-color);">
                                     <h3 class="header-table">CHÍNH SÁCH HỌC VIÊN</h3>
                                 </td>
                             </tr>
