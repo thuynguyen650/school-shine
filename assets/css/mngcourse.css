@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+body{
+	background-color: #F4F7F9;
+}
+*{
+	margin:0;
+	padding: 0;
+	/*color: #666666;*/
+	/*font-family: 'Roboto', sans-serif;*/
+	/*line-height: 17px;
+*/
+}
+main{
+	color: #666666;
+	font-family: 'Roboto', sans-serif;
+	line-height: 17px;
+
+}
+.mngcourse{
+	background-color: white;
+	width: 60%;
+	margin: auto;
+	border: 1px solid #F4F7F9;
+	border-radius: 25px;
+}
+.icon{
+	color: #1EAACE;
+	font-size: 55px;
+	margin-right: 20px;
+}
+.participant{
+	width: 100%;
+}
+p.title_mngcourse{
+	font-size: 60px;
+	color: black;
+	font-weight: 100;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: block;
+	line-height: 55px;
+	margin-left: 5%;
+}
+.bt_blue{
+	margin-left: 5%;
+}
+.list_homework{
+	width: 100%;
+}
+._1course{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.list_participant{
+	width: 100%;
+	overflow: hidden;
+}
+.list_participant{
+	width: 100%;
+}
+.list_participant a{
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 5%;
+	float: left;
+	background-color: #1DBB90;
+	color: white;
+	padding: 15px;
+	border: 1px solid #1DBB90;
+	border-radius: 15px;
+	margin-bottom: 15px;
+	font-size: 20px;
+	text-align: center;
+	transition: 0.2s;
+}
+.list_participant a:hover{
+	background-color: #FFB20E;
+	border: 1px solid #FFB20E;
+	transition: 0.2s;
+}
