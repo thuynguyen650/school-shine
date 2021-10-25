@@ -3,7 +3,7 @@ var answer = [];
 var len = document.getElementsByClassName("questionbox").length;
 answer.length = len;
 question.length = len;
-var score = 0;
+
 function cl(t,e,x,y){
 	e.preventDefault();
 	myArr = t.split("-");
@@ -37,54 +37,65 @@ function cl(t,e,x,y){
   	});
 }
 function submit_ex(x,y,e,m){
+	var score = 0;
+	var len = document.getElementsByClassName("questionbox").length;
 	e.preventDefault();
-	p = document.createElement("p");
-	text = document.createTextNode("Số điểm của bạn: ")
-	p.appendChild(text);
-	z = document.createElement("progress");
-	z.classList.add("grade");
-	z.id = "grade";
-	z.value = "0";
-	var count = 0;
-	z.max = question.length;
-	var d =  document.getElementById("dohomework");
-	d.appendChild(p);
-	d.appendChild(z);
-	var f =  document.createElement("label");
-	f.classList.add('txt_grade');
-	f.id = "txt_grade";
-	d.appendChild(f);
-	for (let n=0; n<question.length; n++){
-		const xhr2 = new XMLHttpRequest();
-		xhr2.onload = function(){
-			
-			if (this.responseText=='1'){
-				count = count +1;
-				score = score +1;
-				z.value = score.toString();
-				document.getElementById('txt_grade').innerHTML = score + "/" +question.length;
-			}
-			else{
-				count = count +1;
-				z.value = score.toString();
-				document.getElementById('txt_grade').innerHTML = score + "/" +question.length;
-			}
-			if (count == question.length){
-				var myobj = document.getElementById("done_ex");
-				const xhr3 = new XMLHttpRequest();
-				xhr3.onload = function(){
-					alert(this.responseText);
+	if (question.length < len)
+	{
+		alert('Chưa làm hết.');
+	}
+	else
+	{
+		p = document.createElement("p");
+		text = document.createTextNode("Số điểm của bạn: ")
+		p.appendChild(text);
+		z = document.createElement("progress");
+		z.classList.add("grade");
+		z.id = "grade";
+		z.value = "0";
+		var count = 0;
+		z.max = len;
+		var d =  document.getElementById("dohomework");
+		d.appendChild(p);
+		d.appendChild(z);
+		var f =  document.createElement("label");
+		f.classList.add('txt_grade');
+		f.id = "txt_grade";
+		d.appendChild(f);
+
+		for (let n=0; n<question.length; n++){
+			const xhr2 = new XMLHttpRequest();
+			xhr2.onload = function(){
+				document.getElementById('dapan'+(n+1).toString()).style.display = 'block';
+				document.getElementById('dapan'+(n+1).toString()).innerHTML = 'Đáp án: '+ this.responseText.split("-")[1];
+				if (this.responseText.split("-")[0]=='1'){
+					count = count +1;
+					score = score +1;
+					z.value = score.toString();
+					document.getElementById('txt_grade').innerHTML = score + "/" +len;
 				}
-				xhr3.open("POST","saverecord.php");
-				xhr3.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-				xhr3.send("makh="+x+"&buoi="+y+"&caudung="+score+"&mabt="+m);
-				myobj.remove();
+				else{
+					count = count +1;
+					z.value = score.toString();
+					document.getElementById('txt_grade').innerHTML = score + "/" +len;
+				}
+				if (count == question.length){
+					var myobj = document.getElementById("done_ex");
+					const xhr3 = new XMLHttpRequest();
+					xhr3.onload = function(){
+						alert(this.responseText);
+					}
+					xhr3.open("POST","saverecord.php");
+					xhr3.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+					xhr3.send("makh="+x+"&buoi="+y+"&caudung="+score+"&mabt="+m);
+					myobj.remove();
+				}
 			}
+			xhr2.open("POST","grade.php");
+			xhr2.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xhr2.send("makh="+x+"&buoi="+y+"&cauhoi="+question[n]+"&tl="+answer[n]);
+			
 		}
-		xhr2.open("POST","grade.php");
-		xhr2.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-		xhr2.send("makh="+x+"&buoi="+y+"&cauhoi="+question[n]+"&tl="+answer[n]);
-		
 	}
 }
 

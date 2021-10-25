@@ -69,10 +69,12 @@
 					echo "<a href=\"#\" title=\"\" class=\"answer cau".$i." c".$i."a\" onclick='cl(\"cau".$i."-c".$i."a\",event,\"".$i."c\",\"nd".$i."\")'>C. ".$arr[2]."</a>";
 					echo "<a href=\"#\" title=\"\" class=\"answer cau".$i." d".$i."a\" onclick='cl(\"cau".$i."-d".$i."a\",event,\"".$i."d\",\"nd".$i."\")'>D. ".$arr[3]."</a>";
 					echo "</div>";
+					echo "<label id=\"dapan".$i."\">Đừng vô đây tìm đáp án làm gì, không có đâu. </label>";
 					echo "</div>";
 					$i = $i+1;
 				}
 			?>
+
 			<?php
 				echo "<a href=\"#\" title=\"\" class=\"bt_blue\" id=\"done_ex\" onclick='submit_ex(\"".$exname."\",\"".$lession."\",event,\"".$mabt."\")''>Nộp bài</a>"
 			?>

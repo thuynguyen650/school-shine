@@ -305,11 +305,13 @@ function create_info_true(){
 		const xhr2 = new XMLHttpRequest();
 		xhr2.onload = function(){
 			window.location.href = "#";
-			alert(this.responseText);
+			
 		}
 		xhr2.open("POST","addquestion.php");
 		xhr2.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 		xhr2.send("nd="+m[n].value+"&needmabt="+mabt.value+"&dung="+b[n].value+"&sai1="+c[n].value+"&sai2="+d[n].value+"&sai3="+e[n].value);
 	}
+	alert("Đã tạo thành công");
+	window.location.href = "teacher.php";
 }
 //Tạo nội dung câu hỏi và đáp án đúng

@@ -17,6 +17,7 @@ main{
 	line-height: 17px;
 
 }
+
 textarea{
 	padding-right: 15px;
 	padding-left: 15px;
@@ -115,14 +116,23 @@ label.label_block{
 }
 .dohomework p{
 	padding-left: 15px;
+	padding-right: 15px;
 	font-size: 20px;
 	line-height: 30px;
+}
+.questionbox label{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 20px;
+	line-height: 30px;
+	display: none;
 }
 .homework form textarea{
 	width: 100%;
 }
 .homework form legend{
-	font-size: 14.5px;
+	color: #1EAACE;
+	font-size: 18px;
 }
 .question_content{
 	height: 100px;
