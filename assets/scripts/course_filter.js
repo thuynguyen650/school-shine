@@ -1,5 +1,6 @@
 //Hiển thị các khóa học theo skill được tìm kiếm
-function showAll(){
+function showAll(e){
+	e.preventDefault();
 	var x = document.getElementsByClassName("_1newcourse");
 	for (let i=0; i<x.length; i++){
 		// x[i].style.width = "350px";
@@ -8,8 +9,18 @@ function showAll(){
 	}
 	return false;
 }
-
-function showWriting(){
+function showCommunication(e){
+	e.preventDefault();
+	disableAll();
+	var x = document.getElementsByClassName("Communication");
+	for (let i=0; i<x.length; i++){
+      	x[i].style.display = "block";
+		
+	}
+	return false;
+}
+function showWriting(e){
+	e.preventDefault();
 	disableAll();
 	var x = document.getElementsByClassName("Writing");
 	for (let i=0; i<x.length; i++){
@@ -18,7 +29,8 @@ function showWriting(){
 	}
 	return false;
 }
-function showReading(){
+function showReading(e){
+	e.preventDefault();
 	disableAll();
 	var x = document.getElementsByClassName("Reading");
 	for (let i=0; i<x.length; i++){
@@ -26,7 +38,8 @@ function showReading(){
 	}
 	return false;
 }
-function showListening(){
+function showListening(e){
+	e.preventDefault();
 	disableAll();
 	var x = document.getElementsByClassName("Listening");
 	for (let i=0; i<x.length; i++){
@@ -34,7 +47,8 @@ function showListening(){
 	}
 	return false;
 }
-function showSpeaking(){
+function showSpeaking(e){
+	e.preventDefault();
 	disableAll();
 	var x = document.getElementsByClassName("Speaking");
 	for (let i=0; i<x.length; i++){
@@ -42,7 +56,8 @@ function showSpeaking(){
 	}
 	return false;
 }
-function showFull(){
+function showFull(e){
+	e.preventDefault();
 	disableAll();
 	var x = document.getElementsByClassName("Full");
 	for (let i=0; i<x.length; i++){

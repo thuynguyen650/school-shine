@@ -21,6 +21,10 @@ main{
 	font-size: 14.5px;
 	float: right;
 }
+
+.res,.late{
+	padding-right: 20px;
+}
 .exname{
 	display: none;
 }

@@ -30,11 +30,26 @@
                         <span class="user-avt">
                             <img  src="./assets/img/default-avt.png" alt="avt">
                         </span>
-                        <span class="user-name">
-                            Thuy Nguyen
-                        </span>
+                        <?php
+                            if (strcmp($_COOKIE['username'], '') == 0)
+                            {
+                                echo "<span class=\"user-name\">
+                                Đăng nhập
+                                </span>";
+                            }
+                            else
+                            { 
+                                echo "<span class=\"user-name\">
+                                ".$row2['TENDANGNHAP']."
+                                </span>";
+                                echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
+                                <a href=\"#\" class=\"user-logout-link\">Đăng xuất</a>
+                                </li>";
+                            }
+                        ?>
+                        
 
-                        <ul class="sub-header-user-list btn btn btn--yellow">
+                        <!-- <ul class="sub-header-user-list btn btn btn--yellow">
                             <li class="sub-header-user-item">
                                 <a href="#">Lớp học</a>
                             </li>
@@ -46,11 +61,9 @@
                             <li class="sub-header-user-item">
                                 <a href="./edit-password.php">Thay đổi mật khẩu</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--green">
-                        <a href="#" class="user-logout-link">Đăng xuất</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>

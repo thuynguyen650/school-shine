@@ -155,7 +155,7 @@
 								if (time() >= strtotime($row2['DEADLINE'])) {
  									echo "<a href=\"#\" title=\"\" style=\"pointer-events: none;\"><i class=\"fas fa-circle\"></i> Bài tập buổi ".$row2['BUOIHOC']."</a>";
  									echo "<label>(Deadline: ".$dead_time." ngày ".$dead_day[2]."/".$dead_day[1]."/".$dead_day[0].")</label>";
- 									echo "<label class=\"result_ex\">Trễ Deadline</label>";
+ 									echo "<label class=\"result_ex late\">Trễ Deadline</label>";
 								}
 								elseif (mysqli_num_rows($query3)==0){
 									echo "<a href=\"#\" title=\"\" onclick='do_exercise(\"do_ex".$i."\")'><i class=\"fas fa-circle\"></i> Bài tập buổi ".$row2['BUOIHOC']."</a>";
@@ -167,12 +167,12 @@
 									echo "<label>(Deadline: ".$dead_time." ngày ".$dead_day[2]."/".$dead_day[1]."/".$dead_day[0].")</label>";
 									if ((int)$row3['ISPASS'] == 1)
 									{
-										echo "<label class=\"result_ex\"> / Kết quả: Đạt</label>";
+										echo "<label class=\"result_ex res\">  Kết quả: Đạt</label>";
 									}
 									else{
-										echo "<label class=\"result_ex\"> / Kết quả: Không đạt</label>";
+										echo "<label class=\"result_ex res\">  Kết quả: Không đạt</label>";
 									}
-									echo "<label class=\"result_ex\">Điểm đạt được: ".$row3['DIEM']." </label>";
+									echo "<label class=\"result_ex\">Điểm đạt được: ".$row3['DIEM']." /</label>";
 									
 								}
 

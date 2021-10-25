@@ -84,7 +84,7 @@ function questionval(n)
 				fieldset.appendChild(textarea);
 				//Nội dung câu hỏi
 				var textarea1 = document.createElement("textarea");
-				textarea1.rows = "1";
+				textarea1.rows = "2";
 				textarea1.cols = "40";
 				textarea1.name = "Text1";
 				textarea1.classList.add("ans_area");
@@ -96,7 +96,7 @@ function questionval(n)
 				fieldset.appendChild(textarea1);
 				//Đáp án đúng
 				textarea1 = document.createElement("textarea");
-				textarea1.rows = "1";
+				textarea1.rows = "2";
 				textarea1.cols = "40";
 				textarea1.name = "Text1";
 				textarea1.classList.add("ans_area");
@@ -108,7 +108,7 @@ function questionval(n)
 				fieldset.appendChild(textarea1);
 				//Đáp án nhiễu 1
 				textarea1 = document.createElement("textarea");
-				textarea1.rows = "1";
+				textarea1.rows = "2";
 				textarea1.cols = "40";
 				textarea1.name = "Text1";
 				textarea1.classList.add("ans_area");
@@ -120,7 +120,7 @@ function questionval(n)
 				fieldset.appendChild(textarea1);
 				//Đáp án nhiễu 2
 				textarea1 = document.createElement("textarea");
-				textarea1.rows = "1";
+				textarea1.rows = "2";
 				textarea1.cols = "40";
 				textarea1.name = "Text1";
 				textarea1.classList.add("ans_area");
@@ -176,7 +176,7 @@ function questionval(n)
 					fieldset.appendChild(textarea);
 					//Nội dung câu hỏi
 					var textarea1 = document.createElement("textarea");
-					textarea1.rows = "1";
+					textarea1.rows = "2";
 					textarea1.cols = "40";
 					textarea1.name = "Text1";
 					textarea1.classList.add("ans_area");
@@ -188,7 +188,7 @@ function questionval(n)
 					fieldset.appendChild(textarea1);
 					//Đáp án đúng
 					textarea1 = document.createElement("textarea");
-					textarea1.rows = "1";
+					textarea1.rows = "2";
 					textarea1.cols = "40";
 					textarea1.name = "Text1";
 					textarea1.classList.add("ans_area");
@@ -200,7 +200,7 @@ function questionval(n)
 					fieldset.appendChild(textarea1);
 					//Đáp án nhiễu 1
 					textarea1 = document.createElement("textarea");
-					textarea1.rows = "1";
+					textarea1.rows = "2";
 					textarea1.cols = "40";
 					textarea1.name = "Text1";
 					textarea1.classList.add("ans_area");
@@ -212,7 +212,7 @@ function questionval(n)
 					fieldset.appendChild(textarea1);
 					//Đáp án nhiễu 2
 					textarea1 = document.createElement("textarea");
-					textarea1.rows = "1";
+					textarea1.rows = "2";
 					textarea1.cols = "40";
 					textarea1.name = "Text1";
 					textarea1.classList.add("ans_area");

@@ -1,3 +1,22 @@
+<?php
+	if (strcmp($_COOKIE['username'], '') == 0)
+	{
+		header("Location: http://localhost/school-shine/block.php");
+		exit();
+	}
+	else{
+		include "connect.php";
+		$sql2 = "SELECT * FROM TAIKHOAN where TENDANGNHAP =". '\'' .$_COOKIE['username']. '\'';
+		$query2 = mysqli_query($conn, $sql2);
+		$row2 = mysqli_fetch_array($query2);
+		if (strcmp($row2['Loai'], '1') == 0)
+		{
+			header("Location: http://localhost/school-shine/block.php");
+			exit();
+		}
+		//mysqli_close($conn);
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +44,10 @@
 	</div>
 	<div class="bill_details">
 		<div class="suggest_tip">
-			<p><i class="fas fa-sign-in-alt buy"></i> Bạn đã có tài khoản? <a href="" title="" class="click_login">Bấm vào đây để đăng nhập</a></p>
+			<?php 
+			echo "<p>Học viên: ".$row2['HOTEN']."</p>";
+			 ?>
+			
 		</div>
 		<div class="suggest_tip">
 			<p><i class="fas fa-percent buy"></i> Bạn có mã giảm giá? <a href="" title="" class="click_login">Bấm vào đây để áp dụng ngay</a></p>
@@ -114,17 +136,7 @@
 					<input type="text" name="" class="in_half">
 					<br> <br> <br>
 				</div>
-				<div class="full">
-					<input type="checkbox" id="create_account" onclick="typePass();">
-					<label> Tạo tài khoản từ các thông tin trên.</label>
-					<br> <br>
-				</div>
-				<div class="full">
-					<label class="detail_field">Nhập mật khẩu <label class="notnull">*</label><br>
-					</label>
-					<input type="password" name="" class="in_full" id="inPass" readonly>
-					<br> <br>
-				</div>
+			
 			</div>
 			<div class="addition_info">
 				<label class="label_detail">Thông tin bổ sung</label><br><br>
