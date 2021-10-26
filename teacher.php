@@ -23,19 +23,18 @@
 <?php
     include "./includes/head.php";
 ?> 
-<body <?php
-        $username = $_COOKIE['username'];
-        $sql = "SELECT * FROM TAIKHOAN where TENDANGNHAP =". '\'' .$username. '\'';
-		$query = mysqli_query($conn, $sql);
-		$row = mysqli_fetch_array($query);
-		echo 'onload= "teacher_setup([\''.$row['HOTEN'].'\',\''.$row['EMAIL'].'\',\''.$row['SDT'].'\',\''.$row['DIACHI'].'\']);"'
-		//mysqli_close($conn);
-    ?>>
+<body >
 	<!-- nếu có khóa học thì sẽ thêm parameter mảng khóa học -->
 	<?php
         include "./includes/header.php";
     ?>
-    
+    <?php
+        $username = $_COOKIE['username'];
+        $sql = "SELECT * FROM TAIKHOAN where TENDANGNHAP =". '\'' .$username. '\'';
+		$query = mysqli_query($conn, $sql);
+		$row = mysqli_fetch_array($query);
+		//mysqli_close($conn);
+    ?>
     <main>
     	<div class="panel">
 			<div class="checkout_title">
@@ -50,12 +49,70 @@
 		</div>
 		<div class="user">
 			<div class="bio">
-				<div class="info" id="info">
-				</div>
-				<div class="image">
-					<img src="http://education-html.themerex.net/images/john_snow_full.jpg" alt="">
-				</div>
+				
+					<?php 
+						echo "<div class=\"teacher-profile-containerr\" >";
+						echo "<div class=\"teacher-profile\">";
+						echo "<div class=\"teacher-profile--left\">";
+						echo "<img class=\"teacher-img\" src=\"assets/img/teacher-11.jpg\" alt=\"use\" />";
+						echo "<div class=\"teacher-list-info\">";
+						echo "<div class=\"item\">
+		                                    <i class=\"fas fa-user\"></i>
+		                                    <div class=\"text\">
+		                                        <strong>Họ và tên</strong>
+		                                        <p>".$row['HOTEN']."</p>
+		                                    </div>
+		                                    
+		                      </div>";
+		                echo "<div class=\"item\">
+		                                    <i class=\"fas fa-phone\"></i>
+		                                    <div class=\"text\">
+		                                        <strong>Số điện thoại liên lạc: </strong>
+		                                        <p>".$row['SDT']."</p>
+		                                    </div>
+		                                    
+		                                </div>";
+		                echo "<div class=\"item\">
+		                                    <i class=\"fas fa-envelope\"></i>
+		                                    <div class=\"text\">
+		                                        <strong>Địa chỉ Email</strong>
+		                                        <p>".$row['EMAIL']."</p>
+		                                    </div>
+		                                    
+		                                </div>";
+		                echo "<div class=\"item\">
+		                                    <i class=\"fas fa-map-marker\"></i>
+		                                    <div class=\"text\">
+		                                        <strong>Địa chỉ hiện tại:</strong>
+		                                        <p>".$row['DIACHI']."</p>
+		                                    </div>
+		                                    
+		                                </div>";
+		                
+						echo "</div>";
+						echo "</div>";
+						echo "<div class=\"teacher-profile--right\">
+		                            <div class=\"teacher-profile--des\">
+		                                <p class=\"teacher-profile--des header\">Đôi nét về Giảng viên</p>
+		                                <p class=\"teacher-profile--des des\">Năng động, trẻ trung, sôi nổi, nhiệt huyết, sáng tạo - là phong cách mà cô hướng tới vì thế trong mỗi bài giảng của mình cô luôn biến hóa một cách sinh động với nhiều phong cách, và nhiều hướng tiếp cận bài học giúp cho các em học sinh tiếp cận kiến thức 1 cách thoải mái, rèn luyện và củng cố kiến thức một cách tự nhiên.</p>
+		                                <p class=\"teacher-profile--des des\">Luôn cập nhật công nghệ thông tin để ứng dụng và cải tiến vào trong các bài giảng, vì thế các bài giảng của cô luôn có sự phá cách và tạo được ấn tượng với các em học sinh.</p>
+		                                <p class=\"teacher-profile--des des\">Phong cách giảng dạy chuyên nghiệp, trẻ trung, nhiệt huyết đam mê truyền động lực mạnh mẽ cho các em học sinh thông qua mục tiêu bài học rõ ràng. Cách tiếp cận bài học thông qua bài hát, hoạt động, trò chơi .... phù hợp với tất cả các học sinh ở mọi trình độ.</p>
+		                            </div>
+		                            <div class=\"teacher-profile--des\">
+		                                <p class=\"teacher-profile--des header\">Thành tích</p>
+		                                <p class=\"teacher-profile--des des\">Nhà Sáng lập - Giám đốc trung tâm Anh Ngữ SABI EDU, hiện nay là Trung tâm CHU CHU English</p>
+		                                <p class=\"teacher-profile--des des\">Bằng chứng chỉ giảng dạy Tiếng Anh chuyên nghiệp theo phương pháp Tesol.</p>
+		                                <p class=\"teacher-profile--des des\">Top 10 nữ sinh thanh lịch trường Đại học Công Nghiệp Hà Nội năm 2014 và giành giải nữ sinh được yêu thích nhiều nhất.</p>
+		                                <p class=\"teacher-profile--des des\">\"Tác giả bộ thẻ học liệu Magic English Flashcard: http://magicenglishflashcard.com/\"</p>
+		                            </div>
+		                        </div> ";
+		                
+						echo "</div>";
+						echo "</div>";
+			 		?>
+				<a href="#" title="Chỉnh sửa thông tin giảng viên" class="bt_blue" id="edbtn" onclick="edinfo(event);"><i class="fas fa-pen"></i> Chỉnh sửa thông tin</a>
 			</div>
+			
 			<?php 
 				echo "<div class=\"editif\" id=\"editif\" style=\"display: none;\">";
 				echo "<i class=\"fas fa-edit icon\"></i>";
@@ -143,6 +200,8 @@
 				?>
 
 			</div>
+			
+			
 			<!-- <form name="frmLogin" action="mngcourse.php" method="post" id="login">
 				<label>ten khoa hoc: </label>
 				<input type="text" name="coursename" id="coursename" /><br/>

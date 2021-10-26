@@ -89,6 +89,13 @@ function submit_ex(x,y,e,m){
 					xhr3.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 					xhr3.send("makh="+x+"&buoi="+y+"&caudung="+score+"&mabt="+m);
 					myobj.remove();
+					anchor = document.createElement("a");
+					text = document.createTextNode("Quay về trang chủ");
+					anchor.appendChild(text);
+					anchor.href = "home.php";
+					anchor.style.width = "200px";
+					anchor.classList.add("bt_blue");
+					document.getElementById("dohomework").appendChild(anchor);
 				}
 			}
 			xhr2.open("POST","grade.php");

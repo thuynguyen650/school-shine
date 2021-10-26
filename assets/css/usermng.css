@@ -17,6 +17,22 @@ main{
 	line-height: 17px;
 
 }
+.editif{
+	border-bottom: 5px dashed gray;
+	margin-bottom: 30px;
+}
+.teacher-profile-containerr{
+	width: 100%;
+	background-color: #1DBB90;
+    border: 5px solid #1EAACE;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+    position: relative;
+}
+.teacher-profile-containerr .teacher-profile--des .header{
+	color: red;
+}
 .result_ex{
 	font-size: 14.5px;
 	float: right;
@@ -80,15 +96,7 @@ main{
 	top: 4px;
 	left: 10px;
 }
-.user .bio{
-	display: flex;
-}
-.user .bio .info{
-	flex: 1;
-}
-.user .bio .image{
-	flex: 1;
-}
+
 .user .bio .image img{
 	width: 100%;
 	height: auto;
@@ -97,6 +105,9 @@ main{
 .bio{
 	border-bottom: 5px dashed gray;
 	margin-bottom: 30px;
+}
+.bio a{
+	margin-top: 30px;
 }
 ._1course{
 	background-color: white;

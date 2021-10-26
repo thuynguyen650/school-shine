@@ -1,3 +1,12 @@
+<script>
+    function gotoTeacher(){
+        window.location.href = "teacher.php";
+    }
+    function gotoStudent(){
+        window.location.href = "student.php";
+    }
+</script>
+<span onclick="gotoTeacher()"></span>
 <header class="header preload">
     <div class="grid wide">
         <div class="sub-header">
@@ -39,12 +48,23 @@
                             }
                             else
                             { 
-                                echo "<span class=\"user-name\">
-                                ".$row2['TENDANGNHAP']."
-                                </span>";
-                                echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
-                                <a href=\"#\" class=\"user-logout-link\">Đăng xuất</a>
-                                </li>";
+                                if (strcmp($_COOKIE['loai'], '1') == 0)
+                                {
+                                    echo "<span class=\"user-name\" onclick=\"gotoTeacher()\">
+                                    ".$_COOKIE['username']."
+                                    </span>";
+                                    echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
+                                    <a href=\"#\" class=\"user-logout-link\">Đăng xuất</a>
+                                    </li>";
+                                }
+                                else{
+                                    echo "<span class=\"user-name\" onclick=\"gotoStudent()\">
+                                    ".$_COOKIE['username']."
+                                    </span>";
+                                    echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
+                                    <a href=\"#\" class=\"user-logout-link\">Đăng xuất</a>
+                                    </li>";
+                                }
                             }
                         ?>
                         
