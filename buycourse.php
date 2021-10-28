@@ -63,7 +63,10 @@
 				<div class="half">
 					<label class="detail_field">Họ <label class="notnull">*</label> <br>
 					</label>
-					<input type="text" name="" class="in_half" id="inFirstName" oninput ="checkBlankFirstName();">
+					<?php 
+						echo "<input type=\"text\" name=\"\" class=\"in_half\" id=\"inFirstName\" value=\"".explode(" ",$row2['HOTEN'])[0]."\" oninput =\"checkBlankFirstName();\">";
+					?>
+					
 					<br>
 					<label class="error" id="first_name_er">Lỗi ở đây</label>
 					<br>
@@ -72,7 +75,10 @@
 				<div class="half">
 					<label class="detail_field">Tên <label class="notnull">*</label> <br>
 					</label>
-					<input type="text" name="" class="in_half" id="inMiddleName" oninput ="checkBlankMiddleName();">
+					<?php 
+						echo "<input type=\"text\" name=\"\" class=\"in_half\" id=\"inMiddleName\" value=\"".explode(" ",$row2['HOTEN'],2)[1]."\" oninput =\"checkBlankMiddleName();\">";
+					?>
+					
 					<br>
 						<label class="error" id="middle_name_er">Lỗi ở đây</label>
 					<br>
@@ -87,14 +93,20 @@
 				<div class="half">
 					<label class="detail_field">Địa chỉ email <label class="notnull">*</label> <br>
 					</label>
-					<input type="email" name="" class="in_half" id="inEmail" oninput="checkBlankEmail();"><br>
+					<?php 
+						echo "<input type=\"email\" name=\"\" class=\"in_half\" value=\"".$row2['EMAIL']."\" id=\"inEmail\" oninput=\"checkBlankEmail();\"><br>";
+					?>
+					
 					<label class="error" id="email_er">Lỗi ở đây</label>
 					<br> 
 				</div>
 				<div class="half">
 					<label class="detail_field">Số điện thoại <label class="notnull">*</label> <br>
 					</label>
-					<input type="number" name="" class="in_half" id="inPhone" oninput="checkBlankPhone();">
+					<?php 
+						echo "<input type=\"number\" name=\"\" class=\"in_half\" value=\"".$row2['SDT']."\" id=\"inPhone\" oninput=\"checkBlankPhone();\">";
+					?>
+					
 					<br>
 					<label class="error" id="phone_er">Lỗi ở đây</label>
 					<br> <br> 
@@ -154,19 +166,30 @@
 		<div class="payment">
 			<ul>
 				<li>
-					<input type="radio" id="visa" name="payment_method" value="visa">
+					<input type="radio" id="visa" name="payment_method" class="payment" value="visa">
   					<label for="visa">Thẻ Visa/Master Card <img src="assets/img/visa.png" alt=""></label><br>
 				</li>
 				<li>
-					<input type="radio" id="bank" name="payment_method" value="bank">
+					<input type="radio" id="bank" name="payment_method" class="payment" value="bank">
  					<label for="bank">Tài khoản ngân hàng nội địa <img src="assets/img/bank.png" alt=""></label><br>
 				</li>
 				<li>
-					<input type="radio" id="momo" name="payment_method" value="momo">
+					<input type="radio" id="momo" name="payment_method" class="payment" value="momo">
  					<label for="momo">Ví momo  <img src="assets/img/momo.png" alt=""></label><br>
 				</li>
 			</ul>
-			<a href="#" title="" onclick="buy();">Thanh toán ngay</a>
+			<div>
+				<?php 
+					echo "<form name=\"frmBuycourse\" class=\"frmBuycourse\" action=\"buy.php\" method=\"post\" id=\"buy\">
+						<input type=\"text\" name=\"makh\" id=\"makh\" value= \"\" readonly>
+						<input type=\"text\" name=\"mahv\" value=\"".$row2['MATK']."\" readonly>
+						</form>";
+				?>
+				
+				
+				<a href="#" title="" onclick="buy(event);">Thanh toán ngay</a>
+			</div>
+			
 		</div>
 	</div>
 	</main>

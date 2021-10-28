@@ -86,7 +86,7 @@
 								echo "</label></p>";
 								echo "<div class=\"sel\">
 									<a href=\"paid_courses.php\" title=\"Tìm hiểu thêm về các khóa học.\" class=\"learnmore\" onclick=\"setWriting()\">Tìm hiểu thêm</a>
-									<a href=\"buycourse.php\" title=\"Mua khóa ".$row['TENKHOAHOC']."\" class=\"buynow\" onclick=\"buyCourse('".$row['TENKHOAHOC']."','".$row['GIA']."', '".$chuki."')\">Mua ngay</a>
+									<a href=\"#\" title=\"Mua khóa ".$row['TENKHOAHOC']."\" class=\"buynow\" onclick='buyCourse(\"".$row['MAKH']."\",\"".$row['TENKHOAHOC']."\",\"".$row['GIA']."\", \"".$chuki."\", \"".$_COOKIE['userid']."\")'>Mua ngay</a>
 								</div>";
 								echo "</div>";
 								

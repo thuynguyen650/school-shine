@@ -1,18 +1,6 @@
 //lấy thông tin 1 tỉnh
-fetch("local.json")
-	.then(function(resp){
-		return resp.json();
-	})
-	.then(function(data){
-		
-		console.log(data);
-		for (let i=0; i<data.length; i++){
-			var x = document.getElementById("province");
-			var option = document.createElement("option");
-  			option.text = data[i].name;
-  			x.add(option);
-		}
-	})
+
+
 function changedist(){
 	var x = document.getElementById("province");
 	var y = document.getElementById("district");
@@ -118,8 +106,9 @@ function checkBlankEmail(){
 		x.style.display = "none";
 	}
 }
-function buy()
+function buy(e)
 {
+	e.preventDefault();
 	var x = document.getElementById("inFirstName");
 	var y = document.getElementById("inMiddleName");
 	var z = document.getElementById("inPhone");
@@ -136,9 +125,13 @@ function buy()
 		alert('Hãy điền đầy đủ địa chỉ');
 		return false;
 	}
+	else if (!checkPayment())
+	{
+		alert('Hãy chọn phương thức thanh toán');
+		return false;
+	}
 	else{
-		alert("Thanh toán thành công");
-		window.location.replace("index.html");
+		document.getElementById("buy").submit();
 	}
 }
 function typePass(){
@@ -166,4 +159,31 @@ function setup(){
 	{
 		z.innerHTML = '(Thanh toán theo ' + localStorage.getItem("period")+')';
 	}
+	var k = document.getElementById("province");
+	document.getElementById("makh").value = localStorage.getItem("makhc").toString();
+	fetch("local.json")
+	.then(function(resp){
+		return resp.json();
+	})
+	.then(function(data){
+		
+		
+		for (let i=0; i<data.length; i++){
+			
+			var option = document.createElement("option");
+  			option.text = data[i].name;
+  			k.add(option);
+		}
+	});
 }
+function checkPayment(){
+     var radios = document.getElementsByClassName("payment");
+
+     for (var i = 0, len = radios.length; i < len; i++) {
+          if (radios[i].checked) {
+              return true;
+          }
+     }
+
+     return false;
+ }

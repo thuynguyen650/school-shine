@@ -55,8 +55,9 @@
 							}
 							else
 							{
+								$clor = $color[rand(0,count($color)-1)];
 								echo "<div class=\"_1newcourse\" id=\"Language\">";
-								echo "<div class=\"hover ".$color[rand(0,count($color)-1)]."\">";
+								echo "<div class=\"hover ".$clor."\">";
 								echo "<h4> ".$row['TENKHOAHOC']." </h4>";
 								echo "<p>".$row['MOTA']."<br> Ngày bắt đầu: ".$row['NGAYBATDAU']."<br> Ca: ".$row['CA']." <br>
 								Thứ: ".$row['THU']."<label class=\"mobile_price\">Giá: ".$row['GIA'];
@@ -71,7 +72,7 @@
 								echo "</label></p>";
 								echo "<div class=\"sel\">
 									<a href=\"paid_courses.php\" title=\"Tìm hiểu thêm về các khóa học.\" class=\"learnmore\" onclick=\"setWriting()\">Tìm hiểu thêm</a>
-									<a href=\"buycourse.php\" title=\"Mua khóa ".$row['TENKHOAHOC']."\" class=\"buynow\" onclick=\"buyCourse('".$row['TENKHOAHOC']."','".$row['GIA']."', '".$chuki."')\">Mua ngay</a>
+									<a href=\"#\" title=\"Mua khóa ".$row['TENKHOAHOC']."\" class=\"buynow\" onclick='buyCourse(\"".$row['MAKH']."\",\"".$row['TENKHOAHOC']."\",\"".$row['GIA']."\", \"".$chuki."\", \"".$_COOKIE['userid']."\")'>Mua ngay</a>
 								</div>";
 								echo "</div>";
 								
@@ -79,7 +80,7 @@
 								<div class=\"imgcourse\">	
 									<img src=\"".$img[rand(0,count($img)-1)]."\" alt=\"".$row['TENKHOAHOC']."\">
 								</div>
-								<div class=\"namecourse ".$color[rand(0,count($color)-1)]."\">	
+								<div class=\"namecourse ".$clor."\">	
 									<h4>
 										".$row['TENKHOAHOC']."
 									</h4>
