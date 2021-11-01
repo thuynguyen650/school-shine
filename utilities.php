@@ -78,24 +78,24 @@
     </div>
 
     <div id="game">
-    <div class="utilities-title"> <strong>game</strong> </div>
+    <div class="utilities-title"> <strong>Game</strong> </div>
     <div id="list-game">
         <div>
         <a href="game/game_1/game_1.html" >
                 <img src="assets/img/game_1.PNG" alt="">
-                <h3>Up-to-Game</h3>
+                <h3>UP-tO-GAME</h3>
             </a>
         </div>
         <div>
         <a href="game/game_2" >
                 <img src="assets/img/game_2.PNG" alt="">
-                <h3>hextris</h3>
+                <h3>HESTRIX</h3>
             </a>
         </div>
         <div>
         <a href="game/game_3/">
                 <img src="assets/img/game_3.PNG" alt="">
-                <h3>jigsaw puzzle</h3>
+                <h3>jISNAW</h3>
             </a>
         </div>
     </div>
