@@ -12,6 +12,10 @@ function check_login(){
 			{
 				document.getElementById('login').submit();
 			}
+			else if (this.responseText.split("-")[1] == '2'){
+				document.getElementById('login').action = "admin.php";
+				document.getElementById('login').submit();
+			}
 			else{
 				document.getElementById('login').action = "student.php";
 				document.getElementById('login').submit();

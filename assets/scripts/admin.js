@@ -7,3 +7,299 @@ function opentab(a) {
     }
     tab.style.display = "block";
 }
+function addkh(){
+	document.getElementById('info_add_kh').style.display = 'block';
+	document.getElementById('info_edit_kh').style.display = 'none';
+	document.getElementById('info_del_kh').style.display = 'none';
+}
+function editkh(){
+	document.getElementById('info_add_kh').style.display = 'none';
+	document.getElementById('info_edit_kh').style.display = 'block';
+	document.getElementById('info_del_kh').style.display = 'none';
+	
+}
+function delkh(){
+	document.getElementById('info_add_kh').style.display = 'none';
+	document.getElementById('info_edit_kh').style.display = 'none';
+	document.getElementById('info_del_kh').style.display = 'block';
+}
+function edit(){
+	alert('click');
+}
+function edit_sel_course(){
+	var select = document.getElementById('sel_edit');
+	if (select.selectedIndex != 0){
+		var makh = select.options[select.selectedIndex].text.split(' - ')[0];
+		const xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			var data = this.responseText.split(' | ');
+			if (this.responseText == 0){
+				var x = document.getElementsByClassName('nonrestrict');
+				var i;
+				for (i = 0; i < x.length; i++) {
+ 					x[i].style.display = "block";
+				}
+				var x = document.getElementsByClassName('restrict');
+				var i;
+				for (i = 0; i < x.length; i++) {
+ 					x[i].style.display = "none";
+				}
+			}
+			else if (this.responseText == 2){
+				alert('Loi truy xuat du lieu');
+			}
+			else{
+				var x = document.getElementsByClassName('nonrestrict');
+				var i;
+				for (i = 0; i < x.length; i++) {
+ 					x[i].style.display = "block";
+				}
+				var x = document.getElementsByClassName('restrict');
+				var i;
+				for (i = 0; i < x.length; i++) {
+ 					x[i].style.display = "block";
+				}
+				document.getElementById('ed_name_course').value = data[1];
+				var listGV = document.getElementById('ed_sel_gv');
+				for(var i = 0; i < listGV.length; i++) {
+   					if(listGV[i].text.split(' - ')[0] == data[0])
+       				{
+       					listGV.selectedIndex = i;
+       					break;
+       				}
+ 				}
+ 				var listSkill = document.getElementById('ed_sel_skill');
+				for(var i = 0; i < listSkill.length; i++) {
+   					if(listSkill[i].text == data[2])
+       				{
+       					listSkill.selectedIndex = i;
+       					break;
+       				}
+ 				}
+ 				var listType = document.getElementById('ed_sel_type');
+				for(var i = 0; i < listType.length; i++) {
+   					if(i == data[11])
+       				{
+       					listType.selectedIndex = i;
+       					break;
+       				}
+ 				}
+ 				document.getElementById('ed_ngaybd').value = data[8];
+ 				document.getElementById('ed_ngaykt').value = data[9];
+ 				document.getElementById('ed_gia').value = data[4];
+ 				var listPay = document.getElementById('ed_sel_pay');
+				for(var i = 0; i < listPay.length; i++) {
+   					if(i == data[5])
+       				{
+       					listPay.selectedIndex = i;
+       					break;
+       				}
+ 				}
+ 				var listCa = document.getElementById('ed_sel_ca');
+				for(var i = 0; i < listCa.length; i++) {
+   					if(listCa[i].text.split(': ')[0].split(' ')[1] == data[6])
+       				{
+       					listCa.selectedIndex = i;
+       					break;
+       				}
+ 				}
+ 				var listThu = document.getElementById('ed_sel_thu');
+				for(var i = 0; i < listThu.length; i++) {
+   					if(listThu[i].text.split(' ')[1] == data[7])
+       				{
+       					listThu.selectedIndex = i;
+       					break;
+       				}
+ 				}
+ 				var listSta = document.getElementById('ed_sel_sta');
+				for(var i = 0; i < listSta.length; i++) {
+   					if(i == data[10])
+       				{
+       					listSta.selectedIndex = i;
+       					break;
+       				}
+ 				}
+ 				document.getElementById('ed_mota').value = data[3];
+			}
+		}
+		xhr.open("POST","edit_kh.php");
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhr.send("makh="+makh);
+	}
+}
+function check_suit_makh(){
+	if (document.getElementById('code-new-course').value == ''){
+		alert('Hãy điền thông tin mã khóa học.')
+	}
+	else{
+		const xhr = new XMLHttpRequest();
+
+		xhr.onload = function(){
+			if (this.responseText == '1'){
+				document.getElementById('is_suit_makh').style.display = 'inline-block';
+				document.getElementById('is_suit_makh').style.color = 'green';
+				document.getElementById('is_suit_makh').innerHTML= 'Có thể sử dụng mã khóa học này';
+			}
+			else{
+				document.getElementById('is_suit_makh').style.display = 'inline-block';
+				document.getElementById('is_suit_makh').style.color = 'red';
+				document.getElementById('is_suit_makh').innerHTML= 'Mã khóa học này đã được sử dụng';
+			}
+		}
+		xhr.open("POST","check_suit_makh.php");
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhr.send("makh="+document.getElementById('code-new-course').value);
+	}
+	
+	
+}
+function check_suit_gv(){
+	var listGV = document.getElementById('sel_gv');
+	var listCa = document.getElementById('sel_ca');
+	var listThu = document.getElementById('sel_thu');
+	if (listGV.selectedIndex==0)
+	{
+		alert('Hãy chọn giảng viên.');
+	}
+	else if (listThu.selectedIndex==0 || listCa.selectedIndex==0)
+	{
+		alert('Hãy điền thông tin về thứ dạy và ca');
+	}
+	else{
+		var gv = listGV.options[listGV.selectedIndex].text.split(' - ')[0];
+		var ca = listCa.options[listCa.selectedIndex].text.split(': ')[0].split(' ')[1];
+
+		
+		var thu = listThu.options[listThu.selectedIndex].text.split(' ')[1];
+		const xhr = new XMLHttpRequest();
+
+		xhr.onload = function(){
+			
+			if (this.responseText == '1'){
+				document.getElementById('is_suit_gv').style.display = 'inline-block';
+				document.getElementById('is_suit_gv').style.color = 'green';
+				document.getElementById('is_suit_gv').innerHTML= 'Giảng viên có thể dạy';
+			}
+			else{
+				document.getElementById('is_suit_gv').style.display = 'inline-block';
+				document.getElementById('is_suit_gv').style.color = 'red';
+				document.getElementById('is_suit_gv').innerHTML= 'Giảng viên đã có lớp học khác ở thời gian này';
+			}
+		}
+		xhr.open("POST","check_suit_gv.php");
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhr.send("magv="+gv+"&ca="+ca+"&thu="+thu);
+	} 
+	
+}
+function add(){
+	var fillFull = 1;
+	var maKH = document.getElementById('code-new-course').value;
+	if (maKH=='')
+	{
+		fillFull = 0;
+	}
+	var tenKH = document.getElementById('name-new-course').value;
+	if (tenKH=='')
+	{
+		fillFull = 0;
+	}
+	var list_loaiKH = document.getElementsByName("type-course");
+	var loaiKH='';
+	for(var i = 0; i < list_loaiKH.length; i++) {
+   		if(list_loaiKH[i].checked)
+       	loaiKH = String(i);
+ 	}
+ 	if (loaiKH=='')
+	{
+		fillFull = 0;
+	}
+ 	var list_loaiSkill = document.getElementsByName("skill");
+	var loaiSkill='';
+
+	for(var i = 0; i < list_loaiSkill.length; i++) {
+   		if(list_loaiSkill[i].checked)
+       	loaiSkill = list_loaiSkill[i].value;
+ 	}
+ 	if (loaiSkill=='')
+	{
+		fillFull = 0;
+	}
+ 	var listGV = document.getElementById('sel_gv');
+	var gv = listGV.options[listGV.selectedIndex].text.split(' - ')[0];
+	if (listGV.selectedIndex==0)
+	{
+		fillFull = 0;
+	}
+	var listCa = document.getElementById('sel_ca');
+	var ca = listCa.options[listCa.selectedIndex].text.split(': ')[0].split(' ')[1];
+	if (listCa.selectedIndex==0)
+	{
+		fillFull = 0;
+	}
+	var listThu = document.getElementById('sel_thu');
+	var thu = listThu.options[listThu.selectedIndex].text.split(' ')[1];
+	if (listThu.selectedIndex==0)
+	{
+		fillFull = 0;
+	}
+	var ngayBD = document.getElementById('ngaybd').value;
+	if (ngayBD=='')
+	{
+		fillFull = 0;
+	}
+	var ngayKT = document.getElementById('ngaykt').value;
+	if (ngayKT=='')
+	{
+		fillFull = 0;
+	}
+	var gia = document.getElementById('gia').value;
+	if (gia=='')
+	{
+		fillFull = 0;
+	}
+	var list_LoaiThanhToan = document.getElementsByName("pay");
+	var loaiThanhToan='';
+
+	for(var i = 0; i < list_LoaiThanhToan.length; i++) {
+   		if(list_LoaiThanhToan[i].checked)
+       	loaiThanhToan = String(i);
+ 	}
+ 	if (loaiThanhToan=='')
+	{
+		fillFull = 0;
+	}
+ 	var moTa = document.getElementById('mota').value;
+ 	if (moTa=='')
+	{
+		fillFull = 0;
+	}
+ 	//alert(maKH + '-' + tenKH + '-'+loaiKH+'-'+loaiSkill+'-'+gv+'-'+ca+'-'+thu+'-'+ngayBD+'-'+ngayKT+'-'+gia+'-'+loaiThanhToan+'-'+moTa);
+ 	if (fillFull==0)
+ 	{
+ 		alert('Hãy điền đầy đủ thông tin');
+ 	}
+ 	else{
+ 		const xhr = new XMLHttpRequest();
+
+		xhr.onload = function(){
+
+			if (this.responseText == 1){
+				alert('Thêm khóa học thành công.');
+				window.location.href = "admin.php";
+			}
+			else if (this.responseText == 0){
+				alert('Thêm khóa học thất bại, hãy kiểm tra lại thông tin.');
+			}
+			else{
+				alert('Lỗi truy xuất dữ liệu.');
+			}
+
+			
+		}
+		xhr.open("POST","add_kh.php");
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhr.send("makh="+maKH+"&tenkh="+tenKH+"&loaikh="+loaiKH+"&loaiskill="+loaiSkill+"&gv="+gv+"&ca="+ca+"&thu="+thu+"&ngaybd="+ngayBD+"&ngaykt="+ngayKT+"&gia="+gia+"&loaitt="+loaiThanhToan+"&mota="+moTa);
+ 	}
+	
+}
