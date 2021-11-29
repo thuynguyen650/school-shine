@@ -115,9 +115,9 @@
                     <div class="col-home">
                         <h2 class="home_header" style="padding-top: 10px;">Giới thiệu School Shine</h2>
                         <div class="home-section" style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
-                            <p class="home-desc">Tự hào là một trong những đơn vị đầu tiên giảng dạy theo phương pháp truyền cảm hứng với mô hình đào tạo S-SMART kết hợp dạy bảng và slide một cách thông minh. Nhờ phương pháp này, hàng nghìn học viên và giáo viên của Anh ngữ 2Eng đều được đồng bộ hóa về giá trị đào tạo. Với mong muốn lan toả nhiều hơn những giá trị đào tạo và khai phá tiềm năng của học viên, chúng tôi sẽ không chỉ dừng lại ở 5 cơ sở tại TP. HCM mà còn đến với các tỉnh thành khác trên toàn quốc.</p>
+                            <p class="home-desc">School Shine đem đến một môi trường học tập tiện ích cùng ứng dụng công nghệ hiện đại giúp học viên dễ dàng quản lý thời gian biểu, tiết kiệm chi phí và nhanh chóng đạt được mục tiêu học tập. Được quản lý và vận hành bởi những sáng lập viên tâm huyết và có nhiều kinh nghiệm trong lĩnh vực giáo dục Tiếng Anh online – tiếng Anh trực tuyến, School Shine cam kết luôn mang đến cho học viên chất lượng đào tạo và dịch vụ học tiếng Anh online – học tiếng Anh trực tuyến tốt nhất.</p>
                             <div style="margin-top: 30px;">
-                                <a class="btn btn--medium btn--green" href="#">Xem chi tiết</a>
+                                <a class="btn btn--medium btn--green" href="./aboutus.php">Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
@@ -276,13 +276,7 @@
         <?php
             include "./includes/chatbot.php";
         ?>
-        
-        
-
-       
     </main>
-    
-
     <?php
         include "./includes/footer.php";
     ?>

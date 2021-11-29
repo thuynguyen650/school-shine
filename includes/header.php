@@ -8,7 +8,7 @@
             </div>
     
             <div class="header-user">
-                <ul class="header-user-list">
+                <!-- <ul class="header-user-list">
                     <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--yellow after">
                         <a href="#" class="user-logout-link">
                         <i class="far fa-bookmark"></i>
@@ -17,15 +17,15 @@
                             <li class="sub-header-user-item" style="border-bottom: 1px solid #f9d6d6">
                                 Đánh dấu trang này
                             </li>
-                            <!-- <li class="sub-header-user-item">
+                            <li class="sub-header-user-item">
                                 Team members
                                 <span class="bookmark-remove"><i class="fas fa-times"></i></span>
-                            </li> -->
+                            </li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
 
-                <ul class="header-user-list">
+                <!-- <ul class="header-user-list">
                     <li class="header-user-item user-control btn btn-border-bottom btn--small btn--yellow after">
                         <span class="user-avt">
                             <img  src="./assets/img/default-avt.png" alt="avt">
@@ -49,7 +49,16 @@
                         </ul>
                     </li>
                     <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--green">
-                        <a href="#" class="user-logout-link">Đăng xuất</a>
+                        <a href="#" class="user-link user-logout-link">Đăng xuất</a>
+                    </li>
+                </ul> -->
+
+                <ul class="header-user-list">
+                    <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--green">
+                        <a href="#" class="user-link user-signup-link">Đăng ký</a>
+                    </li>
+                    <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--green">
+                        <a href="#" class="user-link user-signin-link">Đăng nhập</a>
                     </li>
                 </ul>
             </div>

@@ -8,7 +8,7 @@
             
         </li>
         <li>
-            <a class="chatbot-btn--hover" onclick="openForm()">
+            <a class="chatbot-btn--hover" onclick="openForm()" style="cursor: pointer;">
                 <i class="far fa-envelope"></i>
                 <p>Liên hệ qua mail</p>
             </a>
