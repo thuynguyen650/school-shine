@@ -411,12 +411,19 @@ main {
     animation: none;
 }
 
-.home-background-img {
+.home-background {
     padding-top: 60px;
+}
+
+.home-background.img {
     background-image: url(../img/bacgr.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.home-background.color {
+    background-color: #f4f7f9;
 }
 
 .row-home {
@@ -450,12 +457,9 @@ main {
 }
 
 /* khóa học */
-.home-background-color {
-    background-color: #f4f7f9;
-    padding: 60px 0;
-}
 
-.home-background-color .home_header {
+
+.home-background .home_header {
     padding-bottom: 40px;
 }
 .into_item {
@@ -476,6 +480,15 @@ main {
     text-transform: uppercase;
     color: var(--secondary-color);
     padding-bottom: 30px;
+}
+
+h2.home_header:after {
+    content: '';
+    display: block;
+    background-color: var(--secondary-color);
+    width: 100px;
+    height: 5px;
+    margin: 10px auto;
 }
 
 .home-section {
@@ -565,9 +578,12 @@ main {
 }
 
 .slide-item--author:before {
-    content: '***';
+    content: '~~~~';
     font-size: 1.4em;
     display: block;
+    /* width: 100px;
+    height: 5px;
+    background-color: violet; */
 }
 
 .slide-prev, .slide-next {

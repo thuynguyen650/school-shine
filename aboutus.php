@@ -80,7 +80,7 @@
             </div>
             <div class="static-container primary-color">
                 <div class="grid wide">
-                    <h1 class="static-header white">Tầm nhìn - Sứ mệnh - Triết lí giáo dục</h1>
+                    <h1 class="static-header">Tầm nhìn - Sứ mệnh - Triết lí giáo dục</h1>
                     <div class="static-item--tn">
                         <p class="static-item--tn header">Tầm nhìn</p>
                         <p class="static-item--tn des">Tự hào là một trong những đơn vị đầu tiên giảng dạy theo phương pháp truyền cảm hứng với mô hình đào tạo S-SMART kết hợp dạy bảng và slide một cách thông minh. Nhờ phương pháp này, hàng nghìn học viên và giáo viên của Anh ngữ 2Eng đều được đồng bộ hóa về giá trị đào tạo. Với mong muốn lan toả nhiều hơn những giá trị đào tạo và khai phá tiềm năng của học viên, chúng tôi sẽ không chỉ dừng lại ở 5 cơ sở tại  TP. HCM  mà còn đến với các tỉnh thành khác trên toàn quốc.</p>

@@ -4,9 +4,9 @@
 	margin:0;
 	padding:0;
 }
-body{
+/* body{
 	background-color: #F4F7F9;
-}
+} */
 
 .btn_addr{
 	color: #1EAACE;
@@ -58,7 +58,7 @@ a.btn_addr{
 	/*margin-top: 50px;*/
 	margin-bottom: 40px;
 }
-h2{
+/* h2{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	font-size: 60px;
@@ -66,7 +66,7 @@ h2{
 	color: #4E4F50;
 	margin-bottom: 50px;
 	margin-top: 50px;
-}
+} */
 ._1newcourse{
 	width: 31.33%;
 	height: 350px;
@@ -150,7 +150,7 @@ p.type{
 }
 main{
 	overflow: hidden;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 .view_all{
 	margin: auto;
@@ -281,7 +281,7 @@ a.buynow:hover{
 }
 .field{
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -376,9 +376,9 @@ a.buynow:hover{
 	}
 }
 @media only screen and (max-width: 46.1875em){
-	h2{
+	/* h2{
 		font-size: 40px;
-	}
+	} */
 	.mobile_price{
 		display: block;
 	}

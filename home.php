@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Các khóa học mới</title>
+	<link rel="stylesheet" href="assets/css/courses.css">
+	<link rel="stylesheet" type="text/css" href="FontAwesome/css/all.css">
+	<script src="assets/scripts/vote.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
 <?php
     include "./includes/head.php";
 ?>
@@ -109,7 +119,7 @@
         </div>
 
         <!-- giới thiệu school shine -->
-        <div class="home-background-img">
+        <div class="home-background img">
             <div class="grid wide">
                 <div class="row-home">
                     <div class="col-home">
@@ -117,7 +127,7 @@
                         <div class="home-section" style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
                             <p class="home-desc">School Shine đem đến một môi trường học tập tiện ích cùng ứng dụng công nghệ hiện đại giúp học viên dễ dàng quản lý thời gian biểu, tiết kiệm chi phí và nhanh chóng đạt được mục tiêu học tập. Được quản lý và vận hành bởi những sáng lập viên tâm huyết và có nhiều kinh nghiệm trong lĩnh vực giáo dục Tiếng Anh online – tiếng Anh trực tuyến, School Shine cam kết luôn mang đến cho học viên chất lượng đào tạo và dịch vụ học tiếng Anh online – học tiếng Anh trực tuyến tốt nhất.</p>
                             <div style="margin-top: 30px;">
-                                <a class="btn btn--medium btn--green" href="./aboutus.php">Xem chi tiết</a>
+                                <a class="btn btn--medium btn--green" href="aboutus.php">Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
@@ -140,7 +150,7 @@
                         <div class="home-section" style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
                             <p class="home-desc">Tự hào là một trong những đơn vị đầu tiên giảng dạy theo phương pháp truyền cảm hứng với mô hình đào tạo S-SMART kết hợp dạy bảng và slide một cách thông minh. Nhờ phương pháp này, hàng nghìn học viên và giáo viên của Anh ngữ School Shine đều được đồng bộ hóa về giá trị đào tạo. Với mong muốn lan toả nhiều hơn những giá trị đào tạo và khai phá tiềm năng của học viên, chúng tôi sẽ không chỉ dừng lại ở 5 cơ sở tại TP. HCM mà còn đến với các tỉnh thành khác trên toàn quốc.</p>
                             <div style="margin-top: 30px;">
-                                <a class="btn btn--medium btn--green" href="#">Xem chi tiết</a>
+                                <a class="btn btn--medium btn--green" href="teacher-list.php">Xem chi tiết</a>
                             </div>
                         </div>
                     </div>
@@ -151,7 +161,7 @@
 
 
         <!-- tại sao lại chọn school shine -->
-        <div class="home-background-color">
+        <div class="home-background color">
             <div class="grid wide">
                 <h2 class="home_header">Tại sao chọn chúng tôi?</h2>
                 <div class="row home-section">
@@ -185,7 +195,266 @@
         </div>
 
         <!-- khóa học tiêu biểu -->
-        
+        <div class="home-background">
+            <div class="grid wide">
+                <h2 class="home_header">Các khóa học tiêu biểu</h2>
+                <div class="list_courses">
+                    <div class="_1newcourse" id="Language">
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
+                        <div class="hover blueback">
+                            <h4>
+                                Luyện thi TOEIC 400+
+                            </h4>
+                            <p>
+                                Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
+                                sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
+                                Reading + Listening: 550+ <br>
+                                Speaking + Writing: 200+ <br>
+                                Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
+                                Thời hạn đăng kí: Đến hết 15/09/2021.
+                                <label class="mobile_price">Giá 5.400.000đ</label>
+                            </p>
+                            <div class="sel">
+                                <!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
+                                <a href="paid_courses.php" title="" class="learnmore" onclick="setWriting()">Tìm hiểu thêm</a>
+                                <a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 1)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- Hiển thị thông tin sơ lược -->
+                        <div class="unhover">
+                            <div class="imgcourse">	
+                                <img src="assets/img/Principles of Written English, Part 2.jpg" alt="">
+                            </div>
+                            <div class="namecourse blueback">	
+                                <h4>
+                                    Luyện thi TOEIC 400+
+                                </h4>
+                            </div>
+                            <div class="overview">
+                                <p class="type blue">Writing Skill</p>
+                                <p class="cost">235.000đ <label class="period">/ tháng</label>
+                                </p>	
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin sơ lược -->
+                    </div>
+                    <!-- finish 1 course -->
+                    <div class="_1newcourse" id="Marketing">
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
+                        <div class="hover greenback">
+                            <h4>
+                                Luyện thi TOEIC 400+
+                            </h4>
+                            <p>
+                                Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
+                                sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
+                                Reading + Listening: 550+ <br>
+                                Speaking + Writing: 200+ <br>
+                                Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
+                                Thời hạn đăng kí: Đến hết 15/09/2021.
+                                <label class="mobile_price">Giá 5.400.000đ</label>
+                            </p>
+                            <div class="sel">
+                                <!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
+                                <a href="paid_courses.php" title="" class="learnmore" onclick="setFull()">Tìm hiểu thêm</a>
+                                <a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 2)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- Hiển thị thông tin sơ lược -->
+                        <div class="unhover">
+                            <div class="imgcourse">	
+                                <img src="assets/img/Entrepreneurship 101 Who is your customer.jpg" alt="">
+                            </div>
+                            <div class="namecourse greenback">	
+                                <h4>
+                                    Luyện thi TOEIC 400+
+                                </h4>
+                            </div>
+                            <div class="overview">
+                                <p class="type green">Full Skill</p>
+                                <p class="cost">5.400.000đ <label class="period"></label>
+                                </p>	
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin sơ lược -->
+                    </div>
+                    <!-- finish 1 course -->
+                    <div class="_1newcourse" id="Social">
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
+                        <div class="hover yellowback">
+                            <h4>
+                                Luyện thi TOEIC 400+
+                            </h4>
+                            <p>
+                                Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
+                                sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
+                                Reading + Listening: 550+ <br>
+                                Speaking + Writing: 200+ <br>
+                                Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
+                                Thời hạn đăng kí: Đến hết 15/09/2021.
+                                <label class="mobile_price">Giá 5.400.000đ</label>
+                            </p>
+                            <div class="sel">
+                                <!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
+                                <a href="paid_courses.php" title="" class="learnmore" onclick="setFull()">Tìm hiểu thêm</a>
+                                <a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 3)','5.400.000', 'none')">Mua ngay</a>
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- Hiển thị thông tin sơ lược -->
+                        <div class="unhover">
+                            <div class="imgcourse">	
+                                <img src="assets/img/Evaluating Social Programs.png" alt="">
+                            </div>
+                            <div class="namecourse yellowback">	
+                                <h4>
+                                    Luyện thi TOEIC 400+
+                                </h4>
+                            </div>
+                            <div class="overview">
+                                <p class="type yellow">Full Skill</p>
+                                <p class="cost">5.400.000đ<label class="period"></label>
+                                </p>	
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin sơ lược -->
+                    </div>
+                    <!-- finish 1 course -->
+                    <div class="_1newcourse" id="Language">
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
+                        <div class="hover greenback">
+                            <h4>
+                                Luyện thi TOEIC 400+
+                            </h4>
+                            <p>
+                                Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
+                                sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
+                                Reading + Listening: 550+ <br>
+                                Speaking + Writing: 200+ <br>
+                                Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
+                                Thời hạn đăng kí: Đến hết 15/09/2021.
+                                <label class="mobile_price">Giá 5.400.000đ</label>
+                            </p>
+                            <div class="sel">
+                                <!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
+                                <a href="paid_courses.php" title="" class="learnmore" onclick="setWriting()">Tìm hiểu thêm</a>
+                                <a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 4)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- Hiển thị thông tin sơ lược -->
+                        <div class="unhover">
+                            <div class="imgcourse">	
+                                <img src="assets/img/Principles of Written English, Part 1.jpeg" alt="">
+                            </div>
+                            <div class="namecourse greenback">	
+                                <h4>
+                                    Luyện thi TOEIC 400+
+                                </h4>
+                            </div>
+                            <div class="overview">
+                                <p class="type green">Writing Skill</p>
+                                <p class="cost">235.000đ <label class="period">/ tháng</label>
+                                </p>	
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin sơ lược -->
+                    </div>
+                    <!-- finish 1 course -->
+                    <div class="_1newcourse" id="Medicine">
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
+                        <div class="hover yellowback">
+                            <h4>
+                                Luyện thi TOEIC 400+
+                            </h4>
+                            <p>
+                                Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
+                                sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
+                                Reading + Listening: 550+ <br>
+                                Speaking + Writing: 200+ <br>
+                                Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
+                                Thời hạn đăng kí: Đến hết 15/09/2021.
+                                <label class="mobile_price">Giá 5.400.000đ</label>
+                            </p>
+                            <div class="sel">
+                                <!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
+                                <a href="paid_courses.php" title="" class="learnmore" onclick="setReading()">Tìm hiểu thêm</a>
+                                <a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 5)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- Hiển thị thông tin sơ lược -->
+                        <div class="unhover">
+                            <div class="imgcourse">	
+                                <img src="assets/img/Introduction to Biomedical Imaging.jpg" alt="">
+                            </div>
+                            <div class="namecourse yellowback">	
+                                <h4>
+                                    Luyện thi TOEIC 400+
+                                </h4>
+                            </div>
+                            <div class="overview">
+                                <p class="type yellow">Reading Skill</p>
+                                <p class="cost">300.000đ <label class="period"> / tháng</label>
+                                </p>	
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin sơ lược -->
+                    </div>
+                    <!-- finish 1 course -->
+                    <div class="_1newcourse" id="Computer">
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
+                        <div class="hover blueback">
+                            <h4>
+                                Luyện thi TOEIC 400+
+                            </h4>
+                            <p>
+                                Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
+                                sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
+                                Reading + Listening: 550+ <br>
+                                Speaking + Writing: 200+ <br>
+                                Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
+                                Thời hạn đăng kí: Đến hết 15/09/2021.
+                                <label class="mobile_price">Giá 5.400.000đ</label>
+                            </p>
+                            <div class="sel">
+                                <!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
+                                <a href="paid_courses.php" title="" class="learnmore" onclick="setReading()">Tìm hiểu thêm</a>
+                                <a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 6)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin chi tiết khi hover vào -->
+                        <!-- Hiển thị thông tin sơ lược -->
+                        <div class="unhover">
+                            <div class="imgcourse">	
+                                <img src="assets/img/Introduction to Computer Science.jpg" alt="">
+                            </div>
+                            <div class="namecourse blueback">	
+                                <h4>
+                                    Luyện thi TOEIC 400+
+                                </h4>
+                            </div>
+                            <div class="overview">
+                                <p class="type blue">Reading Skill</p>
+                                <p class="cost">300.000đ <label class="period">/ tháng</label>
+                                </p>	
+                            </div>
+                        </div>
+                        <!-- Hiển thị thông tin sơ lược -->
+                    </div>
+                    <!-- finish 1 course -->
+                </div>
+                <a href="allcourses.php" title="" class="view_all"> <i class="fas fa-graduation-cap"></i> XEM TẤT CẢ KHÓA HỌC</a>
+            </div>
+        </div>
 
         <!-- cảm nhận của học viên -->
         <div class="slide-student">
@@ -259,7 +528,7 @@
                         slideIndex_2 = 1;
                         }    
                         //tự động chuyển đổi slide sau 5s
-                        setTimeout(showSlides_2, 5000);
+                        setTimeout(showSlides_2, 500000000);
                     }
                             
                 </script>

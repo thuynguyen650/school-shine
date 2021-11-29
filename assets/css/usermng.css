@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+body{
+	background-color: #F4F7F9;
+}
+*{
+	margin:0;
+	padding: 0;
+	/*color: #666666;*/
+	/*font-family: 'Roboto', sans-serif;*/
+	/*line-height: 17px;
+*/
+}
+main{
+	color: #666666;
+	font-family: 'Roboto', sans-serif;
+	line-height: 17px;
+
+}
+.editif{
+	border-bottom: 5px dashed gray;
+	margin-bottom: 30px;
+}
+.teacher-profile-containerr{
+	width: 100%;
+	background-color: #1DBB90;
+    border: 5px solid #1EAACE;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+    position: relative;
+}
+.teacher-profile-containerr .teacher-profile--des .header{
+	color: red;
+}
+.result_ex{
+	font-size: 14.5px;
+	float: right;
+}
+
+.res,.late{
+	padding-right: 20px;
+}
+.exname{
+	display: none;
+}
+.studentname{
+	display: none;
+}
+.coursename{
+	display: none;
+}
+.showex{
+	margin-left: 20px;
+}
+.listex{
+	margin-left: 27px;
+	font-weight: 100;
+}
+.listex i{
+	font-size: 10px;
+}
+
+._1course .listex a{
+	font-weight: 100;
+	font-style: normal;
+}
+.user{
+	width: 60%;
+	margin: auto;
+	margin-top: 40px;
+	background-color: #F4F7F9;
+	border: 1px solid #F4F7F9;
+	overflow: hidden;
+}
+.user span{
+	font-size: 60px;
+	color: black;
+	font-weight: 100;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: block;
+	line-height: 55px;
+}
+/*.listex{
+	display: none;
+}*/
+.icon{
+	color: #1EAACE;
+	font-size: 55px;
+}
+.iconmini{
+	color: #1EAACE;
+	font-size: 25px;
+	position: relative;
+	top: 4px;
+	left: 10px;
+}
+
+.user .bio .image img{
+	width: 100%;
+	height: auto;
+	padding-top: 60px;
+}
+.bio{
+	border-bottom: 5px dashed gray;
+	margin-bottom: 30px;
+}
+.bio a{
+	margin-top: 30px;
+}
+._1course{
+	background-color: white;
+	border: 1px solid #F4F7F9;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+._1course a{
+	font-size: 20px;
+	padding-left: 15px;
+	font-weight: bold;
+	font-style: italic;
+}

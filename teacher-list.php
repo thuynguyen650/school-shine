@@ -169,7 +169,7 @@
                                     <i class="fas fa-envelope"></i>
                                     <div class="text">
                                         <strong>Email liên hệ</strong>
-                                        <p><a href="mailto:gv.anhtv@hocmai.edu.vn">gv.anhtv@hocmai.edu.vn</a></p>
+                                        <p><a href="mailto:camduyen@gmail.com">camduyen@gmail.com</a></p>
                                     </div>
                                     
                                 </div>
@@ -198,7 +198,7 @@
     </main>
 
     <script>
-        var teacher = document.getElementById("teacher");
+        const teacher = document.getElementById("teacher");
         function openTeacher() {
             teacher.style.display = "block";
         }
@@ -206,11 +206,11 @@
             teacher.style.display = "none";
         }
 
-        // var teacher = document.getElementById("teacher");
-        // window.onclick = function(event) {
-        //     if (event.target == teacher) {
-        //     teacher.style.display = "none";
-        // }
+        window.onclick = function(event) {
+            if (event.target == teacher) {
+            teacher.style.display = "none";
+            }
+        }
     </script>
 
 </body>

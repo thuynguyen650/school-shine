@@ -42,268 +42,81 @@
 		<div class="page-content">
 			<div class="grid wide">
 				<div class="listfields">
-					<a href="#" title="" class="field" onclick="showAll();">All</a>
-					<a href="#" title="" class="field" onclick="showWriting();">Writing Skill</a>
-					<a href="#" title="" class="field" onclick="showReading();">Reading Skill</a>
-					<a href="#" title="" class="field" onclick="showListening();">Listening Skill</a>
-					<a href="#" title="" class="field" onclick="showSpeaking();">Speaking Skill</a>
-					<a href="#" title="" class="field" onclick="showFull();">Full SKill</a>
+					<a href="#" title="" class="field" onclick="showAll(event);">All</a>
+					<a href="#" title="" class="field" onclick="showWriting(event);">Writing Skill</a>
+					<a href="#" title="" class="field" onclick="showReading(event);">Reading Skill</a>
+					<a href="#" title="" class="field" onclick="showListening(event);">Listening Skill</a>
+					<a href="#" title="" class="field" onclick="showSpeaking(event);">Speaking Skill</a>
+					<a href="#" title="" class="field" onclick="showFull(event);">Full SKill</a>
+					<a href="#" title="" class="field" onclick="showCommunication(event);">Communication SKill</a>
 				</div>
 				<!-- Phần này dùng để lọc khóa học theo kĩ năng -->
 				<!-- Danh sách các khóa học copy từ file newcourses.php qua -->
 				<!-- có 1 class mở rộng đằng sau _1newcourse dùng để nhận biết lọc kĩ năng -->
 				<div class="list_courses">
-					<div class="_1newcourse Writing" id="Writing">
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-						<div class="hover blueback">
-							<h4>
-								Luyện thi TOEIC 400+
-							</h4>
-							<p>
-								Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-								sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-								Reading + Listening: 550+ <br>
-								Speaking + Writing: 200+ <br>
-								Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-								Thời hạn đăng kí: Đến hết 15/09/2021.
-								<label class="mobile_price">Giá 5.400.000đ</label>
-							</p>
-							<div class="sel">
-								<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-								<a href="paid_courses.php" title="" class="learnmore" onclick="setWriting()">Tìm hiểu thêm</a>
-								<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 1)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-							</div>
-						</div>
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- Hiển thị thông tin sơ lược -->
-						<div class="unhover">
-							<div class="imgcourse">	
-								<img src="assets/img/Principles of Written English, Part 2.jpg" alt="">
-							</div>
-							<div class="namecourse blueback">	
-								<h4>
-									Luyện thi TOEIC 400+
-								</h4>
-							</div>
-							<div class="overview">
-								<p class="type blue">Writing Skill</p>
-								<p class="cost">235.000đ <label class="period">/ tháng</label>
-								</p>	
-							</div>
-						</div>
-						<!-- Hiển thị thông tin sơ lược -->
-					</div>
-					<!-- finish 1 course -->
-					<div class="_1newcourse Full" id="Full">
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-						<div class="hover greenback">
-							<h4>
-								Luyện thi TOEIC 400+
-							</h4>
-							<p>
-								Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-								sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-								Reading + Listening: 550+ <br>
-								Speaking + Writing: 200+ <br>
-								Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-								Thời hạn đăng kí: Đến hết 15/09/2021.
-								<label class="mobile_price">Giá 5.400.000đ</label>
-							</p>
-							<div class="sel">
-								<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-								<a href="paid_courses.php" title="" class="learnmore" onclick="setFull()">Tìm hiểu thêm</a>
-								<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 2)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-							</div>
-						</div>
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- Hiển thị thông tin sơ lược -->
-						<div class="unhover">
-							<div class="imgcourse">	
-								<img src="assets/img/Entrepreneurship 101 Who is your customer.jpg" alt="">
-							</div>
-							<div class="namecourse greenback">	
-								<h4>
-									Luyện thi TOEIC 400+
-								</h4>
-							</div>
-							<div class="overview">
-								<p class="type green">Full Skill</p>
-								<p class="cost">5.400.000đ <label class="period"></label>
-								</p>	
-							</div>
-						</div>
-						<!-- Hiển thị thông tin sơ lược -->
-					</div>
-					<!-- finish 1 course -->
-					<div class="_1newcourse Full" id="Full">
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-						<div class="hover yellowback">
-							<h4>
-								Luyện thi TOEIC 400+
-							</h4>
-							<p>
-								Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-								sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-								Reading + Listening: 550+ <br>
-								Speaking + Writing: 200+ <br>
-								Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-								Thời hạn đăng kí: Đến hết 15/09/2021.
-								<label class="mobile_price">Giá 5.400.000đ</label>
-							</p>
-							<div class="sel">
-								<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-								<a href="paid_courses.php" title="" class="learnmore" onclick="setFull()">Tìm hiểu thêm</a>
-								<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 3)','5.400.000', 'none')">Mua ngay</a>
-							</div>
-						</div>
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- Hiển thị thông tin sơ lược -->
-						<div class="unhover">
-							<div class="imgcourse">	
-								<img src="assets/img/Evaluating Social Programs.png" alt="">
-							</div>
-							<div class="namecourse yellowback">	
-								<h4>
-									Luyện thi TOEIC 400+
-								</h4>
-							</div>
-							<div class="overview">
-								<p class="type yellow">Full Skill</p>
-								<p class="cost">5.400.000đ<label class="period"></label>
-								</p>	
-							</div>
-						</div>
-						<!-- Hiển thị thông tin sơ lược -->
-					</div>
-					<!-- finish 1 course -->
-					<div class="_1newcourse Writing" id="Writing">
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-						<div class="hover greenback">
-							<h4>
-								Luyện thi TOEIC 400+
-							</h4>
-							<p>
-								Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-								sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-								Reading + Listening: 550+ <br>
-								Speaking + Writing: 200+ <br>
-								Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-								Thời hạn đăng kí: Đến hết 15/09/2021.
-								<label class="mobile_price">Giá 5.400.000đ</label>
-							</p>
-							<div class="sel">
-								<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-								<a href="paid_courses.php" title="" class="learnmore" onclick="setWriting()">Tìm hiểu thêm</a>
-								<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 4)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-							</div>
-						</div>
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- Hiển thị thông tin sơ lược -->
-						<div class="unhover">
-							<div class="imgcourse">	
-								<img src="assets/img/Principles of Written English, Part 1.jpeg" alt="">
-							</div>
-							<div class="namecourse greenback">	
-								<h4>
-									Luyện thi TOEIC 400+
-								</h4>
-							</div>
-							<div class="overview">
-								<p class="type green">Writing Skill</p>
-								<p class="cost">235.000đ <label class="period">/ tháng</label>
-								</p>	
-							</div>
-						</div>
-						<!-- Hiển thị thông tin sơ lược -->
-					</div>
-					<!-- finish 1 course -->
-					<div class="_1newcourse Reading" id="Reading">
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-						<div class="hover yellowback">
-							<h4>
-								Luyện thi TOEIC 400+
-							</h4>
-							<p>
-								Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-								sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-								Reading + Listening: 550+ <br>
-								Speaking + Writing: 200+ <br>
-								Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-								Thời hạn đăng kí: Đến hết 15/09/2021.
-								<label class="mobile_price">Giá 5.400.000đ</label>
-							</p>
-							<div class="sel">
-								<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-								<a href="paid_courses.php" title="" class="learnmore" onclick="setReading()">Tìm hiểu thêm</a>
-								<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 5)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-							</div>
-						</div>
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- Hiển thị thông tin sơ lược -->
-						<div class="unhover">
-							<div class="imgcourse">	
-								<img src="assets/img/Introduction to Biomedical Imaging.jpg" alt="">
-							</div>
-							<div class="namecourse yellowback">	
-								<h4>
-									Luyện thi TOEIC 400+
-								</h4>
-							</div>
-							<div class="overview">
-								<p class="type yellow">Reading Skill</p>
-								<p class="cost">300.000đ <label class="period"> / tháng</label>
-								</p>	
-							</div>
-						</div>
-						<!-- Hiển thị thông tin sơ lược -->
-					</div>
-					<!-- finish 1 course -->
-					<div class="_1newcourse Reading" id="Reading">
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-						<div class="hover blueback">
-							<h4>
-								Luyện thi TOEIC 400+
-							</h4>
-							<p>
-								Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-								sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-								Reading + Listening: 550+ <br>
-								Speaking + Writing: 200+ <br>
-								Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-								Thời hạn đăng kí: Đến hết 15/09/2021.
-								<label class="mobile_price">Giá 5.400.000đ</label>
-							</p>
-							<div class="sel">
-								<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-								<a href="paid_courses.php" title="" class="learnmore" onclick="setReading()">Tìm hiểu thêm</a>
-								<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 6)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-							</div>
-						</div>
-						<!-- Hiển thị thông tin chi tiết khi hover vào -->
-						<!-- Hiển thị thông tin sơ lược -->
-						<div class="unhover">
-							<div class="imgcourse">	
-								<img src="assets/img/Introduction to Computer Science.jpg" alt="">
-							</div>
-							<div class="namecourse blueback">	
-								<h4>
-									Luyện thi TOEIC 400+
-								</h4>
-							</div>
-							<div class="overview">
-								<p class="type blue">Reading Skill</p>
-								<p class="cost">300.000đ <label class="period">/ tháng</label>
-								</p>	
-							</div>
-						</div>
-						<!-- Hiển thị thông tin sơ lược -->
-					</div>
+					<?php 
+						include "connect.php";
+						$sql = "SELECT * FROM KHOAHOC";
+						$query = mysqli_query($conn, $sql);
+						$i=0;
+						$chuki = '';
+						$color = array("blueback", "greenback", "yellowback");
+						$img = array("assets/img/Principles of Written English, Part 2.jpg", "assets/img/Entrepreneurship 101 Who is your customer.jpg","assets/img/Evaluating Social Programs.png",
+									"assets/img/Principles of Written English, Part 1.jpeg","assets/img/Introduction to Biomedical Imaging.jpg", "assets/img/Introduction to Computer Science.jpg");
+						while($row = mysqli_fetch_array($query)){
+							if ($i == 6)
+							{
+								break;
+							}
+							else
+							{
+								echo "<div class=\"_1newcourse ".$row['SKILL']."\" id=\"".$row['SKILL']."\">";
+								echo "<div class=\"hover ".$color[rand(0,count($color)-1)]."\">";
+								echo "<h4> ".$row['TENKHOAHOC']." </h4>";
+								echo "<p>".$row['MOTA']."<br> Ngày bắt đầu: ".$row['NGAYBATDAU']."<br> Ca: ".$row['CA']." <br>
+								Thứ: ".$row['THU']."<label class=\"mobile_price\">Giá: ".$row['GIA'];
+								if (strcmp($row['CHUKI'], '1') == 0)
+								{
+									$chuki = 'tháng';
+									echo "/ tháng";
+								}
+								else{
+									$chuki = 'none';
+								}
+								echo "</label></p>";
+								echo "<div class=\"sel\">
+									<a href=\"paid_courses.php\" title=\"Tìm hiểu thêm về các khóa học.\" class=\"learnmore\" onclick=\"setWriting()\">Tìm hiểu thêm</a>
+									<a href=\"#\" title=\"Mua khóa ".$row['TENKHOAHOC']."\" class=\"buynow\" onclick='buyCourse(\"".$row['MAKH']."\",\"".$row['TENKHOAHOC']."\",\"".$row['GIA']."\", \"".$chuki."\", \"".$_COOKIE['userid']."\")'>Mua ngay</a>
+								</div>";
+								echo "</div>";
+								
+								echo "<div class=\"unhover\">
+								<div class=\"imgcourse\">	
+									<img src=\"".$img[rand(0,count($img)-1)]."\" alt=\"".$row['TENKHOAHOC']."\">
+								</div>
+								<div class=\"namecourse ".$color[rand(0,count($color)-1)]."\">	
+									<h4>
+										".$row['TENKHOAHOC']."
+									</h4>
+								</div>
+								<div class=\"overview\">
+									<p class=\"type blue\">".$row['SKILL']."</p>
+									<p class=\"cost\">".$row['GIA']."đ <label class=\"period\">";
+									if (strcmp($row['CHUKI'], '1') == 0)
+									{
+										echo "/ tháng";
+									}
+									
+								echo "</label>
+									</p>	
+								</div>
+								</div>
+								</div>";
+								$i++;
+							}
+						}
+					?>
+					
 					<!-- finish 1 course -->
 				</div>
 			</div>
@@ -313,298 +126,3 @@
         include "./includes/footer.php";
     ?> 
 </body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tất cả khóa học</title>
-	<link rel="stylesheet" href="assets/css/courses.css">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
-	<script src="assets/scripts/course_filter.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script src="assets/scripts/vote.js" type="text/javascript" charset="utf-8" async defer></script>
-</head>
-<?php
-    include "./includes/head.php";
-?>
-<body>
-	<?php
-        include "./includes/header.php";
-    ?>
-    <main>
-
-	<!-- Phần này dùng để lọc khóa học theo kĩ năng -->
-	
-	
-	<div class="listfields">
-		<a href="#" title="" class="field" onclick="showAll();">All</a>
-		<a href="#" title="" class="field" onclick="showWriting();">Writing Skill</a>
-		<a href="#" title="" class="field" onclick="showReading();">Reading Skill</a>
-		<a href="#" title="" class="field" onclick="showListening();">Listening Skill</a>
-		<a href="#" title="" class="field" onclick="showSpeaking();">Speaking Skill</a>
-		<a href="#" title="" class="field" onclick="showFull();">Full SKill</a>
-	</div>
-	<!-- Phần này dùng để lọc khóa học theo kĩ năng -->
-	<!-- Danh sách các khóa học copy từ file newcourses.php qua -->
-	<!-- có 1 class mở rộng đằng sau _1newcourse dùng để nhận biết lọc kĩ năng -->
-	<div class="list_courses">
-		<div class="_1newcourse Writing" id="Writing">
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-			<div class="hover blueback">
-				<h4>
-					Luyện thi TOEIC 400+
-				</h4>
-				<p>
-					Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-					sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-					Reading + Listening: 550+ <br>
-					Speaking + Writing: 200+ <br>
-					Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-					Thời hạn đăng kí: Đến hết 15/09/2021.
-					<label class="mobile_price">Giá 5.400.000đ</label>
-				</p>
-				<div class="sel">
-					<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-					<a href="paid_courses.php" title="" class="learnmore" onclick="setWriting()">Tìm hiểu thêm</a>
-					<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 1)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-				</div>
-			</div>
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- Hiển thị thông tin sơ lược -->
-			<div class="unhover">
-				<div class="imgcourse">	
-					<img src="assets/img/Principles of Written English, Part 2.jpg" alt="">
-				</div>
-				<div class="namecourse blueback">	
-					<h4>
-						Luyện thi TOEIC 400+
-					</h4>
-				</div>
-				<div class="overview">
-					<p class="type blue">Writing Skill</p>
-					<p class="cost">235.000đ <label class="period">/ tháng</label>
-					</p>	
-				</div>
-			</div>
-			<!-- Hiển thị thông tin sơ lược -->
-		</div>
-		<!-- finish 1 course -->
-		<div class="_1newcourse Full" id="Full">
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-			<div class="hover greenback">
-				<h4>
-					Luyện thi TOEIC 400+
-				</h4>
-				<p>
-					Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-					sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-					Reading + Listening: 550+ <br>
-					Speaking + Writing: 200+ <br>
-					Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-					Thời hạn đăng kí: Đến hết 15/09/2021.
-					<label class="mobile_price">Giá 5.400.000đ</label>
-				</p>
-				<div class="sel">
-					<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-					<a href="paid_courses.php" title="" class="learnmore" onclick="setFull()">Tìm hiểu thêm</a>
-					<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 2)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-				</div>
-			</div>
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- Hiển thị thông tin sơ lược -->
-			<div class="unhover">
-				<div class="imgcourse">	
-					<img src="assets/img/Entrepreneurship 101 Who is your customer.jpg" alt="">
-				</div>
-				<div class="namecourse greenback">	
-					<h4>
-						Luyện thi TOEIC 400+
-					</h4>
-				</div>
-				<div class="overview">
-					<p class="type green">Full Skill</p>
-					<p class="cost">5.400.000đ <label class="period"></label>
-					</p>	
-				</div>
-			</div>
-			<!-- Hiển thị thông tin sơ lược -->
-		</div>
-		<!-- finish 1 course -->
-		<div class="_1newcourse Full" id="Full">
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-			<div class="hover yellowback">
-				<h4>
-					Luyện thi TOEIC 400+
-				</h4>
-				<p>
-					Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-					sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-					Reading + Listening: 550+ <br>
-					Speaking + Writing: 200+ <br>
-					Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-					Thời hạn đăng kí: Đến hết 15/09/2021.
-					<label class="mobile_price">Giá 5.400.000đ</label>
-				</p>
-				<div class="sel">
-					<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-					<a href="paid_courses.php" title="" class="learnmore" onclick="setFull()">Tìm hiểu thêm</a>
-					<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 3)','5.400.000', 'none')">Mua ngay</a>
-				</div>
-			</div>
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- Hiển thị thông tin sơ lược -->
-			<div class="unhover">
-				<div class="imgcourse">	
-					<img src="assets/img/Evaluating Social Programs.png" alt="">
-				</div>
-				<div class="namecourse yellowback">	
-					<h4>
-						Luyện thi TOEIC 400+
-					</h4>
-				</div>
-				<div class="overview">
-					<p class="type yellow">Full Skill</p>
-					<p class="cost">5.400.000đ<label class="period"></label>
-					</p>	
-				</div>
-			</div>
-			<!-- Hiển thị thông tin sơ lược -->
-		</div>
-		<!-- finish 1 course -->
-		<div class="_1newcourse Writing" id="Writing">
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-			<div class="hover greenback">
-				<h4>
-					Luyện thi TOEIC 400+
-				</h4>
-				<p>
-					Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-					sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-					Reading + Listening: 550+ <br>
-					Speaking + Writing: 200+ <br>
-					Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-					Thời hạn đăng kí: Đến hết 15/09/2021.
-					<label class="mobile_price">Giá 5.400.000đ</label>
-				</p>
-				<div class="sel">
-					<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-					<a href="paid_courses.php" title="" class="learnmore" onclick="setWriting()">Tìm hiểu thêm</a>
-					<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 4)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-				</div>
-			</div>
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- Hiển thị thông tin sơ lược -->
-			<div class="unhover">
-				<div class="imgcourse">	
-					<img src="assets/img/Principles of Written English, Part 1.jpeg" alt="">
-				</div>
-				<div class="namecourse greenback">	
-					<h4>
-						Luyện thi TOEIC 400+
-					</h4>
-				</div>
-				<div class="overview">
-					<p class="type green">Writing Skill</p>
-					<p class="cost">235.000đ <label class="period">/ tháng</label>
-					</p>	
-				</div>
-			</div>
-			<!-- Hiển thị thông tin sơ lược -->
-		</div>
-		<!-- finish 1 course -->
-		<div class="_1newcourse Reading" id="Reading">
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-			<div class="hover yellowback">
-				<h4>
-					Luyện thi TOEIC 400+
-				</h4>
-				<p>
-					Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-					sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-					Reading + Listening: 550+ <br>
-					Speaking + Writing: 200+ <br>
-					Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-					Thời hạn đăng kí: Đến hết 15/09/2021.
-					<label class="mobile_price">Giá 5.400.000đ</label>
-				</p>
-				<div class="sel">
-					<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-					<a href="paid_courses.php" title="" class="learnmore" onclick="setReading()">Tìm hiểu thêm</a>
-					<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 5)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-				</div>
-			</div>
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- Hiển thị thông tin sơ lược -->
-			<div class="unhover">
-				<div class="imgcourse">	
-					<img src="assets/img/Introduction to Biomedical Imaging.jpg" alt="">
-				</div>
-				<div class="namecourse yellowback">	
-					<h4>
-						Luyện thi TOEIC 400+
-					</h4>
-				</div>
-				<div class="overview">
-					<p class="type yellow">Reading Skill</p>
-					<p class="cost">300.000đ <label class="period"> / tháng</label>
-					</p>	
-				</div>
-			</div>
-			<!-- Hiển thị thông tin sơ lược -->
-		</div>
-		<!-- finish 1 course -->
-		<div class="_1newcourse Reading" id="Reading">
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- blueback = blue background (nền màu xanh) tương tự các màu khác -->
-			<div class="hover blueback">
-				<h4>
-					Luyện thi TOEIC 400+
-				</h4>
-				<p>
-					Khóa học kéo dài 6 tháng. 4 tháng đầu học viên sẽ được rèn luyện 2 kĩ năng Reading và Listening, 2 tháng còn lại 
-					sẽ học 2 kĩ năng Speaking và Writing. Chuẩn đầu ra sẽ được đảm bảo như sau: <br>
-					Reading + Listening: 550+ <br>
-					Speaking + Writing: 200+ <br>
-					Thời gian học: 18h - 19h30 thứ 2,4,6 mỗi tuần. <br>
-					Thời hạn đăng kí: Đến hết 15/09/2021.
-					<label class="mobile_price">Giá 5.400.000đ</label>
-				</p>
-				<div class="sel">
-					<!-- Lưu ý: nút nhấn là thẻ a, không phải thẻ input -->
-					<a href="paid_courses.php" title="" class="learnmore" onclick="setReading()">Tìm hiểu thêm</a>
-					<a href="buycourse.php" title="" class="buynow" onclick="buyCourse('Luyện thi TOEIC 400+ (Khoá 6)','5.400.000', 'tháng (demo chu kì')">Mua ngay</a>
-				</div>
-			</div>
-			<!-- Hiển thị thông tin chi tiết khi hover vào -->
-			<!-- Hiển thị thông tin sơ lược -->
-			<div class="unhover">
-				<div class="imgcourse">	
-					<img src="assets/img/Introduction to Computer Science.jpg" alt="">
-				</div>
-				<div class="namecourse blueback">	
-					<h4>
-						Luyện thi TOEIC 400+
-					</h4>
-				</div>
-				<div class="overview">
-					<p class="type blue">Reading Skill</p>
-					<p class="cost">300.000đ <label class="period">/ tháng</label>
-					</p>	
-				</div>
-			</div>
-			<!-- Hiển thị thông tin sơ lược -->
-		</div>
-		<!-- finish 1 course -->
-	</div>
-
-    </main>
-	 <?php
-        include "./includes/footer.php";
-    ?> 
-</body>
-</html>

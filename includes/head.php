@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="./assets/css/historytest.css">
     <link rel="stylesheet" href="./assets/css/chatbot.css">
     <link rel="stylesheet" href="./assets/css/page-static.css">
+
+    <link rel="stylesheet" href="./assets/css/page-static.css">
+
     <link rel="stylesheet" href="./assets/css/recruitment.css">
     <link rel = "icon" href = "./assets/img/title-bar-icon.png" type = "image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">

@@ -71,10 +71,25 @@ function setFull(){
 	localStorage.setItem("fieldName", "Full Skill");
 	return true;
 }
-function buyCourse(x,y,z){
-	localStorage.setItem("course_name_buy", x.toString());
-	localStorage.setItem("sum", y.toString());
-	localStorage.setItem("period", z.toString());
+function buyCourse(t,x,y,z,w){
+	const xhr2 = new XMLHttpRequest();
+		xhr2.onload = function(){
+			if (this.responseText.toString() == '0'){
+				localStorage.setItem("course_name_buy", x.toString());
+				localStorage.setItem("sum", y.toString());
+				localStorage.setItem("period", z.toString());
+				localStorage.setItem("makhc", t.toString());
+				window.location.href = "buycourse.php";
+			}
+			else{
+				alert('Bạn đã tham gia khóa học này');
+			}
+			
+		}
+	xhr2.open("POST","isjoined.php");
+	xhr2.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	xhr2.send("makh="+t.toString()+"&mahv="+w.toString());
+	
 }
 //Set kĩ năng file paid_courses.html (thẻ h3)
 function setheight(){

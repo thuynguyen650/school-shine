@@ -1,3 +1,12 @@
+<script>
+    function gotoTeacher(){
+        window.location.href = "teacher.php";
+    }
+    function gotoStudent(){
+        window.location.href = "student.php";
+    }
+</script>
+<span onclick="gotoTeacher()"></span>
 <header class="header preload">
     <div class="grid wide">
         <div class="sub-header">
@@ -30,11 +39,37 @@
                         <span class="user-avt">
                             <img  src="./assets/img/default-avt.png" alt="avt">
                         </span>
-                        <span class="user-name">
-                            Thuy Nguyen
-                        </span>
+                        <?php
+                            if (strcmp($_COOKIE['username'], '') == 0)
+                            {
+                                echo "<span class=\"user-name\">
+                                Đăng nhập
+                                </span>";
+                            }
+                            else
+                            { 
+                                if (strcmp($_COOKIE['loai'], '1') == 0)
+                                {
+                                    echo "<span class=\"user-name\" onclick=\"gotoTeacher()\">
+                                    ".$_COOKIE['username']."
+                                    </span>";
+                                    echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
+                                    <a href=\"#\" class=\"user-logout-link\">Đăng xuất</a>
+                                    </li>";
+                                }
+                                else{
+                                    echo "<span class=\"user-name\" onclick=\"gotoStudent()\">
+                                    ".$_COOKIE['username']."
+                                    </span>";
+                                    echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
+                                    <a href=\"#\" class=\"user-logout-link\">Đăng xuất</a>
+                                    </li>";
+                                }
+                            }
+                        ?>
+                        
 
-                        <ul class="sub-header-user-list btn btn btn--yellow">
+                         <ul class="sub-header-user-list btn btn btn--yellow">
                             <li class="sub-header-user-item">
                                 <a href="#">Lớp học</a>
                             </li>
@@ -51,7 +86,7 @@
                     <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--green">
                         <a href="#" class="user-link user-logout-link">Đăng xuất</a>
                     </li>
-                </ul> -->
+                </ul> 
 
                 <ul class="header-user-list">
                     <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--green">
@@ -59,7 +94,9 @@
                     </li>
                     <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--green">
                         <a href="#" class="user-link user-signin-link">Đăng nhập</a>
+                        </ul> -->
                     </li>
+                    
                 </ul>
             </div>
         </div>

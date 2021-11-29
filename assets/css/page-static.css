@@ -7,6 +7,16 @@
     text-align: center;
     margin-bottom: 20px;
     padding-top: 50px;
+    color: #04495a;
+}
+
+h1.static-header:after {
+    content: '';
+    display: block;
+    background-color: #04495a;
+    width: 100px;
+    height: 5px;
+    margin: 10px auto;
 }
 
 .static-header--sup {
@@ -15,9 +25,9 @@
     margin-bottom: 30px;
 }
 
-.static-header.white {
+/* .static-header.white {
     color: #04495a;
-}
+} */
 
 .static-des {
     font-size: 16px;
@@ -27,6 +37,8 @@
 
 .static-img {
     max-width: 100%;
+    display: block;
+    margin: auto;
 }
 
 .static-container {
@@ -34,7 +46,8 @@
 }
 
 .static-container.color-hover {
-    background-color: var(--hover-color);
+    /* background-color: var(--hover-color); */
+    background: linear-gradient(to right, #e64536, #ee7338 70%);
 }
 
 .static-container.primary-color {
@@ -146,6 +159,7 @@
 
 .static-itemppdt--child .child-des {
     padding: 10px 20px;
+    text-align: justify;
 }
 
 .static-itemppdt--child .child-des p {
@@ -251,7 +265,7 @@
 /* chi tiết giảng viên */
 .teacher-profile-container {
     background-color: var(--primary-color);
-    box-shadow: 0px 0px 10px 5px var(--secondary-color);
+    box-shadow: 0px 0px 15px 4px #20c8f6;
     border-radius: 10px;
     width: 80%;
     margin: auto;
@@ -343,6 +357,7 @@
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
     .static-img {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
     .teacher-profile--left {
         width: 40%;
@@ -355,6 +370,7 @@
 @media (max-width: 46.1875em) {
     .static-img {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
     .teacher-profile--left, .teacher-profile--right {
         width: 100%;
