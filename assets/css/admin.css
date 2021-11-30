@@ -64,8 +64,10 @@ body {
 #course-admin #info_add_kh div{
     margin-top: 50px;
 }
-
-
+.confirm{
+    float: right;
+    margin-right: 25%;
+}
 #class-admin {
     width: 100%;
     height: max-content;
@@ -97,6 +99,15 @@ body {
 
 #blog-admin div {
     margin-top: 50px;
+}
+#content-tab-admin #info_del_kh #sel_del{
+    width: 300px;
+    height: 40px;
+    background-color: #1EAACE;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    margin-left: 0;
 }
 #content-tab-admin #info_edit_kh #sel_edit{
     width: 300px;

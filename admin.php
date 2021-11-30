@@ -3,7 +3,11 @@
     $sql2 = "SELECT * FROM TAIKHOAN where TENDANGNHAP =". '\'' .$_COOKIE['username']. '\'';
     $query2 = mysqli_query($conn, $sql2);
     $row2 = mysqli_fetch_array($query2);
-    
+    if (strcmp($row2['Loai'], '2') != 0)
+    {
+        header("Location: http://localhost/school-shine/block.php");
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -229,8 +233,10 @@
 
             <div class="info" id="info_del_kh">
                 <h3>Xóa khóa học</h3>
-                <select name="" id="sel_del">
+                <h4 class="warning">*Lưu ý: Chỉ được xóa các lớp chưa có học viên nào tham gia.</h4>
+                <select name="" id="sel_del" onchange="">
                     <option value="">Chọn khóa học</option>
+                    
                     <?php 
                         $sql3 = "SELECT * FROM KHOAHOC";
                         $query3 = mysqli_query($conn, $sql3);
@@ -240,42 +246,13 @@
                         }
                         
                     ?>
-                    
                 </select>
-                <div class="show_info_course">
-                    <div class="half_width">
-                        <p>Mã khóa học</p>
-                        <input type="text" name="">
-                    </div>
-                    <div class="half_width">
-                        <p>Tên khóa học</p>
-                        <input type="text" name=""> 
-                    </div>
-                    <div class="half_width">
-                        <p>Skill</p>
-                        <input type="text" name=""> 
-                    </div>
-                    <div class="half_width">
-                        <p>Loại khóa học</p>
-                        <input type="text" name=""> 
-                    </div>
-                    <div class="half_width">
-                        <p>Ngày bắt đầu</p>
-                        <input type="text" name=""> 
-                    </div>
-                    <div class="half_width">
-                        <p>Ngày kết thúc</p>
-                        <input type="text" name=""> 
-                    </div>
-                    <div class="half_width">
-                        <p>Chu kì thanh toán</p>
-                        <input type="text" name=""> 
-                    </div>
-                    <div class="full_width">
-                        <p>Mô tả khóa học</p>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
+                <br>
+                <div class="confirm">
+                    <input type="checkbox" id="confirm" name="confirm">
+                    <label for="confirm" id="lbl_confirm">Đồng ý với việc xóa lớp học này sẽ không thể khôi phục lại</label>
                 </div>
+                <button id="btn-add-course" >Xóa khóa học</button>
             </div>
         </div>
         <div class="name-tab" id="teacher-admin">

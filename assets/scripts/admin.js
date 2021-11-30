@@ -1,3 +1,4 @@
+var edit_type;
 function opentab(a) {
     var tab = document.getElementById(a);
     var i;
@@ -24,7 +25,50 @@ function delkh(){
 	document.getElementById('info_del_kh').style.display = 'block';
 }
 function edit(){
-	alert('click');
+	var makh = document.getElementById('sel_edit');
+	var name = document.getElementById('ed_name_course');
+	var gia = document.getElementById('ed_gia');
+	var gv = document.getElementById('ed_sel_gv');
+	var skill = document.getElementById('ed_sel_skill');
+	var type = document.getElementById('ed_sel_type');
+	var ngaybd = document.getElementById('ed_ngaybd');
+	var ngaykt = document.getElementById('ed_ngaykt');
+	var gia = document.getElementById('ed_gia');
+	var pay = document.getElementById('ed_sel_pay');
+	var ca = document.getElementById('ed_sel_ca');
+	var thu = document.getElementById('ed_sel_thu');
+	var sta = document.getElementById('ed_sel_sta');
+	var mota = document.getElementById('ed_mota');
+	if (edit_type == 1){
+		if (makh.selectedIndex==0){
+			alert('Chưa chọn khóa học');
+		}
+		else if (name.value=='' || gia.value==''){
+			alert('Thieu thong tin');
+		}
+		else{
+			const xhr = new XMLHttpRequest();
+			xhr.onload = function(){
+				alert(this.responseText);
+			}
+			xhr.open("POST","start_edit_kh.php");
+			xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			xhr.send("makh="+makh.options[makh.selectedIndex].text.split(' - ')[0]+"&name="+name.value+"&gia="+gia.value+"&gv="+gv.options[gv.selectedIndex].text.split(' - ')[0]+
+				"&skill="+skill.options[skill.selectedIndex].text+"&type="+type.selectedIndex+"&ngaybd="+ngaybd.value+"&ngaykt="+ngaykt.value+"&gia="+
+				gia.value+"&pay="+pay.selectedIndex+"&ca="+ca.options[ca.selectedIndex].text.split(': ')[0].split(' ')[1]+"&thu="+thu.options[thu.selectedIndex].text.split(' ')[1]+
+				"&sta="+sta.selectedIndex+"&mota="+mota.value+"&edittype="+edit_type);
+		}
+	}
+	else{
+		const xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			alert(this.responseText);
+		}
+		xhr.open("POST","start_edit_kh.php");
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhr.send("makh="+makh.options[makh.selectedIndex].text.split(' - ')[0]+
+				"&sta="+sta.selectedIndex+"&edittype="+edit_type);
+	}
 }
 function edit_sel_course(){
 	var select = document.getElementById('sel_edit');
@@ -33,7 +77,7 @@ function edit_sel_course(){
 		const xhr = new XMLHttpRequest();
 		xhr.onload = function(){
 			var data = this.responseText.split(' | ');
-			if (this.responseText == 0){
+			if (this.responseText.split(' - ')[0]== 0){
 				var x = document.getElementsByClassName('nonrestrict');
 				var i;
 				for (i = 0; i < x.length; i++) {
@@ -44,11 +88,15 @@ function edit_sel_course(){
 				for (i = 0; i < x.length; i++) {
  					x[i].style.display = "none";
 				}
+				var listSta = document.getElementById('ed_sel_sta');
+				listSta.selectedIndex = parseInt(this.responseText.split(' - ')[1]);
+				edit_type = 0;
 			}
 			else if (this.responseText == 2){
 				alert('Loi truy xuat du lieu');
 			}
 			else{
+				edit_type = 1;
 				var x = document.getElementsByClassName('nonrestrict');
 				var i;
 				for (i = 0; i < x.length; i++) {
