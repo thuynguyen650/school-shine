@@ -252,7 +252,7 @@
                     <input type="checkbox" id="confirm" name="confirm">
                     <label for="confirm" id="lbl_confirm">Đồng ý với việc xóa lớp học này sẽ không thể khôi phục lại</label>
                 </div>
-                <button id="btn-add-course" >Xóa khóa học</button>
+                <button id="btn-add-course" onclick="del()">Xóa khóa học</button>
             </div>
         </div>
         <div class="name-tab" id="teacher-admin">

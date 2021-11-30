@@ -24,6 +24,38 @@ function delkh(){
 	document.getElementById('info_edit_kh').style.display = 'none';
 	document.getElementById('info_del_kh').style.display = 'block';
 }
+function del(){
+	var makh = document.getElementById('sel_del');
+	var checkBox = document.getElementById("confirm");
+	if (makh.selectedIndex == 0){
+		alert('Chưa chọn khóa học');
+	}
+	else if (checkBox.checked == false){
+		alert('Bạn chưa xác nhận xóa');
+	}
+	else{
+		var ma = makh.options[makh.selectedIndex].text.split(' - ')[0];
+		const xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			
+			if (this.responseText == 0){
+				alert('Khóa học đã có người tham gia');
+			}
+			else if (this.responseText == 1){
+				alert('Xóa thành công');
+				window.location.href = "admin.php";
+			}
+			else{
+				alert('Đã xảy ra lỗi');
+			}
+		}
+		xhr.open("POST","del_kh.php");
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhr.send("makh="+ma);
+	}
+	
+
+}
 function edit(){
 	var makh = document.getElementById('sel_edit');
 	var name = document.getElementById('ed_name_course');
