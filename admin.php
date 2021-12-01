@@ -256,50 +256,72 @@
             </div>
         </div>
         <div class="name-tab" id="teacher-admin">
-            <ul>
-                <li><a href="" title="">Thêm giảng viên</a></li>
-                <li><a href="" title="">Sửa thông tin giảng viên</a></li>
-                <li><a href="" title="">Xóa giảng viên</a></li>
+            <ul class="manage_gv">
+                <li><a href="#" title="" onclick="add_gv()">Thêm giảng viên</a></li>
+                <li><a href="#" title="" onclick="delete_gv()">Xóa giảng viên</a></li>
             </ul>
+            <div class="info_gv" id="info_add_gv">
+                <h3>Thêm giảng viên</h3>
+                <div class="half_width">
+                    <p>Tên đăng nhập: </p>
+                    <input type="text" name="" id="username_gv" required="Tên đăng nhập không thể để trống">
+                </div>
+                <div class="half_width">
+                    <p>Mật khẩu: </p>
+                    <input type="password" id="pass_gv" name="" required="Mật khẩu không thể để trống">
+                </div>
+                <div class="half_width">
+                    <p>Họ Tên: </p>
+                    <input type="text" id="name_gv" name="" required="Họ tên không thể để trống">
+                </div>
+                <div class="half_width">
+                    <p>Email: </p>
+                    <input type="text" id="email_gv" name="" required="Email không thể để trống">
+                </div>
+                <div class="half_width">
+                    <p>Số điện thoại: </p>
+                    <input type="number"  id="phone_gv" name="" required="Số điện thoại không thể để trống">
+                </div>
+                <div class="half_width">
+                        <p>Giới tính</p>
+                        <select name="" id="sel_gender_gv">
+                            <option value="">Nam</option>
+                            <option value="">Nữ</option>
+                            <option value="">Không xác định</option>
+                        </select>  
+                </div>
+                <div class="half_width">
+                    <p>Ngày sinh: </p>
+                    <input type="date" id="dob_gv" name="" required="Ngày sinh không thể để trống">
+                </div>
+                <div class="half_width">
+                    <p>Địa chỉ: </p>
+                    <input type="text" id="addr_gv" name="" required="Địa chỉ không thể để trống">
+                </div>
+                <button id="btn-add-course" onclick="add_gv_func()">Thêm giảng viên</button>
+            </div>
 
-            <h3>Thêm giảng viên</h3>
-            <div><strong>Mã khóa học:</strong> <input type="text" name="" id="name-new-course" required="Tên khóa học không thể để trống"></div>
-            <div><strong>Tên khóa học:</strong> <input type="text" name="" id="name-new-course" required="Tên khóa học không thể để trống"></div>
-            <div>
-                <strong>Loại khóa học:</strong>
-                <input style="width:50px" type="radio" name="type-course" id="" value="ielts"> Ielts
-                <input style="width:50px" type="radio" name="type-course" id="" value="toeic"> Toeic
+            <div class="info_gv" id="info_del_gv">
+                <h3>Thêm giảng viên</h3>
+                <h4 class="warning">*Lưu ý: Chỉ được xóa những giảng viên chưa dạy lớp nào kể cả những lớp đã kết thúc.</h4>
+                <select name="" id="sel_del_gv">
+                    <option value="">Chọn giảng viên</option>
+                    <?php 
+                        $sql4 = "SELECT * FROM TAIKHOAN where Loai = '1'";
+                        $query4 = mysqli_query($conn, $sql4);
+                        while($row4 = mysqli_fetch_array($query4))
+                        {
+                            echo "<option value=\"\">".$row4['MATK']." - ".$row4['HOTEN']."</option>";
+                        }
+                        
+                    ?>
+                </select>
+                <div class="confirm">
+                    <input type="checkbox" id="confirm_del_gv" name="confirm">
+                    <label for="confirm_del_gv" id="lbl_confirm">Đồng ý với việc xóa giảng viên này sẽ không thể khôi phục lại</label>
+                </div>
+                <button id="btn-add-course" onclick="del_gv_func()">Xóa giảng viên</button>
             </div>
-            <div>
-                <strong>Kĩ năng:</strong>
-                <input style="width:50px" type="radio" name="skill" id="" value="speaking"> Speaking
-                <input style="width:50px" type="radio" name="skill" id="" value="writing"> Writing
-                <input style="width:50px" type="radio" name="skill" id="" value="reading"> Reading
-                <input style="width:50px" type="radio" name="skill" id="" value="listening"> Listening
-                <input style="width:50px" type="radio" name="skill" id="" value="communicating"> Communicating
-            </div>
-            <div>
-                <strong>Ngày bắt đầu:</strong>
-                <input type="date" required="Ngày bắt đầu không thể để trống">
-            </div>
-            <div>
-                <strong>Ngày kết thúc:</strong>
-                <input type="date" required="Ngày kết thúc không thể để trống">
-            </div>
-            <div>
-                <strong>Giá:</strong>
-                <input type="number" required="Ngày kết thúc không thể để trống">
-            </div>
-            <div>
-                <strong>Chu kì thanh toán:</strong>
-                <input style="width:50px" type="radio" name="pay" id="" value="0"> Một lần
-                <input style="width:50px" type="radio" name="pay" id="" value="1"> Theo tháng
-            </div>
-            <div>
-                <strong>Mô tả khóa học:</strong>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <button id="btn-add-course">Tạo khóa học</button>
         </div>
         <div class="name-tab" id="blog-admin">
             <ul>

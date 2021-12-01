@@ -68,6 +68,7 @@ body {
     float: right;
     margin-right: 5%;
 }
+
 #class-admin {
     width: 100%;
     height: max-content;
@@ -189,7 +190,21 @@ li {
     width: 33.3%;
     background-color: #1EAACE;
 }
-
+.manage_gv li{
+    float: left;
+    display: block;
+    width: 50%;
+    background-color: #1EAACE;
+}
+#sel_del_gv {
+    width: 300px;
+    height: 40px;
+    background-color: #1EAACE;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    margin-left: 0;
+}
 li a {
     display: block;
     color: black;
@@ -207,6 +222,12 @@ li a:focus {
     color: white;
 }
 .info{
+    display: none;
+}
+#info_add_gv{
+    display: none;
+}
+#info_del_gv{
     display: none;
 }
 .warning{

@@ -24,6 +24,79 @@ function delkh(){
 	document.getElementById('info_edit_kh').style.display = 'none';
 	document.getElementById('info_del_kh').style.display = 'block';
 }
+function add_gv(){
+	document.getElementById('info_add_gv').style.display = 'block';
+	document.getElementById('info_del_gv').style.display = 'none';
+}
+function delete_gv(){
+	document.getElementById('info_add_gv').style.display = 'none';
+	document.getElementById('info_del_gv').style.display = 'block';
+}
+function del_gv_func(){
+	var sel_gv = document.getElementById('sel_del_gv');
+	var checkBox = document.getElementById("confirm_del_gv");
+	if (sel_gv.selectedIndex == 0){
+		alert('Chưa chọn giảng viên');
+	}
+	else if (checkBox.checked == false) {
+		alert('Bạn phải đồng ý xác nhận xóa');
+	}
+	else{
+		const xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			
+			if (this.responseText == 0){
+				alert('Không thể xóa giảng viên này vì giảng viên đã hoặc đang dạy ít nhất một lớp học.');
+			}
+			else if (this.responseText == 1){
+				alert('Xóa giảng viên thành công');
+				window.location.href = "admin.php";
+			}
+			else{
+				alert('Đã xảy ra lỗi');
+			}
+		}
+		xhr.open("POST","del_gv.php");
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhr.send("magv="+sel_gv.options[sel_gv.selectedIndex].text.split(' - ')[0]);
+	}
+}
+function add_gv_func(){
+	var username = document.getElementById('username_gv');
+	var pass = document.getElementById('pass_gv');
+	var name = document.getElementById('name_gv');
+	var email = document.getElementById('email_gv');
+	var phone = document.getElementById('phone_gv');
+	var dob = document.getElementById('dob_gv');
+	var addr = document.getElementById('addr_gv');
+	var gender = document.getElementById('sel_gender_gv');
+	if (username.value=='' || pass.value=='' || name.value ==''||
+		email.value == ''||phone.value==''||dob.value==''||addr.value=='')
+	{
+		alert('Các trường không được để trống');
+	}
+	else{
+		const xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			
+			if (this.responseText == 0){
+				alert('Username đã tồn tại');
+			}
+			else if (this.responseText == 1){
+				alert('Thêm giảng viên thành công');
+				window.location.href = "admin.php";
+			}
+			else{
+				alert('Đã xảy ra lỗi');
+			}
+		}
+		xhr.open("POST","add_gv.php");
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhr.send("username="+username.value+"&pass="+pass.value+"&name="+name.value+"&email="+email.value+"&phone="+
+			phone.value+"&gender="+gender.options[gender.selectedIndex].text+
+			"&dob="+dob.value+"&addr="+addr.value+"&loai=1");
+	}
+}
 function del(){
 	var makh = document.getElementById('sel_del');
 	var checkBox = document.getElementById("confirm");

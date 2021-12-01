@@ -1,8 +1,8 @@
 <?php 
 	include "connect.php";
-	$makh = $_POST['makh'];
+	$magv = $_POST['magv'];
 	
-	$sql1 = "SELECT * FROM THAMGIA where MAKH ="."'".$makh."'";
+	$sql1 = "SELECT * FROM KHOAHOC where MAGV ="."'".$magv."'";
 	$query1 = mysqli_query($conn, $sql1);
 	$total_row1 = mysqli_num_rows($query1);
 
@@ -11,7 +11,7 @@
 		echo "0";
 	}
 	else{
-		$sql2 = "DELETE FROM KHOAHOC WHERE MAKH = '".$makh."'";
+		$sql2 = "DELETE FROM TAIKHOAN WHERE MATK = '".$magv."'";
 		$query2 = mysqli_query($conn, $sql2);
 		if ($query2){
 			echo "1";
