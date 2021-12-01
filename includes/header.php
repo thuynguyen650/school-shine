@@ -5,6 +5,18 @@
     function gotoStudent(){
         window.location.href = "student.php";
     }
+    function logout(){
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function(){
+           window.location.href = "http://localhost/school-shine/home.php";
+        }
+        xhr.open("POST","logout.php");
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xhr.send();
+    }
+    function login(){
+        window.location.href = "http://localhost/school-shine/login.php";
+    }
 </script>
 <span onclick="gotoTeacher()"></span>
 <header class="header preload">
@@ -42,7 +54,7 @@
                         <?php
                             if (strcmp($_COOKIE['username'], '') == 0)
                             {
-                                echo "<span class=\"user-name\">
+                                echo "<span class=\"user-name\" onclick=\"login()\">
                                 Đăng nhập
                                 </span>";
                             }
@@ -54,7 +66,7 @@
                                     ".$_COOKIE['username']."
                                     </span>";
                                     echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
-                                    <a href=\"#\" class=\"user-logout-link\">Đăng xuất</a>
+                                    <a href=\"#\" class=\"user-logout-link\"onclick=\"logout()\" >Đăng xuất </a>
                                     </li>";
                                 }
                                 else{
@@ -62,7 +74,7 @@
                                     ".$_COOKIE['username']."
                                     </span>";
                                     echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
-                                    <a href=\"#\" class=\"user-logout-link\">Đăng xuất</a>
+                                    <a href=\"#\" class=\"user-logout-link\" onclick=\"logout()\" >Đăng xuất</a>
                                     </li>";
                                 }
                             }

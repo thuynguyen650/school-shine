@@ -12,7 +12,7 @@
 		<body>
 			<script>
 				alert('Bạn cần đăng nhập tài khoản để tiếp tục.');
-				window.location.href = \"http://localhost/school-shine/home.php\";
+				window.location.href = \"http://localhost/school-shine/login.php\";
 			</script> 
 		</body>
 		</html>";

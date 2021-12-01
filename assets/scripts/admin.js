@@ -8,6 +8,33 @@ function opentab(a) {
     }
     tab.style.display = "block";
 }
+function register_stu(){
+	var username = document.getElementById('reg_stu_usr');
+	var email = document.getElementById('reg_stu_email');
+	var pass = document.getElementById('reg_stu_pass');
+	if (username.value==''||email.value==''||pass.value==''){
+		alert('Không được để trống các trường dưới.');
+	}
+	else{
+		const xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			
+			if (this.responseText == 0){
+				alert('Username đã tồn tại');
+			}
+			else if (this.responseText == 1){
+				alert('Tạo tài khoản thành công');
+				window.location.href = "login.php";
+			}
+			else{
+				alert('Đã xảy ra lỗi');
+			}
+		}
+		xhr.open("POST","add_student.php");
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhr.send("username="+username.value+"&pass="+pass.value+"&email="+email.value);
+	}
+}
 function addkh(){
 	document.getElementById('info_add_kh').style.display = 'block';
 	document.getElementById('info_edit_kh').style.display = 'none';
