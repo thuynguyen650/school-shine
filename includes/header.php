@@ -65,23 +65,44 @@
                                     echo "<span class=\"user-name\" onclick=\"gotoTeacher()\">
                                     ".$_COOKIE['username']."
                                     </span>";
+                                    echo "<ul class=\"sub-header-user-list btn btn btn--yellow\">
+                                            <li class=\"sub-header-user-item\">
+                                                <a href=\"teacher.php\">Trang của giáo viên</a>
+                                            </li>
+
+
+                                            <li class=\"sub-header-user-item\">
+                                                <a href=\"./edit-password.php\">Thay đổi mật khẩu</a>
+                                            </li>
+                                        </ul>";
                                     echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
                                     <a href=\"#\" class=\"user-logout-link\"onclick=\"logout()\" >Đăng xuất </a>
                                     </li>";
+                                    
                                 }
                                 else{
                                     echo "<span class=\"user-name\" onclick=\"gotoStudent()\">
                                     ".$_COOKIE['username']."
                                     </span>";
+                                    echo "<ul class=\"sub-header-user-list btn btn btn--yellow\">
+                                            <li class=\"sub-header-user-item\">
+                                                <a href=\"student.php\">Các lớp học của tôi</a>
+                                            </li>
+
+                                            <li class=\"sub-header-user-item\">
+                                                <a href=\"./edit-password.php\">Thay đổi mật khẩu</a>
+                                            </li>
+                                        </ul>";
                                     echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
                                     <a href=\"#\" class=\"user-logout-link\" onclick=\"logout()\" >Đăng xuất</a>
                                     </li>";
+                                    
                                 }
                             }
                         ?>
                         
 
-                        <!-- <ul class="sub-header-user-list btn btn btn--yellow">
+                        <ul class="sub-header-user-list btn btn btn--yellow">
                             <li class="sub-header-user-item">
                                 <a href="#">Lớp học</a>
                             </li>
@@ -93,7 +114,7 @@
                             <li class="sub-header-user-item">
                                 <a href="./edit-password.php">Thay đổi mật khẩu</a>
                             </li>
-                        </ul> -->
+                        </ul>
                     </li>
                     
                 </ul>
@@ -190,7 +211,7 @@
                             </li>
 
                             <li class="sub-nav-item">
-                                <a href="">Khóa học miễn phí</a>
+                                <a href="free_courses.php">Khóa học miễn phí</a>
                             </li>
                         </ul>
                         <span>Tự học online</span>

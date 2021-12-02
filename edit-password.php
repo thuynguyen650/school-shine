@@ -29,12 +29,12 @@
                     <div class="col l-12 m-12">
                         <form class="form form-user">
                             <label class="form-user-label">Nhập mật khẩu hiện tại</label>
-                            <input class="input" type="password" placeholder="" />
+                            <input class="input" type="password" id="change_old" placeholder="" />
                             <label class="form-user-label">Nhập mật khẩu mới</label>
-                            <input class="input" type="password" placeholder="" />
+                            <input class="input" type="password" id="change_new" placeholder="" />
                             <label class="form-user-label">Nhập lại mật khẩu mới</label>
-                            <input class="input" type="password" placeholder="" />
-                            <button class="btn btn--medium btn--green" style="width:100%; margin-top:10px;" href="#">Lưu mật khẩu</button>
+                            <input class="input" type="password" id="change_confirm" placeholder="" />
+                            <a class="btn btn--medium btn--green" onclick="changePass()" style="width:100%; margin-top:10px; font-size: 20px; padding-bottom: 40px;" href="#">Lưu mật khẩu</a>
                         </form>
                     </div>
 
@@ -42,7 +42,7 @@
             </div>
         </div>
     </main>
-    
+    <script src="assets/scripts/admin.js"></script>
 </body>
 
 <?php
