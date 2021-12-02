@@ -61,9 +61,12 @@ body {
     font-size: 20px;
     display: none;
 }
-
-#course-admin div {
+#course-admin #info_add_kh div{
     margin-top: 50px;
+}
+.confirm{
+    float: right;
+    margin-right: 5%;
 }
 
 #class-admin {
@@ -77,14 +80,14 @@ body {
     margin-top: 50px;
 }
 
-#student-admin {
+#teacher-admin {
     width: 100%;
     height: max-content;
     font-size: 20px;
     display: none;
 }
 
-#student-admin div {
+#teacher-admin div {
     margin-top: 50px;
 }
 
@@ -98,7 +101,23 @@ body {
 #blog-admin div {
     margin-top: 50px;
 }
-
+#content-tab-admin #info_del_kh #sel_del{
+    width: 300px;
+    height: 40px;
+    background-color: #1EAACE;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    margin-left: 0;
+}
+#content-tab-admin #info_edit_kh #sel_edit{
+    width: 300px;
+    height: 40px;
+    background-color: #1EAACE;
+    border-radius: 30px;
+    color: white;
+    border: none;
+}
 #content-tab-admin div textarea {
     display: block;
     width: 98%;
@@ -114,14 +133,35 @@ body {
     display: inline-block;
     width: 15%;
 }
-
-#content-tab-admin div input {
+.restrict{
+    display: none;
+}
+.nonrestrict{
+    display: none;
+}
+#content-tab-admin #info_edit_kh input {
+    display: inline-block;
+    width: 80%;
+    height: 25px;
+    margin-left: 0;
+}
+#content-tab-admin #info_edit_kh select {
+    display: inline-block;
+    width: 80%;
+    height: 25px;
+    margin-left: 0;
+}
+#content-tab-admin #info_add_kh input,select {
     display: inline-block;
     width: 80%;
     margin-left: 2%;
     height: 25px;
 }
 
+#content-tab-admin #info_add_kh .btn_check {
+    margin-top: -12px;
+    margin-left: 2%;
+}
 #content-tab-admin button {
     margin-left: 75%;
     width: 20%;
@@ -136,4 +176,95 @@ body {
 #content-tab-admin button:active {
     background-color: #15687c;
     box-shadow: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    display: block;
+    width: 33.3%;
+    background-color: #1EAACE;
+}
+.manage_gv li{
+    float: left;
+    display: block;
+    width: 50%;
+    background-color: #1EAACE;
+}
+#sel_del_gv {
+    width: 300px;
+    height: 40px;
+    background-color: #1EAACE;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    margin-left: 0;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FFB20E;
+    color: white;
+}
+li a:focus {
+    background-color: #FFB20E;
+    color: white;
+}
+.info{
+    display: none;
+}
+#info_add_gv{
+    display: none;
+}
+#info_del_gv{
+    display: none;
+}
+.warning{
+    color: red;
+    font-style: italic;
+}
+#btn_search_kh{
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 60px;
+    background-color: #1EAACE;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.half_width{
+    width: 50%;
+    height: 100px;
+    float: left;
+}
+.half_width input{
+    width: 80%;
+}
+
+.full_width{
+    width: 100%;
+    float: left;
+}
+#content-tab-admin .info .full_width textarea{
+    width: 90%;
+}
+.show_info_course select{
+    width: 80%
+}
+#is_suit_makh, #is_suit_gv{
+    margin-left: 20px;
+    display: none;
 }

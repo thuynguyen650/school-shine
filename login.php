@@ -4,13 +4,14 @@
     <div class="container-login" id="container">
         <div class="row" style="padding: 30px 0px;">
             <div class="col l-6 m-6 c-12">
-                <form class="form" action="#">
+                <form class="form" action="teacher.php" id="login">
                     <h1 class="form-title title-login">Đăng nhập</h1>
-                    <input class="input" type="email" placeholder="Nhập email" />
-                    <input class="input" type="password" placeholder="Nhập password" />
+
+                    <input class="input" type="email" id="username" placeholder="Nhập tài khoản" />
+                    <input class="input" type="password" id="password" placeholder="Nhập mật khẩu" />
                     <a class="form-forgot"href="#">Quên mật khẩu?</a>
                     <a class="btn btn-login btn--green" style="width:100%;
-                    padding: 9px;" href="#">Đăng nhập</a>
+                    padding: 9px;" href="#" onclick="check_login()">Đăng nhập</a>
                     <h2 style="margin:20px 0; color: red;">Hoặc có thể đăng nhập với</h2>
                     <div class="social-container">
                         <a href="#" class="fb social-btn">
@@ -41,4 +42,5 @@
             </div>
         </div>
     </div>
+    <script src="assets/scripts/testlogin.js" type="text/javascript" charset="utf-8" async defer></script>
 </div>

@@ -31,6 +31,7 @@ function changePrice(){
 	slider.style.background = color;
 	recount();
 }
+
 //setup các thanh kéo phần đánh giá khóa học của file paid_courses.html
 
 

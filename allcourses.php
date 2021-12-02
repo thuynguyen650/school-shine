@@ -56,7 +56,7 @@
 				<div class="list_courses">
 					<?php 
 						include "connect.php";
-						$sql = "SELECT * FROM KHOAHOC";
+						$sql = "SELECT * FROM KHOAHOC WHERE TINHTRANG=1";
 						$query = mysqli_query($conn, $sql);
 						$i=0;
 						$chuki = '';
