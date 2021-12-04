@@ -27,13 +27,22 @@
             <div class="grid wide">
                 <div class="row">
                     <div class="col l-12 m-12">
-                        <form class="form form-user">
-                            <label class="form-user-label">Nhập mật khẩu hiện tại</label>
-                            <input class="input" type="password" id="change_old" placeholder="" />
-                            <label class="form-user-label">Nhập mật khẩu mới</label>
-                            <input class="input" type="password" id="change_new" placeholder="" />
-                            <label class="form-user-label">Nhập lại mật khẩu mới</label>
-                            <input class="input" type="password" id="change_confirm" placeholder="" />
+                        <form class="form form-user" id="form-user">
+                            <div class="form-group-user">
+                                <label class="form-user-label">Nhập mật khẩu hiện tại</label>
+                                <input class="input" type="password" id="change_old" placeholder="" />
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group-user">
+                                <label class="form-user-label">Nhập mật khẩu mới</label>
+                                <input class="input" type="password" id="change_new" placeholder="" />
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group-user">
+                                <label class="form-user-label">Nhập lại mật khẩu mới</label>
+                                <input class="input" type="password" id="change_confirm" placeholder="" />
+                                <span class="form-message"></span>
+                            </div>
                             <a class="btn btn--medium btn--green" onclick="changePass()" style="width:100%; margin-top:10px; font-size: 20px; padding-bottom: 40px;" href="#">Lưu mật khẩu</a>
                         </form>
                     </div>
@@ -43,10 +52,40 @@
         </div>
     </main>
     <script src="assets/scripts/admin.js"></script>
+    <script src="assets/scripts/valiform.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+      // Mong muốn của chúng ta
+            Validator({
+                form: '#form-user',
+                formGroupSelector: '.form-group-user',
+                errorSelector: '.form-message',
+                rules: [
+                Validator.isRequired('#change_old', 'Vui lòng nhập mật khẩu hiện tại của bạn'),
+                Validator.minLength('#change_new', 6),
+                Validator.isRequired('#change_confirm', 'Vui lòng nhập lại mật khẩu'),
+                Validator.isConfirmed('#change_confirm', function () {
+                    return document.querySelector('#form-user #change_new').value;
+                }, 'Mật khẩu nhập lại không chính xác')
+                
+                ],
+                onSubmit: function (data) {
+                // Call API
+                console.log(data);
+                }
+            });
+        });
+    </script>
 </body>
 
+<!-- nút ontop -->
 <?php
-    include "./includes/btntop.php"
+    include "./includes/btntop.php";
+?>
+
+<!-- chatbox -->
+<?php
+    include "./includes/chatbot.php";
 ?>
 
 <?php

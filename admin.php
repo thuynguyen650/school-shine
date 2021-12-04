@@ -264,27 +264,27 @@
                 <h3>Thêm giảng viên</h3>
                 <div class="half_width">
                     <p>Tên đăng nhập: </p>
-                    <input type="text" name="" id="username_gv" required="Tên đăng nhập không thể để trống">
+                    <input class="admin-input" type="text" name="" id="username_gv" required="Tên đăng nhập không thể để trống">
                 </div>
                 <div class="half_width">
                     <p>Mật khẩu: </p>
-                    <input type="password" id="pass_gv" name="" required="Mật khẩu không thể để trống">
+                    <input class="admin-input" type="password" id="pass_gv" name="" required="Mật khẩu không thể để trống">
                 </div>
                 <div class="half_width">
                     <p>Họ Tên: </p>
-                    <input type="text" id="name_gv" name="" required="Họ tên không thể để trống">
+                    <input class="admin-input" type="text" id="name_gv" name="" required="Họ tên không thể để trống">
                 </div>
                 <div class="half_width">
                     <p>Email: </p>
-                    <input type="text" id="email_gv" name="" required="Email không thể để trống">
+                    <input class="admin-input" type="text" id="email_gv" name="" required="Email không thể để trống">
                 </div>
                 <div class="half_width">
                     <p>Số điện thoại: </p>
-                    <input type="number"  id="phone_gv" name="" required="Số điện thoại không thể để trống">
+                    <input class="admin-input" type="number"  id="phone_gv" name="" required="Số điện thoại không thể để trống">
                 </div>
                 <div class="half_width">
                         <p>Giới tính</p>
-                        <select name="" id="sel_gender_gv">
+                        <select class="admin-input" name="" id="sel_gender_gv">
                             <option value="">Nam</option>
                             <option value="">Nữ</option>
                             <option value="">Không xác định</option>
@@ -292,11 +292,11 @@
                 </div>
                 <div class="half_width">
                     <p>Ngày sinh: </p>
-                    <input type="date" id="dob_gv" name="" required="Ngày sinh không thể để trống">
+                    <input class="admin-input" type="date" id="dob_gv" name="" required="Ngày sinh không thể để trống">
                 </div>
                 <div class="half_width">
                     <p>Địa chỉ: </p>
-                    <input type="text" id="addr_gv" name="" required="Địa chỉ không thể để trống">
+                    <input class="admin-input" type="text" id="addr_gv" name="" required="Địa chỉ không thể để trống">
                 </div>
                 <button id="btn-add-course" onclick="add_gv_func()">Thêm giảng viên</button>
             </div>

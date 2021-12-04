@@ -47,6 +47,19 @@
 	text-align: center;
 }
 
+.form-group-login {
+	width: 100%;
+	text-align: left;
+}
+
+.form-message {
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	padding: 4px 0 0;
+	color: #f33a58;
+	align-self: start;
+}
+
 .input {
 	background-color: #eee;
 	border: 2px solid #eee;
