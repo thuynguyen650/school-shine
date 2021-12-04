@@ -8,14 +8,14 @@
     function logout(){
         const xhr = new XMLHttpRequest();
         xhr.onload = function(){
-           window.location.href = "http://localhost/school-shine/home.php";
+           window.location.href = "http://localhost:8888/school-shine/home.php";
         }
         xhr.open("POST","logout.php");
         xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
         xhr.send();
     }
     function login(){
-        window.location.href = "http://localhost/school-shine/login.php";
+        window.location.href = "http://localhost:8888/school-shine/login.php";
     }
 </script>
 <span onclick="gotoTeacher()"></span>

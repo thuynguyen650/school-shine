@@ -104,6 +104,16 @@
                 </div>
             </div>
         </div>
+
+        <!-- nút ontop -->
+        <?php
+            include "./includes/btntop.php";
+        ?>
+
+        <!-- chatbox -->
+        <?php
+            include "./includes/chatbot.php";
+        ?>
     </main>
 </body>
 <?php
