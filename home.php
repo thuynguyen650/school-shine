@@ -110,7 +110,7 @@
                                     <p>Cơ hội gặp gỡ và tiếp xúc <span>với các diễn giả, trải nghiệm các dự án cộng đồng</span></p>
                                 </li>
                             </ul>
-                            <a href= "#" class="slide-btn btn btn--large">Đăng Ký Học Ngay</a>
+                            <a href= "newcourses.php" class="slide-btn btn btn--large">Đăng Ký Học Ngay</a>
                         </div>
                     </div>
                 </div>

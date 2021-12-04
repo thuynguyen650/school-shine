@@ -1,18 +1,19 @@
-#contentfasttest{
+#contentfasttest {
     background-color: #f4f7f9;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-#contentfasttest h1{
+#contentfasttest h1 {
     font-size: 40;
     color: teal;
     text-align: center;
 }
-#formfasttest{
-    background-color:rgba(149, 238, 194, 0.8);
-    border-radius:.25em;
-    box-shadow:0 0 .25em rgba(0,0,0,.25);
+
+#formfasttest {
+    background-color: rgba(149, 238, 194, 0.8);
+    border-radius: .25em;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
     width: 50%;
     margin-left: 25%;
     margin-top: 50px;
@@ -20,10 +21,11 @@
     font-size: 18;
     line-height: 30px;
 }
-#btn-submit-fasttest{
-    background-color:teal;
-    border-radius:.25em;
-    box-shadow:0 0 .25em rgba(0,0,0,.25);
+
+#btn-submit-fasttest {
+    background-color: teal;
+    border-radius: .25em;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
     width: 50%;
     height: 50px;
     margin-left: 25%;
@@ -31,4 +33,9 @@
     font-size: 18;
     line-height: 30px;
     color: white;
+}
+
+#fasttest_audio {
+    width: 100%;
+    margin-bottom: 2%;
 }

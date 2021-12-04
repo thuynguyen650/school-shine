@@ -15,7 +15,7 @@ function showex(e,c,l){
 	}
 }
 function student_setup(a){
-	var x = document.getElementById("info");
+	//var x = document.getElementById("info");
 	var p = document.createElement("p");
 	var i = document.createElement("i");
 	i.classList.add("fas");
@@ -53,8 +53,8 @@ function student_setup(a){
 	anchor.appendChild(text);
 	anchor.setAttribute("onclick", "edinfo(event);");
 	p.appendChild(anchor);
-	x.appendChild(p);
-	var x = document.getElementById("course");
+	//x.appendChild(p);
+	//var x = document.getElementById("course");
 
 }
 function edinfo(e){
