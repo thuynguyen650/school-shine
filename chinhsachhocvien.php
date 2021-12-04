@@ -80,6 +80,16 @@
     </main>
 </body>
 
+
+<!-- nút ontop -->
+        <?php
+            include "./includes/btntop.php";
+        ?>
+
+        <!-- chatbox -->
+        <?php
+            include "./includes/chatbot.php";
+        ?>
 <?php
         include "./includes/footer.php";
 ?>

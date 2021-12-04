@@ -35,6 +35,37 @@ function register_stu(){
 		xhr.send("username="+username.value+"&pass="+pass.value+"&email="+email.value);
 	}
 }
+function changePass(){
+	var oldpass=document.getElementById('change_old');
+	var newpass=document.getElementById('change_new');
+	var confirm=document.getElementById('change_confirm');
+	if (oldpass.value ==''||newpass.value==''||confirm.value==''){
+		alert('Các trường không được để trống');
+	}
+	else if (newpass.value!=confirm.value){
+		alert('Mật khẩu xác nhận không khớp');
+	}
+	else{
+		const xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			
+			if (this.responseText == 0){
+				alert('Sai mật khẩu');
+			}
+			else if (this.responseText == 1){
+				alert('Đổi mật khẩu thành công');
+				window.location.href = "home.php";
+			}
+			else{
+				alert('Đã xảy ra lỗi');
+			}
+		}
+		xhr.open("POST","change_pass.php");
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xhr.send("oldpass="+oldpass.value+"&newpass="+newpass.value);
+	}
+
+}
 function addkh(){
 	document.getElementById('info_add_kh').style.display = 'block';
 	document.getElementById('info_edit_kh').style.display = 'none';

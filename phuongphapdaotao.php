@@ -15,9 +15,9 @@
                         <h1>Về chúng tôi</h1>
                     </div>
                     <div class="page-breadcrumb">
-                        <a class="page-banner-item" href="./home.php">Phương pháp đào tạo</a>
+                        <a class="page-banner-item" href="./home.php">Về chúng tôi</a>
                         <i class="page-banner-icon fas fa-arrow-right"></i>
-                        <a class="page-banner-item" href="./aboutus.php">Về chúng tôi</a>
+                        <a class="page-banner-item" href="./aboutus.php">Phương pháp đào tạo</a>
                     </div>
                 </div>
             </div>
@@ -123,6 +123,16 @@
                 </div>
             </div>
         </div>
+
+        <!-- nút ontop -->
+        <?php
+            include "./includes/btntop.php";
+        ?>
+
+        <!-- chatbox -->
+        <?php
+            include "./includes/chatbot.php";
+        ?>
     </main>
 </body>
 

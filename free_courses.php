@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
+<head> 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tất cả khóa học</title>
+	<title>Các khóa học mới</title>
 	<link rel="stylesheet" href="assets/css/courses.css">
 	<link rel="stylesheet" type="text/css" href="FontAwesome/css/all.css">
-	<script src="assets/scripts/course_filter.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="assets/scripts/vote.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <?php
     include "./includes/head.php";
-?>
+?> 
 <body>
 	<?php
         include "./includes/header.php";
     ?>
-    <main>
+	<main>
 		<div class="page-banner-wrap">
 			<div class="grid wide">
 				<div class="page-banner">
 					<div class="page-title">
-						<h1>Tất Cả Khóa Học</h1>
+						<h1>Các Khóa Học Mới</h1>
 					</div>
 
 					<div class="page-breadcrumb">
@@ -32,31 +30,18 @@
 							<a class="page-banner-item" href="">Khóa học</a>
 							<i class="page-banner-icon fas fa-arrow-right"></i>
 
-							<span class="page-banner-item">Tất cả khóa học</span>
+							<span class="page-banner-item">Các khóa học miễn phí</span>
 					</div>
 				</div>
 				
 			</div>
 		</div>
-	<!-- Phần này dùng để lọc khóa học theo kĩ năng -->
 		<div class="page-content">
 			<div class="grid wide">
-				<div class="listfields">
-					<a href="#" title="" class="field" onclick="showAll(event);">All</a>
-					<a href="#" title="" class="field" onclick="showWriting(event);">Writing Skill</a>
-					<a href="#" title="" class="field" onclick="showReading(event);">Reading Skill</a>
-					<a href="#" title="" class="field" onclick="showListening(event);">Listening Skill</a>
-					<a href="#" title="" class="field" onclick="showSpeaking(event);">Speaking Skill</a>
-					<a href="#" title="" class="field" onclick="showFull(event);">Full SKill</a>
-					<a href="#" title="" class="field" onclick="showCommunication(event);">Communication SKill</a>
-				</div>
-				<!-- Phần này dùng để lọc khóa học theo kĩ năng -->
-				<!-- Danh sách các khóa học copy từ file newcourses.php qua -->
-				<!-- có 1 class mở rộng đằng sau _1newcourse dùng để nhận biết lọc kĩ năng -->
 				<div class="list_courses">
 					<?php 
 						include "connect.php";
-						$sql = "SELECT * FROM KHOAHOC WHERE TINHTRANG=1";
+						$sql = "SELECT * FROM KHOAHOC WHERE GIA=0";
 						$query = mysqli_query($conn, $sql);
 						$i=0;
 						$chuki = '';
@@ -70,8 +55,9 @@
 							}
 							else
 							{
-								echo "<div class=\"_1newcourse ".$row['SKILL']."\" id=\"".$row['SKILL']."\">";
-								echo "<div class=\"hover ".$color[rand(0,count($color)-1)]."\">";
+								$clor = $color[rand(0,count($color)-1)];
+								echo "<div class=\"_1newcourse\" id=\"Language\">";
+								echo "<div class=\"hover ".$clor."\">";
 								echo "<h4> ".$row['TENKHOAHOC']." </h4>";
 								echo "<p>".$row['MOTA']."<br> Ngày bắt đầu: ".$row['NGAYBATDAU']."<br> Ca: ".$row['CA']." <br>
 								Thứ: ".$row['THU']."<label class=\"mobile_price\">Giá: ".$row['GIA'];
@@ -94,7 +80,7 @@
 								<div class=\"imgcourse\">	
 									<img src=\"".$img[rand(0,count($img)-1)]."\" alt=\"".$row['TENKHOAHOC']."\">
 								</div>
-								<div class=\"namecourse ".$color[rand(0,count($color)-1)]."\">	
+								<div class=\"namecourse ".$clor."\">	
 									<h4>
 										".$row['TENKHOAHOC']."
 									</h4>
@@ -117,21 +103,16 @@
 						}
 					?>
 					
-					<!-- finish 1 course -->
+					</div>
 				</div>
+				<a href="allcourses.php" title="" class="view_all"> <i class="fas fa-graduation-cap"></i> XEM TẤT CẢ KHÓA HỌC</a>
 			</div>
-		</div>
-    </main>
-	<!-- nút ontop -->
-		<?php
-            include "./includes/btntop.php";
-        ?>
 
-        <!-- chatbox -->
-        <?php
-            include "./includes/chatbot.php";
-        ?>
+	<!-- Thông tin các khóa học -->
+	
+	</main>
 	 <?php
         include "./includes/footer.php";
     ?> 
 </body>
+</html>

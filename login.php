@@ -9,7 +9,7 @@
 
                     <input class="input" type="email" id="username" placeholder="Nhập tài khoản" />
                     <input class="input" type="password" id="password" placeholder="Nhập mật khẩu" />
-                    <a class="form-forgot"href="#">Quên mật khẩu?</a>
+                    <a class="form-forgot"href="forget-password.php">Quên mật khẩu?</a>
                     <a class="btn btn-login btn--green" style="width:100%;
                     padding: 9px;" href="#" onclick="check_login()">Đăng nhập</a>
                     <h2 style="margin:20px 0; color: red;">Hoặc có thể đăng nhập với</h2>
