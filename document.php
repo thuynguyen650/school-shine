@@ -35,7 +35,7 @@
                         <div>
                             <ul class="document-list">
                                 <li class="document-item">
-                                    <a href="">
+                                    <a class="download">
                                         <img src="./assets/img/document1.png" alt="toeic" class="document-item-img">
                                         <h2 class="document-item-heading">Bộ tài liệu tự học TOEIC 0-900+ 2021</h2>
                                     </a>
@@ -48,7 +48,7 @@
                                 </li>
 
                                 <li class="document-item">
-                                    <a href="">
+                                    <a class="download">
                                         <img src="./assets/img/document1.png" alt="toeic" class="document-item-img">
                                         <h2 class="document-item-heading">Bộ tài liệu tự học TOEIC 0-900+ 2021</h2>
                                     </a>
@@ -61,7 +61,7 @@
                                 </li>
 
                                 <li class="document-item">
-                                    <a href="">
+                                    <a class="download">
                                         <img src="./assets/img/document1.png" alt="toeic" class="document-item-img">
                                         <h2 class="document-item-heading">Bộ tài liệu tự học TOEIC 0-900+ 2021</h2>
                                     </a>
@@ -119,7 +119,7 @@
                                             <div class="col l-9">
                                                 <div class="blog-category-info">
                                                     <p class="blog-category-title">
-                                                        <a href="">
+                                                        <a class="download">
                                                             Mẹo hay phân biệt A - An - The để không còn nhầm lẫn
                                                         </a>
                                                     </p>
@@ -145,7 +145,7 @@
                                             <div class="col l-9">
                                                 <div class="blog-category-info">
                                                     <p class="blog-category-title">
-                                                        <a href="">
+                                                        <a class="download">
                                                             Mẹo hay phân biệt A - An - The để không còn nhầm lẫn
                                                         </a>
                                                     </p>
@@ -171,7 +171,7 @@
                                             <div class="col l-9">
                                                 <div class="blog-category-info">
                                                     <p class="blog-category-title">
-                                                        <a href="">
+                                                        <a class="download">
                                                             Mẹo hay phân biệt A - An - The để không còn nhầm lẫn
                                                         </a>
                                                     </p>
@@ -190,6 +190,10 @@
             </div>
         </div>
     </main>
+    <script>
+        $('.download').attr({target: '_blank', 
+                    href  : 'http://localhost:81/school-shine/source/New.pdf'});
+    </script>
 </body>
 
 <?php
