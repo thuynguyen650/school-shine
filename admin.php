@@ -41,7 +41,7 @@
     <div id="content-tab-admin">
         
         <div class="name-tab" id="course-admin">
-            <ul>
+            <ul class="nav-admin">
                 <li><a href="#" title="" onclick="addkh()">Tạo khóa học</a></li>
                 <li><a href="#" title="" onclick="editkh()">Sửa khóa học</a></li>
                 <li><a href="#" title="" onclick="delkh()">Xóa khóa học</a></li>
@@ -256,7 +256,7 @@
             </div>
         </div>
         <div class="name-tab" id="teacher-admin">
-            <ul class="manage_gv">
+            <ul class="manage_gv nav-admin">
                 <li><a href="#" title="" onclick="add_gv()">Thêm giảng viên</a></li>
                 <li><a href="#" title="" onclick="delete_gv()">Xóa giảng viên</a></li>
             </ul>
@@ -324,7 +324,7 @@
             </div>
         </div>
         <div class="name-tab" id="blog-admin">
-            <ul>
+            <ul class="nav-admin">
                 <li><a href="" title="">Tạo bài viết</a></li>
                 <li><a href="" title="">Sửa bài viết</a></li>
                 <li><a href="" title="">Xóa bài viết</a></li>
