@@ -363,9 +363,11 @@
 						include "connect.php";
 						$sql = "SELECT * FROM blog";
 						$query = mysqli_query($conn, $sql);
-                        $row = mysqli_fetch_assoc($query);
+                        // $row = mysqli_fetch_assoc($query);
+                        $total_row = mysqli_num_rows($query);
+
                         $i = 0;
-                        if($row === null) {
+                        if($total_row === 0) {
                             echo "<p class='null'>Chưa có bài viết nào.</p>";
                         } else {
                         echo "<div>

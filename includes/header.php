@@ -46,9 +46,9 @@
                     </li>
                 </ul> -->
 
-                <!-- <ul class="header-user-list">
+                <ul class="header-user-list">
                     <li class="header-user-item user-control btn btn-border-bottom btn--small btn--yellow after">
-                        <span class="user-avt">
+                        <!-- <span class="user-avt">
                             <img  src="./assets/img/default-avt.png" alt="avt">
                         </span>
                         <?php
@@ -118,7 +118,7 @@
                     </li>
                     
                 </ul>
-            </div>
+            </div>-->
         </div>
     </div>
     <div class="grid wide">
@@ -131,7 +131,7 @@
                 </div>
             </a>
 
-            <!-- sticky logo  -->
+             <!-- sticky logo  --> 
             <a href="./home.php" class="sticky-logo title">
                 School Shine🌥
             </a> 
