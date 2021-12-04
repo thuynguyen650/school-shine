@@ -114,12 +114,12 @@
     </div>
 
     <div class="consult-form">
-        <form action="">
+        <form action="" id="form-tuvan">
             <h3>Đăng ký tư vấn</h3>
-            <input type="text" name="name" id="name" placeholder="Họ và tên">
-            <input type="text" name="phone" id="phone" placeholder="Số điện thoại">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <button type="submit">Gửi</button>
+            <input type="text" name="name" id="name-tuvan" placeholder="Họ và tên">
+            <input type="text" name="phone" id="phone-tuvan" placeholder="Số điện thoại">
+            <input type="email" name="email" id="email-tuvan" placeholder="Email">
+            <button type="button" id="submit-tuvan">Gửi</button>
         </form>
     </div>
 
@@ -318,4 +318,6 @@
             Xem thêm học viên điểm cao
         </a>
     </div>
+<script src="assets/scripts/admin.js"></script>
+
 </aside>

@@ -240,3 +240,7 @@
 <?php
     include "./includes/footer.php";
 ?>
+
+<?php
+    include "./includes/popup.php";
+?>

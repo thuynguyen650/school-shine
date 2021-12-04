@@ -40,6 +40,7 @@ function addkh(){
 	document.getElementById('info_edit_kh').style.display = 'none';
 	document.getElementById('info_del_kh').style.display = 'none';
 }
+
 function editkh(){
 	document.getElementById('info_add_kh').style.display = 'none';
 	document.getElementById('info_edit_kh').style.display = 'block';
@@ -482,4 +483,43 @@ function add(){
 		xhr.send("makh="+maKH+"&tenkh="+tenKH+"&loaikh="+loaiKH+"&loaiskill="+loaiSkill+"&gv="+gv+"&ca="+ca+"&thu="+thu+"&ngaybd="+ngayBD+"&ngaykt="+ngayKT+"&gia="+gia+"&loaitt="+loaiThanhToan+"&mota="+moTa);
  	}
 	
+}	
+
+function addBlog() {
+	const title = document.getElementById('blog-title-input').value;
+	const author = document.getElementById('blog-author-input').value
+	const topic = document.getElementById('blog-topic-input').value
+	const content = document.getElementById('blog-content-input').value
+	const xhr = new XMLHttpRequest()
+	xhr.onload = function() {
+		console.log(this.responseText)
+	}
+	xhr.open("POST", "add_blog.php")
+	xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	xhr.send("title="+title+"&author="+author+"&topic="+topic+"&content="+content);
+	alert("Bài viết đã được đăng lên page!")
+	location.reload()
+}
+
+function addblog(){
+	document.getElementById('info_add_blog').style.display = 'block';
+	document.getElementById('info_del_blog').style.display = 'none';
+}
+
+function delblog(){
+	document.getElementById('info_add_blog').style.display = 'none';
+	document.getElementById('info_del_blog').style.display = 'block';
+}
+
+function xoaBaiViet(id){
+	alert('Bài viết sẽ bị xóa')
+
+	jQuery.ajax({
+		type: "POST",
+		url: "del_blog.php",
+		data: {"id": id},
+		success: function(res) {
+			$(`#${id}`).css("display", "none")
+		}
+	})
 }

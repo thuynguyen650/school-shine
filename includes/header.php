@@ -98,7 +98,7 @@
                     <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--green">
                         <a href="#" class="user-link user-logout-link">Đăng xuất</a>
                     </li>
-                </ul> 
+                </ul> -->
 
                 <ul class="header-user-list">
                     <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--green">
@@ -106,7 +106,7 @@
                     </li>
                     <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--green">
                         <a href="#" class="user-link user-signin-link">Đăng nhập</a>
-                        </ul> -->
+                        </ul> 
                     </li>
                     
                 </ul>
