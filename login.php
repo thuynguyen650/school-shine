@@ -6,9 +6,14 @@
             <div class="col l-6 m-6 c-12">
                 <form class="form" action="teacher.php" id="login">
                     <h1 class="form-title title-login">Đăng nhập</h1>
-
-                    <input class="input" type="email" id="username" placeholder="Nhập tài khoản" />
-                    <input class="input" type="password" id="password" placeholder="Nhập mật khẩu" />
+                    <div class="form-group-login">
+                        <input class="input" type="email" id="username" placeholder="Nhập tài khoản" />
+                        <span class="form-message"></span>
+                    </div>
+                    <div  class="form-group-login">
+                        <input class="input" type="password" id="password" placeholder="Nhập mật khẩu" />
+                        <span class="form-message"></span>
+                    </div>
                     <a class="form-forgot"href="forget-password.php">Quên mật khẩu?</a>
                     <a class="btn btn-login btn--green" style="width:100%;
                     padding: 9px;" href="#" onclick="check_login()">Đăng nhập</a>
@@ -43,4 +48,25 @@
         </div>
     </div>
     <script src="assets/scripts/testlogin.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="assets/scripts/valiform.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+      // Mong muốn của chúng ta
+            Validator({
+                form: '#login',
+                formGroupSelector: '.form-group-login',
+                errorSelector: '.form-message',
+                rules: [
+                Validator.isRequired('#username', 'Vui lòng nhập tên đầy đủ của bạn'),
+                
+                Validator.isRequired('#password', 'Vui lòng nhập mật khẩu của bạn'),
+                Validator.minLength('#password', 6),
+                ],
+                onSubmit: function (data) {
+                // Call API
+                console.log(data);
+                }
+            });
+      });
+    </script>
 </div>

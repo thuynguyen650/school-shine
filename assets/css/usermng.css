@@ -24,7 +24,7 @@ main{
 .teacher-profile-containerr{
 	width: 100%;
 	background-color: #1DBB90;
-    border: 5px solid #1EAACE;
+    /* border: 5px solid #1EAACE; */
     border-radius: 10px;
     margin-bottom: 20px;
     margin: auto;

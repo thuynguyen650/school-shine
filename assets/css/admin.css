@@ -120,6 +120,8 @@ body {
     border-radius: 30px;
     color: white;
     border: none;
+    font-size: 16px;
+    padding: 0 10px;
 }
 #content-tab-admin div textarea {
     display: block;
@@ -131,6 +133,10 @@ body {
     text-align: center;
     width: 100%;
     margin-top: 60px;
+}
+
+.admin-input {
+    padding: 5px;
 }
 
 #content-tab-admin strong {
@@ -158,9 +164,9 @@ body {
 }
 #content-tab-admin #info_add_kh input,select {
     display: inline-block;
-    width: 80%;
-    margin-left: 2%;
-    height: 25px;
+    width: 82%;
+    /* margin-left: 2%;
+    height: 25px; */
 }
 
 #content-tab-admin #info_add_kh .btn_check {

@@ -294,8 +294,8 @@ h1.static-header:after {
 }
 
 .teacher-profile--left {
-    width: 30%;
-    float: left;
+    width: 100%;
+    /* float: left; */
 }
 
 .teacher-profile--right {
@@ -359,9 +359,9 @@ h1.static-header:after {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .teacher-profile--left {
-        width: 40%;
-    }
+    /* .teacher-profile--left {
+        width: 100%;
+    } */
     .teacher-profile--right {
         width: 60%;
     }
