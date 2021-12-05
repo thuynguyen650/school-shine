@@ -7,7 +7,7 @@ function check_login(){
 		if (this.responseText == '0'){
 			alert('Sai tên đăng nhập hoặc mật khẩu');
 		}
-		else{
+		else{ 
 			if (this.responseText.split("-")[1] == '1')
 			{
 				document.getElementById('login').submit();

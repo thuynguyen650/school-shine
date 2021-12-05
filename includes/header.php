@@ -5,17 +5,20 @@
     function gotoStudent(){
         window.location.href = "student.php";
     }
+    function gotoAdmin(){
+        window.location.href = "admin.php";
+    }
     function logout(){
         const xhr = new XMLHttpRequest();
         xhr.onload = function(){
-           window.location.href = "http://localhost:8888/school-shine/home.php";
+           window.location.href = "http://localhost:8080/school-shine/home.php";
         }
         xhr.open("POST","logout.php");
         xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
         xhr.send();
     }
     function login(){
-        window.location.href = "http://localhost:8888/school-shine/login.php";
+        window.location.href = "http://localhost:8080/school-shine/login.php";
     }
 </script>
 <span onclick="gotoTeacher()"></span>
@@ -29,7 +32,7 @@
             </div>
     
             <div class="header-user">
-                <!-- <ul class="header-user-list">
+                <ul class="header-user-list">
                     <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--yellow after">
                         <a href="#" class="user-logout-link">
                         <i class="far fa-bookmark"></i>
@@ -38,21 +41,21 @@
                             <li class="sub-header-user-item" style="border-bottom: 1px solid #f9d6d6">
                                 Đánh dấu trang này
                             </li>
-                            <li class="sub-header-user-item">
+                            <!-- <li class="sub-header-user-item">
                                 Team members
                                 <span class="bookmark-remove"><i class="fas fa-times"></i></span>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
-                </ul> -->
+                </ul>
 
                 <ul class="header-user-list">
                     <li class="header-user-item user-control btn btn-border-bottom btn--small btn--yellow after">
-                        <!-- <span class="user-avt">
+                        <span class="user-avt">
                             <img  src="./assets/img/default-avt.png" alt="avt">
                         </span>
                         <?php
-                            if (strcmp($_COOKIE['username'], '') == 0)
+                            if (!isset($_COOKIE['username']))
                             {
                                 echo "<span class=\"user-name\" onclick=\"login()\">
                                 Đăng nhập
@@ -60,7 +63,27 @@
                             }
                             else
                             { 
-                                if (strcmp($_COOKIE['loai'], '1') == 0)
+                                if (strcmp($_COOKIE['loai'], '0') == 0)
+                                {
+                                    echo "<span class=\"user-name\" onclick=\"gotoStudent()\">
+                                    ".$_COOKIE['username']."
+                                    </span>";
+                                    echo "<ul class=\"sub-header-user-list btn btn btn--yellow\">
+                                            <li class=\"sub-header-user-item\">
+                                                <a href=\"./student.php\">Lớp học của tôi</a>
+                                            </li>
+
+
+                                            <li class=\"sub-header-user-item\">
+                                                <a href=\"./edit-password.php\">Thay đổi mật khẩu</a>
+                                            </li>
+                                        </ul>";
+                                    echo "<li class=\"header-user-item user-logout btn btn-border-bottom btn--small btn--green\">
+                                    <a href=\"#\" class=\"user-logout-link\"onclick=\"logout()\" >Đăng xuất </a>
+                                    </li>";
+                                    
+                                }
+                                else if (strcmp($_COOKIE['loai'], '1') == 0)
                                 {
                                     echo "<span class=\"user-name\" onclick=\"gotoTeacher()\">
                                     ".$_COOKIE['username']."
@@ -81,12 +104,12 @@
                                     
                                 }
                                 else{
-                                    echo "<span class=\"user-name\" onclick=\"gotoStudent()\">
+                                    echo "<span class=\"user-name\" onclick=\"gotoAdmin()\">
                                     ".$_COOKIE['username']."
                                     </span>";
                                     echo "<ul class=\"sub-header-user-list btn btn btn--yellow\">
                                             <li class=\"sub-header-user-item\">
-                                                <a href=\"student.php\">Các lớp học của tôi</a>
+                                                <a href=\"admin.php\">Truy cập trang admin</a>
                                             </li>
 
                                             <li class=\"sub-header-user-item\">
@@ -118,7 +141,7 @@
                     </li>
                     
                 </ul>
-            </div>-->
+            </div>
         </div>
     </div>
     <div class="grid wide">
@@ -131,7 +154,7 @@
                 </div>
             </a>
 
-             <!-- sticky logo  --> 
+            <!-- sticky logo  -->
             <a href="./home.php" class="sticky-logo title">
                 School Shine🌥
             </a> 

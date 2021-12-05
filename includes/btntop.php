@@ -1,7 +1,7 @@
 <button id="btn-ontop" class="btn-ontop" onclick="btnonTop()">
     <i class="fas fa-chevron-left"></i>
 </button>
-        <script>
+        <script> 
             var btntop = document.getElementById("btn-ontop");
 
             // When the user scrolls down 20px from the top of the document, show the button
