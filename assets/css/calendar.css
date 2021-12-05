@@ -106,3 +106,7 @@
 .emissary {
     background-color: var(--white-color);
 }
+
+.calendar-table td {
+    color: var(--text-color);
+}

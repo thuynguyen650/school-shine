@@ -1,9 +1,4 @@
 
-/* Header */
-/* header {
-    height: var(--header-height);
-} */
-
 header.green {
     background-color: var(--primary-color);
     background: url(images/bg_over.png) repeat-x center bottom, url(http://education-html.themerex.net/images/green.jpg) repeat-x center top, url(http://education-html.themerex.net/images/green.jpg) repeat-x center bottom;
@@ -239,11 +234,6 @@ header nav {
 .sub-nav-list:hover ~ a {
     background-color: var(--secondary-color);
     color: var(--white-color);
-}
-.sub-nav-item {
-    height: 36px;
-    line-height: 36px;
-    padding: 0 16px;
 }
 
 .sub-nav-item a {

@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="FontAwesome/css/all.css">
     <meta charset="utf-8">
     <title>SCHOOL SHINE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -36,6 +38,14 @@
         </a>
         <a href="#" onclick="opentab('blog-admin')">
             <div id="">Blog</div>
+        </a>
+
+        <a href="#" onclick="opentab('tuvan-admin')">
+            <div id="">Đăng ký tư vấn</div>
+        </a>
+        
+        <a href="#" onclick="opentab('contact-admin')">
+            <div id="">Liên hệ, góp ý</div>
         </a>
     </div>
     <div id="content-tab-admin">
@@ -324,20 +334,187 @@
             </div>
         </div>
         <div class="name-tab" id="blog-admin">
-            <ul class="nav-admin">
-                <li><a href="" title="">Tạo bài viết</a></li>
-                <li><a href="" title="">Sửa bài viết</a></li>
-                <li><a href="" title="">Xóa bài viết</a></li>
+            <ul>
+                <li><a href="#" title="" onclick="addblog()">Tạo bài viết</a></li>
+                <li><a href="#" title="" onclick="delblog()">Danh sách bài viết</a></li>
             </ul>
+            <div class="info" id="info_add_blog">
             <h3>Thêm bài viết</h3>
-            <div><strong>Tên bài viết:</strong> <input type="text" name="" id="name-new-blog" required="Tên bài viết không thể để trống"></div>
-            <div><strong>Tên tác giả:</strong> <input type="text" name="" id="name-author-new-blog" required="Tên tác giả không thể để trống"></div>
-            <div><strong>Ngày đăng bài:</strong> <input type="text" name="" id="name-date-new-class" required="Ngày đăng bài không thể để trống"></div>
-            <div>
-                <strong>Nội dung:</strong>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="blog-input-group"><strong>Tên bài viết:</strong> <input type="text" name="" id="blog-title-input" required="Tên bài viết không thể để trống"></div>
+            <div class="blog-input-group"><strong>Tên tác giả:</strong> <input type="text" name="" id="blog-author-input" required="Tên tác giả không thể để trống"></div>
+            <div class="blog-input-group"><strong>Danh mục:</strong> 
+                <select name="blog-topic-input" id="blog-topic-input" class="contact-input">
+                    <option value="1">Bí kíp học ngoại ngữ</option>
+                    <option value="2">Cảm nhận học viên</option>
+                    <option value="3">Tuyển dụng</option>
+                </select>
             </div>
-            <button id="btn-add-class">Đăng bài Blog</button>
+            <div class="blog-input-group">
+                <strong>Nội dung:</strong>
+                <textarea name="blog-content-input" id="blog-content-input" cols="30" rows="10"></textarea>
+            </div>
+            <button id="blog-add-btn" onclick="addBlog()">Đăng bài Blog</button>
+            </div>
+
+            <div class="info" id="info_del_blog">
+            <h3>Danh sách bài viết</h3>
+            <div>
+                <?php 
+						include "connect.php";
+						$sql = "SELECT * FROM blog";
+						$query = mysqli_query($conn, $sql);
+                        // $row = mysqli_fetch_assoc($query);
+                        $total_row = mysqli_num_rows($query);
+
+                        $i = 0;
+                        if($total_row === 0) {
+                            echo "<p class='null'>Chưa có bài viết nào.</p>";
+                        } else {
+                        echo "<div>
+                        <table style='border: 1px solid black;'>
+                            <tr>
+                                <th>STT</th>
+                                <th>Danh mục</th>
+                                <th>Tên bài viết</th>
+                                <th>Tác giả</th>
+                                <th>Thao tác</td>
+                                </tr>";
+                        while ($row = mysqli_fetch_assoc($query)) {
+                            $i++;
+                            switch($row['topic']) {
+                                case 1:
+                                    $row['topic'] = 'Bí kíp học ngoại ngữ';
+                                    break;
+                                case 2: 
+                                    $row['topic'] = 'Cảm nhận học viên';
+                                    break;
+                                case 3:
+                                    $row['topic'] = 'Tuyển dụng';
+                                    break;
+                            }
+                            echo "
+                            
+                                <tr id='".$row['blog_id']."'>
+                                <td>".$i."</td>
+                                <td>".$row['topic']."</td>
+                                <td>".$row['title']."</td>
+                                <td>".$row['author']."</td>
+                                <td>
+                                    <div class='delete-button' id=".$row['blog_id']." onclick='xoaBaiViet(this.id)''>Xóa</div>
+                                </td>
+                                </tr>
+                                ";
+                            }
+                        echo "
+
+                        </table>
+                        <div class='table-actions'>
+                            <button onclick='clearContact()'>Xóa tất cả</button>
+                        </div>
+                        </div>";
+                        }
+					?>
+            </div>
+            </div>
+
+            
+        </div>
+        <div class="name-tab thuy-admin" id="tuvan-admin">
+            <h1>Đăng ký tư vấn</h1>
+            <div>
+                <?php 
+						include "connect.php";
+						$sql = "SELECT * FROM tuvan";
+						$query = mysqli_query($conn, $sql);
+                        $row = mysqli_fetch_assoc($query);
+                        if($row === null) {
+                            echo "<p class='null'>Hiện tại chưa có ai đăng ký tư vấn.</p>";
+                        } else {
+                        echo "<div>
+                        <table style='border: 1px solid black;'>
+                            <tr>
+                                <th>Tên</th>
+                                <th>Số điện thoại</th>
+                                <th>Email</th>
+                            </tr>";
+                        while ($row = mysqli_fetch_assoc($query)) {
+                            echo "
+                            
+                                <tr>
+                                <td>".$row['name']."</td>
+                                <td>
+                                <a href='tel: ".$row['sdt']."'>
+                                ".$row['sdt']."</td>
+                                <td>
+                                <a href='mailto:".$row['email']."'>
+                                ".$row['email']."</td>
+                            </tr>
+                                ";
+                            }
+                        echo "
+
+                        </table>
+                        </div>";
+                        }
+					?>
+            </div>
+        </div>
+        <div class="name-tab thuy-admin" id="contact-admin">
+            <h1>Thắc mắc & Góp ý</h1>
+            <div>
+                <?php 
+						include "connect.php";
+						$sql = "SELECT * FROM lienhe";
+						$query = mysqli_query($conn, $sql);
+                        $row = mysqli_fetch_assoc($query);
+                        if($row === null) {
+                            echo "<p class='null'>Hiện tại chưa có thắc mắc và góp ý.</p>";
+                        } else {
+                        echo "<div>
+                        <table style='border: 1px solid black;'>
+                            <tr>
+                                <th>Tên</th>
+                                <th>Email</th>
+                                <th>Danh mục</th>
+                                <th>Lời nhắn</th>
+                                </tr>";
+                        while ($row = mysqli_fetch_assoc($query)) {
+                            switch($row['topic']) {
+                                case 1:
+                                    $row['topic'] = 'Than phiền';
+                                    break;
+                                case 2: 
+                                    $row['topic'] = 'Khen ngợi';
+                                    break;
+                                case 3:
+                                    $row['topic'] = 'Tư vấn / Đăng ký khóa học';
+                                    break;
+                                case 4: 
+                                    $row['topic'] = 'Tuyển dụng';
+                                    break;
+                            }
+                            echo "
+                            
+                                <tr>
+                                <td>".$row['name']."</td>
+                                <td>
+                                <a href='mailto:".$row['email']."'>
+                                ".$row['email']."</td>
+                                <td>".$row['topic']."</td>
+                                <td>".$row['message']."</td>
+                                </tr>
+                                ";
+                            }
+                        echo "
+
+                        </table>
+                        <div class='table-actions'>
+                            <button onclick='clearContact()'>Xóa tất cả</button>
+                        </div>
+                        </div>";
+                        }
+					?>
+            </div>
         </div>
     </div>
     <div class="clear"></div>

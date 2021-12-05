@@ -291,3 +291,87 @@ li a:focus {
     margin-left: 20px;
     display: none;
 }
+
+#tuvan-admin,
+#contact-admin {
+    display: none;
+}
+
+#tuvan-admin h1,
+.thuy-admin .null{
+    margin-left: 240px;
+}
+
+#contact-admin h1 {
+    text-align: center;
+}
+
+#tuvan-admin table {
+    margin-left: 100px;
+}
+
+.thuy-admin table, th, td,
+#blog-admin table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 20px;
+}
+
+#blog-admin table, th, td {
+    padding: 0px;
+}
+
+#contact-admin table, th, td {
+    padding: 10px;
+}
+
+.thuy-admin a {
+    text-decoration: none;
+    color: #1eaace;
+}
+
+.thuy-admin a:hover {
+    text-decoration: underline;
+}
+
+.thuy-admin .null {
+    margin-left: 240px;
+}
+
+.blog-input-group {
+    display: flex;
+}
+
+.blog-input-group input,
+.blog-input-group select,
+.blog-input-group textarea {
+    flex: 1;
+    margin: 0;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.blog-input-group select {
+    padding: 0;
+}
+
+#blog-admin li {
+    width: 50%;
+}
+
+.delete-button {
+    margin: 0!important;
+    width: unset;
+    min-width: 50px;
+    height: unset;
+    background: red;
+    border-radius: 5px;
+    color: #fff;
+    padding: 6px 0;
+    text-align: center;
+}
+
+.delete-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

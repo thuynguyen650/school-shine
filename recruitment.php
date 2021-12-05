@@ -30,45 +30,28 @@
                 <div class="blog-list-wrapper">
                     <div class="row">
                         <div class="col l-8-5">
-                            <ul class="blog-list">
-                                <li class="recruitment-item">
-                                    <div class="recruitment-img">
-                                        <img src="./assets/img/recruitment.jpg" alt="">
-                                    </div>
-
-                                    <div class="recruitment-detail">
-                                        <a class="recruitment-title" href="">School Shine tuyển dụng chuyên viên tư vấn - Thu nhập 15-30 Triệu/tháng - Ưu tiên có tiếng Anh</a>
-                                        <p class="recruitment-desc">
-                                            Anh Ngữ Ms Hoa tuyển dụng chuyên viên tư vấn - Thu nhập 15-30 Triệu/tháng - Ưu tiên có tiếng Anh
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="recruitment-item">
-                                    <div class="recruitment-img">
-                                        <img src="./assets/img/recruitment.jpg" alt="">
-                                    </div>
-
-                                    <div class="recruitment-detail">
-                                        <a class="recruitment-title" href="">School Shine tuyển dụng chuyên viên tư vấn - Thu nhập 15-30 Triệu/tháng - Ưu tiên có tiếng Anh</a>
-                                        <p class="recruitment-desc">
-                                            Anh Ngữ Ms Hoa tuyển dụng chuyên viên tư vấn - Thu nhập 15-30 Triệu/tháng - Ưu tiên có tiếng Anh
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="recruitment-item">
-                                    <div class="recruitment-img">
-                                        <img src="./assets/img/recruitment.jpg" alt="">
-                                    </div>
-
-                                    <div class="recruitment-detail">
-                                        <a class="recruitment-title" href="">School Shine tuyển dụng chuyên viên tư vấn - Thu nhập 15-30 Triệu/tháng - Ưu tiên có tiếng Anh</a>
-                                        <p class="recruitment-desc">
-                                            Anh Ngữ Ms Hoa tuyển dụng chuyên viên tư vấn - Thu nhập 15-30 Triệu/tháng - Ưu tiên có tiếng Anh
-                                        </p>
-                                    </div>
-                                </li>
+                            <ul class="blog-list new-blog-list">
+                            <?php
+                                    include "connect.php";
+                                    $sql = "SELECT * FROM blog WHERE topic=3";
+                                    $query = mysqli_query($conn, $sql);
+                                    while($row = mysqli_fetch_array($query)){
+                                        echo "
+                                        <li class='recruitment-item'>
+                                        <div class='recruitment-img'>
+                                            <img src='./assets/img/recruitment.jpg' alt=''>
+                                        </div>
+    
+                                        <div class='recruitment-detail'>
+                                            <a class='recruitment-title' href=''>".$row['title']."</a>
+                                            <p class='recruitment-desc'>
+                                                ".substr($row['content'], 0, 90)."...
+                                            </p>
+                                        </div>
+                                    </li>
+                                        ";
+                                    }
+                                ?>
                             </ul>
                         </div>
 

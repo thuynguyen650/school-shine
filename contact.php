@@ -68,15 +68,15 @@
                     <div class="grid wide">
                         <h1>Liên Hệ Trung Tâm</h1>
                         <p class='contact-desc'>Mọi thông tin liên lạc của bạn sẽ được bảo mật. School Shine luôn mong muốn nhận được những phản hồi từ các bạn!</p>
-                        <form action="">
+                        <form action="" id="form-contact">
                             <div class="contact-form-row">
-                               <input type="text" class="contact-input" name="contact-name" id="contact-name" placeholder="Name*">
+                                <input type="text" class="contact-input" name="contact-name" id="contact-name" placeholder="Name*">
                                 <input type="email" class="contact-input" name="contact-email" id="contact-email" placeholder="E-mail*">
                                 <select name="contact-subject" id="contact-subject" class="contact-input">
-                                    <option value="">Than phiền</option>
-                                    <option value="">Khen ngợi</option>
-                                    <option value="">Tư vấn/ Đăng ký khóa học</option>
-                                    <option value="">Tuyển dụng</option>
+                                    <option value="1">Than phiền</option>
+                                    <option value="2">Khen ngợi</option>
+                                    <option value="3">Tư vấn/ Đăng ký khóa học</option>
+                                    <option value="4">Tuyển dụng</option>
                                 </select>
                             </div>
                                 
@@ -85,7 +85,7 @@
                             </div>
 
                             <div class="contact-form-submit">
-                                <button class="btn btn--primary btn--medium">SEND MESSAGE</button>
+                                <button class="btn btn--primary btn--medium btn-contact" type="button">SEND MESSAGE</button>
                             </div>
                         </form>
                     </div>
@@ -118,4 +118,8 @@
         ?>
 <?php
     include "./includes/footer.php";
+?>
+
+<?php
+    include "./includes/popup.php";
 ?>

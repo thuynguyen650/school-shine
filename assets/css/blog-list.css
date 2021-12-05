@@ -2,6 +2,11 @@
     margin-right: 10px;
 }
 
+.blog-list.new-blog-list {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .blog-item-title {
     font-size: 3.4rem;
     line-height: 4.4rem;
@@ -18,7 +23,11 @@
     padding: 50px 0;    
 }
 
-.blog-item:first-child {
+.all-blog .blog-item:first-child {
+    padding-top: 0;
+}
+
+.new-blog-list .blog-item:last-child {
     padding-top: 0;
 }
 

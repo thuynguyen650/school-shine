@@ -29,7 +29,7 @@
             </div>
     
             <div class="header-user">
-                <ul class="header-user-list">
+                <!-- <ul class="header-user-list">
                     <li class="header-user-item user-logout btn btn-border-bottom btn--small btn--yellow after">
                         <a href="#" class="user-logout-link">
                         <i class="far fa-bookmark"></i>
@@ -38,17 +38,17 @@
                             <li class="sub-header-user-item" style="border-bottom: 1px solid #f9d6d6">
                                 Đánh dấu trang này
                             </li>
-                            <!-- <li class="sub-header-user-item">
+                            <li class="sub-header-user-item">
                                 Team members
                                 <span class="bookmark-remove"><i class="fas fa-times"></i></span>
-                            </li> -->
+                            </li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
 
                 <ul class="header-user-list">
                     <li class="header-user-item user-control btn btn-border-bottom btn--small btn--yellow after">
-                        <span class="user-avt">
+                        <!-- <span class="user-avt">
                             <img  src="./assets/img/default-avt.png" alt="avt">
                         </span>
                         <?php
@@ -118,7 +118,7 @@
                     </li>
                     
                 </ul>
-            </div>
+            </div>-->
         </div>
     </div>
     <div class="grid wide">
@@ -131,7 +131,7 @@
                 </div>
             </a>
 
-            <!-- sticky logo  -->
+             <!-- sticky logo  --> 
             <a href="./home.php" class="sticky-logo title">
                 School Shine🌥
             </a> 

@@ -18,7 +18,7 @@
     <div class="content">
         <button onclick="window.location.href='./fasttest.php'" class="snip1582">Test nhanh</button>
         <button onclick="window.location.href='./listen_test.php'"  class="snip1582">Test Listen</button>
-        <button onclick="window.location.href='./reading_test.php.php'" class="snip1582">Test Reading</button>
+        <button onclick="window.location.href='./reading_test.php'" class="snip1582">Test Reading</button>
         <button class="snip1582">Đăng ký test Offline</button>
     </div>
     </div>

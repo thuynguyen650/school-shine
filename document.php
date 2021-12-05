@@ -192,7 +192,7 @@
     </main>
     <script>
         $('.download').attr({target: '_blank', 
-                    href  : 'http://localhost:81/school-shine/source/New.pdf'});
+                    href  : '../school-shine/source/New.pdf'});
     </script>
 </body>
 
