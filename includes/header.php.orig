@@ -11,14 +11,22 @@
     function logout(){
         const xhr = new XMLHttpRequest();
         xhr.onload = function(){
+<<<<<<< HEAD
            window.location.href = "http://localhost:8080/school-shine/home.php";
+=======
+           window.location.href = "http://localhost/school-shine/home.php";
+>>>>>>> 595c9d1d8c2db64d6003b760ba39b44ff8aa9b09
         }
         xhr.open("POST","logout.php");
         xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
         xhr.send();
     }
     function login(){
+<<<<<<< HEAD
         window.location.href = "http://localhost:8080/school-shine/login.php";
+=======
+        window.location.href = "http://localhost/school-shine/login.php";
+>>>>>>> 595c9d1d8c2db64d6003b760ba39b44ff8aa9b09
     }
 </script>
 <span onclick="gotoTeacher()"></span>
@@ -125,7 +133,7 @@
                         ?>
                         
 
-                        <!-- <ul class="sub-header-user-list btn btn btn--yellow">
+                        <ul class="sub-header-user-list btn btn btn--yellow">
                             <li class="sub-header-user-item">
                                 <a href="#">Lớp học</a>
                             </li>
@@ -137,7 +145,7 @@
                             <li class="sub-header-user-item">
                                 <a href="./edit-password.php">Thay đổi mật khẩu</a>
                             </li>
-                        </ul> -->
+                        </ul>
                     </li>
                     
                 </ul>

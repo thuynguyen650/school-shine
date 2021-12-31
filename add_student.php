@@ -22,7 +22,7 @@
 	}
 	else{
 		$sql3 = "INSERT INTO TAIKHOAN (MATK, TENDANGNHAP, MATKHAU, HOTEN, EMAIL, SDT, GIOITINH, NGAYSINH, DIACHI, Loai)
-		VALUES ('".$newCode."','".$username."','".$pass."','No Name','".$email."','0123456789','Nam','2000-01-01','Hồ Chí Minh',0".")";
+		VALUES ('".$newCode."','".$username."','".$pass."','Chưa cập nhật','".$email."','Chưa cập nhật','Nam','2000-01-01','Chưa cập nhật',0".")";
 		$query3 = mysqli_query($conn, $sql3);
 		if ($query3){
 			echo "1";

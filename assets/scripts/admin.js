@@ -1,12 +1,16 @@
 var edit_type;
-function opentab(a) {
+function opentab(a) { 
     var tab = document.getElementById(a);
+	var activeItem = document.getElementById(`${a}-active`)
     var i;
     var x = document.getElementsByClassName('name-tab');
+	var y = document.getElementsByClassName('thuy-admin-item')
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
+		y[i].classList.remove("active")
     }
     tab.style.display = "block";
+	activeItem.classList.add("active")
 }
 function register_stu(){
 	var username = document.getElementById('reg_stu_usr');
@@ -27,21 +31,22 @@ function register_stu(){
 				window.location.href = "login.php";
 			}
 			else{
-				alert('Đã xảy ra lỗi');
-			}
+				alert(this.responseText);
+			} 
 		}
 		xhr.open("POST","add_student.php");
 		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 		xhr.send("username="+username.value+"&pass="+pass.value+"&email="+email.value);
 	}
 }
-function changePass(){
+function changePass(event){
+	event.preventDefault()
 	var oldpass=document.getElementById('change_old');
 	var newpass=document.getElementById('change_new');
 	var confirm=document.getElementById('change_confirm');
 	if (oldpass.value ==''||newpass.value==''||confirm.value==''){
 		alert('Các trường không được để trống');
-	}
+	} 
 	else if (newpass.value!=confirm.value){
 		alert('Mật khẩu xác nhận không khớp');
 	}

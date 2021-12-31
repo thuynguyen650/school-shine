@@ -201,7 +201,7 @@ label.label_block{
 .checkout_title{
 	width: 60%;
 	margin: auto;
-	font-size: 60px;
+	font-size: 50px;
 	color: white;
 	font-weight: 100;
 	padding-top: 20px;
@@ -428,3 +428,4 @@ em{
 	.payment a{
 		font-size: 12px;
 	}
+}

@@ -29,7 +29,7 @@
 			<body>
 				<script>
 					alert('Cập nhật thành công.');
-					window.location.href = \"http://localhost/school-shine/".$redirect.".php\";
+					window.location.href = \"./".$redirect.".php\";
 				</script> 
 			</body>
 			</html>";

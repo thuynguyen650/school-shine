@@ -6,40 +6,58 @@ body {
     width: 20%;
     height: 100vmax;
     float: left;
-    background-color: #1eaace;
-    border-right: 1px solid #1eaace;
+    border-right: 1px solid #018763;
     position: fixed;
 }
 
 #list-tab div {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid white;
+    width: calc(100%-30px);
+    color: #018763;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-left: 54px;
+    padding-bottom: 10px;
+    transition: .2s;
 }
 
+#list-tab div.active {
+    background-color: #018763;
+    color: #fff;
+}
+
+#list-tab div:hover {
+    cursor: pointer;
+    background-color: #018763;
+    color: #fff;
+}
 #info-admin {
     background-color: white;
     width: 100%;
     /* height: 200px; */
 }
 
+#list-tab > div {
+    text-align: center;
+    padding-left: 0;
+}
+
+#list-tab > div:hover {
+    background-color: unset;
+    color: #018763;
+}
 #info-admin h2 {
-    color: #1eaace;
+    font-size: 1.4rem;
+    color: #018763;
+    margin-bottom: 0px;
 }
 
 #info-admin img {
-    width: 60%;
-    height: 110px;
+    border-radius: 50%;
+    border: 1px solid #018763;
+    width: 100px;
+    height: 100px;
     margin-left: 3%;
     margin-top: 10px;
-}
-
-#list-tab div:hover {
-    background-color: #018763;
 }
 
 #list-tab a {
@@ -50,6 +68,7 @@ body {
     width: 78%;
     height: max-content;
     float: right;
+    padding: 0 10px;
 }
 
 .clear {
@@ -374,4 +393,15 @@ li a:focus {
 .delete-button:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+html {
+    font-family: 'Arial', sans-serif;
+    color: #018763;
+}
+
+#list-tab hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #018763;
 }

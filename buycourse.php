@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="assets/css/buycourse.css">
 	<link rel="stylesheet" type="text/css" href="FontAwesome/css/all.css">
 	<script src="assets/scripts/buycourse.js" type="text/javascript" charset="utf-8" async defer></script>
-</head>
+</head> 
 <?php
     include "./includes/head.php";
 ?> 

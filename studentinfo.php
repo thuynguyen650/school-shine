@@ -39,9 +39,6 @@
 			<div class="bio">
 				<div class="info" id="info">		
 				</div>
-				<div class="image">
-					<img src="http://education-html.themerex.net/images/john_snow_full.jpg" alt="">
-				</div>
 			</div>
 			<div class="course" id="course">
 				<i class="fas fa-chalkboard-teacher icon"></i>

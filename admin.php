@@ -18,7 +18,17 @@
     <meta charset="utf-8">
     <title>SCHOOL SHINE</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script>
+    function logout(){
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function(){
+           window.location.href = "http://localhost:8080/school-shine/home.php";
+        }
+        xhr.open("POST","logout.php");
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xhr.send();
+    }
+    </script>
 </head>
 
 <body>
@@ -30,22 +40,31 @@
             ?>
 
         </div>
+        <hr>
         <a href="#" onclick="opentab('course-admin')">
-            <div id="">Khóa học</div>
+            <div id="course-admin-active" class="thuy-admin-item">Khóa học</div>
         </a>
         <a href="#" onclick="opentab('teacher-admin')">
-            <div id="">Giảng viên</div>
+            <div id="teacher-admin-active" class="thuy-admin-item">Giảng viên</div>
         </a>
         <a href="#" onclick="opentab('blog-admin')">
-            <div id="">Blog</div>
+            <div id="blog-admin-active" class="thuy-admin-item">Blog</div>
         </a>
 
         <a href="#" onclick="opentab('tuvan-admin')">
-            <div id="">Đăng ký tư vấn</div>
+            <div id="tuvan-admin-active" class="thuy-admin-item">Đăng ký tư vấn</div>
         </a>
         
         <a href="#" onclick="opentab('contact-admin')">
-            <div id="">Liên hệ, góp ý</div>
+            <div id="contact-admin-active" class="thuy-admin-item">Liên hệ, góp ý</div>
+        </a>
+        <hr>
+        <a href="./home.php">
+            <div id="contact-admin-active">Đi tới trang chủ</div>
+        </a>
+
+        <a href="#" onclick="logout()">
+            <div id="blog-admin-active">Đăng xuất</div>
         </a>
     </div>
     <div id="content-tab-admin">

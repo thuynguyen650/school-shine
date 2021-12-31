@@ -5,7 +5,7 @@
 	$row2 = mysqli_fetch_array($query2);
 	if (strcmp($row2['Loai'], '0') != 0)
 	{
-		header("Location: http://localhost/school-shine/block.php");
+		header("Location: http://localhost:8080/school-shine/block.php");
 		exit();
 	}
 ?>
@@ -38,7 +38,7 @@
     	<div class="panel">
 			<div class="checkout_title">
 				<?php 
-					echo('<p>Chào mừng '.$row['HOTEN'].'</p>')
+					echo('<p>Chào mừng '.$username.'</p>')
 				?>
 				<!-- phpcode -->
 
@@ -51,7 +51,7 @@
 						echo "<div class=\"teacher-profile-containerr\" >";
 						echo "<div class=\"teacher-profile\">";
 						echo "<div class=\"teacher-profile--left\">";
-						echo "<img class=\"teacher-img\" src=\"assets/img/teacher-11.jpg\" alt=\"use\" />";
+						echo "<img class=\"teacher-img\" src=\"assets/img/default-avt.png\" alt=\"use\" />";
 						echo "<div class=\"teacher-list-info\">";
 						echo "<div class=\"item\">
 		                                    <i class=\"fas fa-user\"></i>

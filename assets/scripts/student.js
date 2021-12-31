@@ -13,7 +13,7 @@ function showex(e,c,l){
 		x.classList.remove("fa-minus-square");
 		y.style.display = "none";
 	}
-}
+} 
 function student_setup(a){
 	//var x = document.getElementById("info");
 	var p = document.createElement("p");

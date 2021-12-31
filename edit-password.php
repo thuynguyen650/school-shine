@@ -43,8 +43,8 @@
                                 <input class="input" type="password" id="change_confirm" placeholder="" />
                                 <span class="form-message"></span>
                             </div>
-                            <a class="btn btn--medium btn--green" onclick="changePass()" style="width:100%; margin-top:10px; font-size: 20px; padding-bottom: 40px;" href="#">Lưu mật khẩu</a>
-                        </form>
+                            <a class="btn btn--medium btn--green" onclick="changePass(event)" style="width:100%; margin-top:10px; font-size: 20px; padding-bottom: 40px;" href="#">Lưu mật khẩu</a>
+                        </form> 
                     </div>
 
                 </div>

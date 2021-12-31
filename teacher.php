@@ -5,7 +5,7 @@
 	$row2 = mysqli_fetch_array($query2);
 	if (strcmp($row2['Loai'], '1') != 0)
 	{
-		header("Location: http://localhost/school-shine/block.php");
+		header("Location: block.php");
 		exit();
 	}
 ?>
@@ -91,22 +91,6 @@
 		                
 						echo "</div>";
 						echo "</div>";
-						echo "<div class=\"teacher-profile--right\">
-		                            <div class=\"teacher-profile--des\">
-		                                <p class=\"teacher-profile--des header\">Đôi nét về Giảng viên</p>
-		                                <p class=\"teacher-profile--des des\">Năng động, trẻ trung, sôi nổi, nhiệt huyết, sáng tạo - là phong cách mà cô hướng tới vì thế trong mỗi bài giảng của mình cô luôn biến hóa một cách sinh động với nhiều phong cách, và nhiều hướng tiếp cận bài học giúp cho các em học sinh tiếp cận kiến thức 1 cách thoải mái, rèn luyện và củng cố kiến thức một cách tự nhiên.</p>
-		                                <p class=\"teacher-profile--des des\">Luôn cập nhật công nghệ thông tin để ứng dụng và cải tiến vào trong các bài giảng, vì thế các bài giảng của cô luôn có sự phá cách và tạo được ấn tượng với các em học sinh.</p>
-		                                <p class=\"teacher-profile--des des\">Phong cách giảng dạy chuyên nghiệp, trẻ trung, nhiệt huyết đam mê truyền động lực mạnh mẽ cho các em học sinh thông qua mục tiêu bài học rõ ràng. Cách tiếp cận bài học thông qua bài hát, hoạt động, trò chơi .... phù hợp với tất cả các học sinh ở mọi trình độ.</p>
-		                            </div>
-		                            <div class=\"teacher-profile--des\">
-		                                <p class=\"teacher-profile--des header\">Thành tích</p>
-		                                <p class=\"teacher-profile--des des\">Nhà Sáng lập - Giám đốc trung tâm Anh Ngữ SABI EDU, hiện nay là Trung tâm CHU CHU English</p>
-		                                <p class=\"teacher-profile--des des\">Bằng chứng chỉ giảng dạy Tiếng Anh chuyên nghiệp theo phương pháp Tesol.</p>
-		                                <p class=\"teacher-profile--des des\">Top 10 nữ sinh thanh lịch trường Đại học Công Nghiệp Hà Nội năm 2014 và giành giải nữ sinh được yêu thích nhiều nhất.</p>
-		                                <p class=\"teacher-profile--des des\">\"Tác giả bộ thẻ học liệu Magic English Flashcard: http://magicenglishflashcard.com/\"</p>
-		                            </div>
-		                        </div> ";
-		                
 						echo "</div>";
 						echo "</div>";
 			 		?>

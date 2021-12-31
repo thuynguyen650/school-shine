@@ -23,24 +23,23 @@
 	{
 		echo "<script>
 				alert('Phát hiện bạn chỉnh sửa dữ liệu không hợp lệ.');
-				window.location.href = \"http://localhost/school-shine/home.php\";
+				window.location.href = \"./home.php\";
 			</script> ";
 		//Phát hiện chỉnh sửa thông tin không hợp lệ
 	}
 	elseif (strcmp($row2['Loai'], '0') != 0){
 		echo "<script>
 				alert('Phát hiện bạn chỉnh sửa dữ liệu không hợp lệ.');
-				window.location.href = \"http://localhost/school-shine/home.php\";
+				window.location.href = \"./home.php\";
 			</script> ";
 		//Phát hiện chỉnh sửa thông tin không hợp lệ
 	}
 	else{
-		$sql3  = "INSERT INTO THAMGIA (MAHV, MAKH)
-		VALUES ('".$mahv."','".$makh."')";
+		$sql3  = "INSERT INTO THAMGIA (MAHV, MAKH) VALUES ('".$mahv."','".$makh."')";
 		$query3 = mysqli_query($conn, $sql3);
 		echo "<script>
 				alert('Đã thanh toán ".$row['GIA']." đồng cho khóa học ".$makh.".');
-				window.location.href = \"http://localhost/school-shine/home.php\";
+				window.location.href = \"./home.php\";
 			</script> ";
 	}
 	echo "</body>
